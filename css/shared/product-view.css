@@ -1,0 +1,644 @@
+/* =====================================================================
+   SHARED PRODUCT VIEW
+   =====================================================================
+   One definition of how a product looks on gifts, corporate and studio.
+
+   The three pages render the same product view through three different
+   class vocabularies, from three separate stylesheets:
+
+       gifts      .details-copy   .details-price-row   .details-gallery
+       corporate  .modal-title-block   .modal-price-row   .modal-gallery-col
+       studio     .preview-title-block .preview-price-row .preview-gallery-col
+
+   Rewriting them onto one vocabulary would mean rewriting three pages'
+   markup and JS. Instead this file states each shared rule once and lists
+   all three selectors for it, so a change lands on all three pages or on
+   none - they can no longer drift the way they had (title 18px on one page
+   and 25px on another, "You May Also Like" at 38px serif here and 20px
+   sans there).
+
+   LOAD ORDER MATTERS: this file must come AFTER the page's own stylesheet
+   in every <link> list. Most rules here match the page rules' specificity
+   exactly (gifts' are `body.gifts-module-route .x`, two classes), so they
+   win on source order alone. Moving this link earlier silently reverts the
+   page to its old look.
+
+   Where a page rule is responsive, the full ramp is restated here - a
+   single non-responsive declaration in this file would otherwise beat the
+   page's media-query rule and flatten it.
+   ===================================================================== */
+
+:root {
+  /* Georgia, following the gifts product page - the one of the three that is
+     signed off as correct, so it is the reference the other two match rather
+     than the other way round. Change this one value to move all three product
+     views to a different face. */
+  --pv-title-font: Georgia, 'Times New Roman', serif;
+  --pv-brand: #5C0930;
+  --pv-ink: #111827;
+  --pv-muted: #64748B;
+  --pv-frame: #EEF0F2;
+}
+
+/* ---------------------------------------------------------------------
+   1. TITLE BLOCK
+   Phone 18 -> tablet 20 -> desktop 22. The desktop step is where the three
+   were furthest apart: gifts ran to clamp(28px, 3.2vw, 40px) while
+   corporate sat at a flat 25px and studio at 24px.
+   --------------------------------------------------------------------- */
+/* The leading `body` is load-bearing, not noise. gifts.css writes its title
+   rule as `body.gifts-module-route .details-copy h1` - two classes AND two
+   elements, (0,2,2). A selector here of `.details-main .details-copy h1` is
+   (0,2,1) and loses to that outright, whatever the load order: which is why
+   the gifts title kept Georgia at its own sizes while corporate and studio
+   moved to the shared ones, leaving the three no more consistent than before.
+   Matching (0,2,2) puts source order back in charge. */
+body .details-main .details-copy h1,
+body .modal-grid .modal-title-block h2,
+body .preview-scroll .preview-title-block h2 {
+  margin: 8px 0 10px;
+  font-family: var(--pv-title-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--pv-ink);
+}
+
+@media (min-width: 576px) {
+  body .details-main .details-copy h1,
+  body .modal-grid .modal-title-block h2,
+  body .preview-scroll .preview-title-block h2 {
+    font-size: 20px;
+  }
+}
+
+/* Desktop. Was clamp(28px, 3.2vw, 40px), which turned the long, keyword-heavy
+   product names ("... | Wedding | For Couples, ...") into several huge lines
+   above the price - sized like a marketplace product title instead. */
+@media (min-width: 1024px) {
+  body .details-main .details-copy h1,
+  body .modal-grid .modal-title-block h2,
+  body .preview-scroll .preview-title-block h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+}
+
+/* Only the gifts view has a category eyebrow above the title; the other two
+   have no element for one. Rather than add markup and JS to two pages to
+   print a category that the breadcrumb already names, the product view goes
+   without it. (This hides it on the PRODUCT view only - the eyebrow above
+   "You May Also Like" and the ones on category pages are untouched.) */
+.details-main .details-copy .eyebrow {
+  display: none;
+}
+
+/* No breadcrumb trail on the product view, at any width - the back link in
+   the topbar covers going up a level on all three pages.
+
+   This follows gifts rather than leading it: gifts.css already hides its
+   trail with `display: none !important` at every width, deliberately
+   ("Replaced by the PRODUCT DETAILS back link above at every width"). A rule
+   here that showed the trail on desktop could not beat that !important, so
+   gifts would have stayed bare while corporate and studio grew one - the
+   exact drift this file exists to stop. Corporate was the only page printing
+   the full "Home / Corporate Gifts / <product>" trail on a phone, where it
+   competes with the title for the first screenful. */
+.details-page .breadcrumb-links,
+.modal-grid .modal-breadcrumb,
+.preview-scroll .preview-breadcrumb {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
+   2. PRICE ROW
+   The three carried three different treatments of the same three facts:
+   price, struck-through MRP, discount. Studio printed "11% off" as loose
+   red text while gifts used a filled brand pill; corporate shows no
+   discount at all (its markup has no element for one, which is a data
+   difference, not a styling one - left alone).
+   --------------------------------------------------------------------- */
+.details-buy-card .details-price-row,
+.modal-info-col .modal-price-row,
+.preview-info .preview-price-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+/* !important here is not decoration. gifts.css marks its own detail price
+   `!important` to defend it from a broad `html body.gifts-module-route .price`
+   rule further down that file (which exists for the small product-grid cards
+   and would otherwise shrink and recolour the detail price). An unmarked rule
+   here, however specific, loses to that. Matching specificity (three classes)
+   plus !important means this one wins on source order instead. */
+.details-buy-card .details-price-row .price,
+.modal-info-col .modal-price-row .modal-price,
+.preview-info .preview-price-row .preview-price {
+  font-family: var(--pv-title-font) !important;
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  line-height: 1.1;
+  color: var(--pv-ink) !important;
+}
+
+.details-buy-card .details-price-row .old-price,
+.preview-info .preview-price-row .preview-old-price {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--pv-muted);
+  text-decoration: line-through;
+}
+
+/* The filled brand pill, applied to studio's percentage too - it was the
+   odd one out as plain coloured text. */
+.details-buy-card .details-price-row .discount-badge,
+.preview-info .preview-price-row .preview-discount-percent {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--pv-brand);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+   3. GALLERY
+   Same frame on all three. Gifts and corporate already framed the gallery;
+   studio ran its images full-bleed against the page.
+   --------------------------------------------------------------------- */
+.details-main .details-gallery,
+.modal-grid .modal-gallery-col,
+.preview-scroll .preview-gallery-col {
+  background: var(--pv-frame);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+@media (max-width: 575px) {
+  .details-main .details-gallery,
+  .modal-grid .modal-gallery-col,
+  .preview-scroll .preview-gallery-col {
+    padding: 10px;
+    border-radius: 12px;
+  }
+}
+
+/* Studio alone hid its thumbnail rail on phones and showed a dot indicator
+   instead, so the same product offered a different way to browse its photos
+   depending on which page you reached it from. Thumbnails everywhere: they
+   show what you are switching to, dots do not. */
+/* Scoped to below the shared 1024px breakpoint on purpose. Above it, studio
+   already lays this rail out as a narrow VERTICAL column beside the image
+   (flex-direction: column, its own gap and overflow) and sizes the thumbs
+   itself - these selectors outrank those, so leaving them unscoped would
+   quietly restyle a desktop rail that was never the problem. */
+/* Studio showed its photos on a flat grey panel, while gifts and corporate
+   inset theirs on a white card inside the grey frame. Matching gifts: white
+   card, rounded, lifted off the frame. The slide background matters too -
+   a product photo that isn't square is letterboxed, and those bars should be
+   the card's white, not the page grey showing through. */
+.preview-scroll .preview-gallery {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(17, 24, 39, 0.06);
+}
+
+.preview-scroll .preview-slide {
+  background: #fff;
+}
+
+/* Arrow buttons for studio's gallery, styled to match gifts' .gallery-arrow-btn
+   exactly (36px white circle, centred vertically, 12px in from each edge). */
+.preview-scroll .preview-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ececec;
+  box-shadow: 0 4px 10px rgba(17, 24, 39, .12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.preview-scroll .preview-arrow-btn:hover {
+  background: #f9fafb;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.preview-scroll .preview-arrow-btn.prev {
+  left: 12px;
+}
+
+.preview-scroll .preview-arrow-btn.next {
+  right: 12px;
+}
+
+/* A single-photo product has nothing to page through. The arrows are SIBLINGS
+   of the gallery (both sit inside .preview-main-wrap), so the test is on the
+   gallery having no second slide, and `~` reaches forward to the buttons.
+   Where :has() is unsupported the arrows simply stay visible, which is
+   harmless: navigatePreviewGallery() returns early below two slides. */
+.preview-scroll .preview-gallery:not(:has(> :nth-child(2))) ~ .preview-arrow-btn {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  /* Thumbnails BELOW the image, as on gifts. Studio's rail is first in the
+     DOM because on desktop it is the vertical strip to the left of the photo;
+     on a phone that put a row of thumbnails above the product image, which is
+     the opposite of the other two views. The column needs to be an explicit
+     flex container for `order` to mean anything here. */
+  .preview-scroll .preview-gallery-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .preview-scroll .preview-main-wrap {
+    order: 1;
+  }
+
+  .preview-scroll .preview-thumb-rail {
+    order: 2;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  /* Sizing the thumbs is not optional once the rail is shown on phones.
+     studio.css styles .preview-thumb as `width: 100%` and only narrows it to
+     68px inside its >=1024px block, because the rail was a vertical column on
+     desktop and hidden entirely on mobile. Showing that rail on a phone
+     without this rule renders each thumbnail at the full width of the gallery
+     - which reads as a second, stacked product image rather than a thumbnail
+     strip. 68px matches gifts' .gallery-thumb and studio's own desktop rail,
+     so the three views share one thumbnail size. */
+  .preview-scroll .preview-thumb-rail .preview-thumb {
+    width: 68px;
+    height: 68px;
+    flex: 0 0 68px;
+  }
+}
+
+.preview-scroll .preview-dots {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
+   4. "YOU MAY ALSO LIKE"
+   The markup for this block is already identical on all three pages; only
+   the CSS had diverged. Gifts rendered the heading at up to 38px Georgia
+   with the description pushed to the right edge, while corporate and studio
+   used 20px sans with it underneath.
+   --------------------------------------------------------------------- */
+.related-section .related-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* Wraps the description under the heading on narrow screens instead of
+     crushing both into one row - what corporate and studio already did. */
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.related-section .related-heading h2 {
+  margin: 2px 0 0;
+  font-family: var(--pv-title-font);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--pv-ink);
+}
+
+@media (min-width: 1024px) {
+  .related-section .related-heading h2 {
+    font-size: 24px;
+  }
+}
+
+.related-section .related-heading p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--pv-muted);
+}
+
+.related-section .related-heading .eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--pv-brand);
+}
+
+/* 2 across on phones, 3 on tablets, 4 on desktop - gifts was pinned at 4
+   on desktop with its own gap, the other two at 4 with another. */
+.related-section .related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 576px) {
+  .related-section .related-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .related-section .related-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* "View more" under the row (js/shared/related-more.js): the first 4 cards
+   show, each click appends the next 8, and the button goes once everything
+   is out. Same outline look as the cards' "View Product" button. */
+.related-section .related-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.related-section .related-more[hidden],
+.related-section .related-more-btn[hidden] {
+  display: none;
+}
+
+.related-section .related-more-count {
+  margin: 0;
+  font-size: 13px;
+  color: var(--pv-muted);
+}
+
+.related-section .related-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  min-width: 180px;
+  padding: 10px 26px;
+  border: 1.5px solid #990F4B;
+  border-radius: 9px;
+  background: #FFFFFF;
+  color: #990F4B;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .28s ease, background-color .28s ease, box-shadow .28s ease;
+}
+
+.related-section .related-more-btn:hover,
+.related-section .related-more-btn:focus-visible {
+  background: #990F4B;
+  color: #FFFFFF;
+  box-shadow: 0 8px 22px rgba(153, 15, 75, 0.35);
+}
+
+.related-section .related-more-btn:focus-visible {
+  outline: 2px solid #990F4B;
+  outline-offset: 3px;
+}
+
+/* Gifts' phone layout bleeds the section to the screen edges (a horizontally
+   scrolling row, css/gifts.css); keep the control off the edge like the heading. */
+@media (max-width: 575px) {
+  body.gifts-module-route .related-section .related-more {
+    margin: 6px 12px 0;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   QUANTITY OFFERS ("buy more, save more")
+   ---------------------------------------------------------------------
+   Rendered by js/shared/bulk-tiers.js renderOfferBox() into a single
+   #productBulkOffers container on each of the three product views, so
+   the tier list, the live saving and the "applied automatically" note
+   read identically on gifts, corporate and studio. Hidden entirely by
+   the renderer when a product has no tiers, which is every product
+   until an admin adds one. */
+.bulk-offer-box {
+  margin: 14px 0 6px;
+  padding: 13px 14px 11px;
+  border: 1px solid rgba(92, 9, 48, 0.14);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(92, 9, 48, 0.045) 0%, rgba(92, 9, 48, 0) 62%),
+    #fff;
+}
+
+.bulk-offer-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 11px;
+}
+
+/* A small filled mark gives the block an anchor so the heading is not the only
+   thing carrying the brand colour. */
+.bulk-offer-head .boh-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--pv-brand);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.bulk-offer-head .boh-text {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--pv-brand);
+}
+
+/* The rungs, side by side so they can be compared at a glance. Wraps to a
+   second row rather than scrolling, so a product with four tiers still shows
+   all of them on a phone. */
+.bulk-offer-tiers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.bulk-offer-tier {
+  flex: 1 1 96px;
+  min-width: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  padding: 7px 10px;
+  border: 1px solid var(--pv-frame);
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.bulk-offer-tier .bot-qty {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--pv-muted);
+}
+
+.bulk-offer-tier .bot-save {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--pv-ink);
+}
+
+/* The rung this quantity has reached: filled, so "which one am I on" needs no
+   reading. */
+.bulk-offer-tier.is-active {
+  border-color: var(--pv-brand);
+  background: var(--pv-brand);
+}
+
+.bulk-offer-tier.is-active .bot-qty { color: rgba(255, 255, 255, 0.72); }
+.bulk-offer-tier.is-active .bot-save { color: #fff; }
+
+.bulk-offer-tier .bot-flag {
+  margin-top: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* The rung they are closest to, outlined rather than filled. */
+.bulk-offer-tier.is-next {
+  border-color: rgba(92, 9, 48, 0.4);
+  background: rgba(92, 9, 48, 0.035);
+}
+
+.bulk-offer-progress {
+  height: 4px;
+  margin: 11px 0 0;
+  border-radius: 99px;
+  background: var(--pv-frame);
+  overflow: hidden;
+}
+
+.bulk-offer-progress span {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  background: var(--pv-brand);
+  transition: width 0.25s ease;
+}
+
+.bulk-offer-cta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 9px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--pv-ink);
+}
+
+.bulk-offer-cta strong { font-weight: 800; }
+
+/* Already saving: state the amount, in the brand colour, with a tick. */
+.bulk-offer-cta.is-saving { color: var(--pv-brand); }
+
+.bulk-offer-cta .boc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--pv-brand);
+  color: #fff;
+  font-size: 9px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.bulk-offer-note {
+  margin: 7px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--pv-muted);
+}
+
+@media (max-width: 420px) {
+  .bulk-offer-tier { flex: 1 1 calc(50% - 4px); min-width: 0; }
+}
+
+/* ---------------------------------------------------------------------
+   STOCK
+   ---------------------------------------------------------------------
+   Gifts and corporate already had a .stock-badge with this exact class
+   vocabulary in their own stylesheets; studio had no stock display at
+   all, so these rules give it the same one rather than a third variant.
+   Scoped to the studio preview so the other two pages keep their own. */
+#previewStockBadge.stock-badge {
+  display: inline-block;
+  margin: 2px 0 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #DCFCE7;
+  color: #16A34A;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+#previewStockBadge.stock-badge.low-stock { background: #FEF3C7; color: #B45309; }
+#previewStockBadge.stock-badge.out-of-stock { background: #FEE2E2; color: #B91C1C; }
+
+/* "Only 3 available" under a quantity stepper that has hit its ceiling.
+   Shared by all three product views. */
+.qty-cap-note {
+  margin-top: 5px;
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #B45309;
+}
+
+/* Product photos open the full-screen zoom viewer on click
+   (ProductFields.openImageViewer) - say so with the cursor. */
+.preview-scroll img.preview-slide,
+.modal-gallery-main #modalMainImg {
+  cursor: zoom-in;
+}

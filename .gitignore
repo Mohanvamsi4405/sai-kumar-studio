@@ -1,0 +1,30 @@
+.env
+.env.bak.*
+__pycache__/
+*.pyc
+image_assets_backup.zip
+*.zip
+cloudinary_backup/
+backend/venv/
+backend/.venv/
+
+# One-off Cloudinary -> R2 migration tooling/data, not app code
+unused/migration-scripts/apply_r2_urls.py
+unused/migration-scripts/legacy_urls.txt
+unused/migration-scripts/migrate_db_image_urls.py
+unused/migration-scripts/r2_image_map.json
+unused/migration-scripts/r2_migrate_assets.py
+
+# Local image backups (large; restore copies, not app code)
+backups/
+
+# Private local guides: server IP, key file names, logins. This repo is
+# public, so these must never be committed.
+guides/
+
+# Database backups - customer PII and password hashes. Never commit these;
+# keep them off the repo host and on the admin machine / external storage.
+backend/backups/
+
+# MCP server venv
+mcp_server/.venv/

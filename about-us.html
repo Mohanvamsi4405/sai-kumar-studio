@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com; object-src 'none'; base-uri 'self';">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About Us | Sai Kumar Digital Lab &amp; Studio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" src="js/about-us.js"></script>
+  <link rel="stylesheet" href="css/shared/mobile-nav-extra.css">
+  <link rel="stylesheet" href="css/about-us.css">
+</head>
+
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+
+  <div class="header-sticky-wrap">
+  <!-- ================= DESKTOP NAVIGATION (same header as Home/Photography/Gifts/Studio/Corporate) ================= -->
+  <nav class="desktop-nav">
+    <div class="nav-shell">
+      <a href="index.html" class="nav-logo-block">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="nav-logo-text">Sai Kumar Digital Studio<br>&amp; Lab</span>
+      </a>
+      <div class="nav-rows">
+        <!-- Primary Row: 4 App Tabs -->
+        <div class="nav-row nav-row-primary">
+          <div class="nav-container">
+            <div class="nav-tabs">
+              <a href="gifts.html" class="nav-tab-pill tab-gifts">
+                <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-customised-gifts.png" alt="Customised Gifts">
+              </a>
+              <a href="corporate.html" class="nav-tab-pill tab-corp">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-corporate-gifts.png" alt="Corporate Gifts">
+              </a>
+              <a href="studio.html" class="nav-tab-pill tab-studio">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-studio-services.png" alt="Studio Services">
+              </a>
+              <a href="photography.html" class="nav-tab-pill tab-photo">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-photography.png" alt="Photography">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Search Bar + Account / More / Cart -->
+        <div class="nav-row nav-row-secondary">
+          <div class="nav-container">
+            <div class="nav-search-container">
+              <div class="nav-search-bar">
+                <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search for frames, gifts, mugs and more...">
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a href="#signin" class="nav-account-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+                <span>Login</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <div class="nav-more-dropdown" tabindex="0">
+                <button type="button" class="nav-more-link">
+                  <span>More</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="nav-more-menu">
+                  <a href="index.html">Home</a>
+                  <a href="photography.html">Photography</a>
+                  <a href="gifts.html">Customised Gift Shop</a>
+                  <a href="studio.html">Studio Services</a>
+                  <a href="corporate.html">Corporate Gifts</a>
+                  <a href="bulk-orders.html">Bulk Orders</a>
+                  <a href="about-us.html" class="active">About Us</a>
+                  <a href="contact-us.html">Contact Us</a>
+                  <a href="#wishlist" onclick="event.preventDefault(); openWishlistDrawer();">Wishlist</a>
+                </div>
+              </div>
+              <a href="cart.html" class="nav-cart-btn">
+                <span class="nav-cart-icon-wrap">
+                  <svg class="nav-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span class="nav-cart-badge" id="navCartBadge" style="display:none;">0</span>
+                </span>
+                <span class="nav-cart-label">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECONDARY NAVIGATION (MAIN MENU) ================= -->
+  <div class="category-menu-bar">
+    <div class="menu-container" data-site-menu>
+      <a href="index.html" class="menu-link">Home</a>
+
+      <div class="nav-item mega-left">
+        <a href="photography.html" class="menu-link">Photography
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Weddings &amp; Events</h4>
+            <a href="photography.html?category=wedding" class="mega-link">Wedding Photography</a>
+            <a href="photography.html?category=prewedding" class="mega-link">Pre-Wedding</a>
+            <a href="photography.html?category=birthday" class="mega-link">Birthday Photography</a>
+            <a href="photography.html?category=event" class="mega-link">Event Photography</a>
+          </div>
+          <div class="mega-col">
+            <h4>Family &amp; Portraits</h4>
+            <a href="photography.html?category=maternity" class="mega-link">Maternity Shoot</a>
+            <a href="photography.html?category=baby" class="mega-link">Baby Shoot</a>
+            <a href="studio.html?category=photo_printing" class="mega-link">Passport Photos</a>
+          </div>
+          <div class="mega-col">
+            <h4>Specialty &amp; More</h4>
+            <a href="photography.html?category=outdoor" class="mega-link">Outdoor Photography</a>
+            <a href="photography.html?category=drone" class="mega-link">Drone Photography <span class="mega-badge">NEW</span></a>
+            <a href="photography.html?category=video" class="mega-link">Videography</a>
+            <a href="photography.html?category=album" class="mega-link">Album Designing</a>
+          </div>
+          <a href="photography.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/wedding_photography.jpg" alt="Wedding Season">
+            <div class="mega-promo-text">
+              <strong>Wedding Season '26</strong>
+              <span>Book early &amp; save 15%</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="gifts.html" class="menu-link">Customised Gift Shop
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Photo Frames</h4>
+            <a href="gifts.html?view=category&category=frames&search=acrylic" class="mega-link">Acrylic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=wooden" class="mega-link">Wooden Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=crystal" class="mega-link">Crystal Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=led" class="mega-link">LED Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=neon" class="mega-link">Neon Frames <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Drinkware &amp; Pillows</h4>
+            <a href="gifts.html?view=category&category=drinkware&search=magic" class="mega-link">Magic Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=heart" class="mega-link">Heart Handle Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Photo Water Bottles</a>
+            <a href="gifts.html?view=category&category=pillows&search=heart" class="mega-link">Heart Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=magic" class="mega-link">Magic Pillows</a>
+          </div>
+          <div class="mega-col">
+            <h4>Crystal &amp; Decor</h4>
+            <a href="gifts.html?view=category&category=crystal&search=cube" class="mega-link">Crystal Cubes</a>
+            <a href="gifts.html?view=category&category=crystal&search=rotat" class="mega-link">Rotate LED Crystal</a>
+            <a href="gifts.html?view=category&category=clocks" class="mega-link">Wall Clocks</a>
+            <a href="gifts.html?view=category&category=accessories&search=keychain" class="mega-link">Keychains</a>
+          </div>
+          <a href="gifts.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/customized_gifts_card.jpg" alt="Gift Combos">
+            <div class="mega-promo-text">
+              <strong>Gift Combos</strong>
+              <span>Bestsellers from ₹449</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="studio.html" class="menu-link">Studio Services
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Printing</h4>
+            <a href="studio.html?category=photo_printing" class="mega-link">Photo Printing</a>
+            <a href="studio.html?category=xerox_printing" class="mega-link">Canvas Printing</a>
+            <a href="studio.html?category=id_card_printing" class="mega-link">ID Card Printing</a>
+          </div>
+          <div class="mega-col">
+            <h4>Editing &amp; Restore</h4>
+            <a href="studio.html?category=photo_restoration" class="mega-link">Photo Restoration</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Photo Editing</a>
+            <a href="studio.html?category=photo_lamination" class="mega-link">Photo Lamination</a>
+          </div>
+          <a href="studio.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/studio_camera_setup.jpg" alt="Same-Day Prints">
+            <div class="mega-promo-text">
+              <strong>Same-Day Prints</strong>
+              <span>Photo prints from ₹49</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="corporate.html" class="menu-link">Corporate Gifts
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Gift Sets &amp; Kits</h4>
+            <a href="corporate.html?category=sets" class="mega-link">Corporate Gift Sets</a>
+            <a href="corporate.html?category=kits" class="mega-link">Employee Welcome Kits</a>
+            <a href="corporate.html?category=promotional" class="mega-link">Promotional Gifts</a>
+          </div>
+          <div class="mega-col">
+            <h4>Awards &amp; Recognition</h4>
+            <a href="corporate.html?category=mementos" class="mega-link">Mementos</a>
+            <a href="corporate.html?category=shields" class="mega-link">Shields</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Trophies</a>
+          </div>
+          <a href="corporate.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/corporate_hamper.jpg" alt="Bulk Branding">
+            <div class="mega-promo-text">
+              <strong>Bulk Branding</strong>
+              <span>Kits, awards &amp; hampers</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="bulk-orders.html" class="menu-link">Bulk Orders</a>
+      <a href="about-us.html" class="menu-link active">About Us</a>
+      <a href="contact-us.html" class="menu-link">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- ================= MOBILE HEADER ================= -->
+  <div class="mobile-header-bar">
+    <button class="mobile-back-btn" onclick="window.location.href='index.html'">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </button>
+    <div class="mobile-header-title">About Us</div>
+    <div style="width: 24px;"></div>
+  </div>
+
+  <!-- Cinematic Hero Banner -->
+  <header class="relative h-[80vh] min-h-[540px] w-full flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="w-full h-full bg-cover bg-center"
+        style="background-image: url('https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/about_us_hero_banner.jpg');">
+      </div>
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    <div class="relative z-10 text-center max-w-4xl px-margin-mobile text-white">
+      <span class="font-label-sm text-xs md:text-sm uppercase tracking-[0.4em] text-amber-300 block mb-4 font-bold">
+        Established 2000 &bull; Hyderabad
+      </span>
+      <h1 class="font-display-lg text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-md mb-6 leading-tight font-bold">
+        Capturing life's <br><span class="italic font-normal">quiet luxury.</span>
+      </h1>
+      <p class="font-body-lg text-slate-200 text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+        Preserving cherished milestones with artisanal photography, archival digital printing, and custom heirloom keepsakes.
+      </p>
+      <div>
+        <a href="#vision-section"
+          class="bg-white text-primary px-9 py-4 rounded-lg font-label-sm text-xs font-bold uppercase tracking-widest hover:bg-slate-100 transition-all inline-block shadow-lg hover:scale-105 transform">
+          Explore the Vision
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10 text-white">
+      <span class="material-symbols-outlined text-3xl opacity-80">expand_more</span>
+    </div>
+  </header>
+
+  <!-- The Narrative / Our Story Section -->
+  <section class="py-16 max-w-container-max mx-auto px-margin-desktop">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-6">
+        <span class="font-label-sm text-xs font-bold text-cta uppercase tracking-widest block mb-2">The Narrative</span>
+        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary font-bold mb-6">
+          From a single frame to a legacy of memories.
+        </h2>
+        <p class="font-body-lg text-secondary mb-5 leading-relaxed text-base">
+          Sai Kumar Digital Lab &amp; Studio began as a quiet obsession with light and visual perfection. What started in 2000 has evolved into a trusted sanctuary for those who value the tangible, the sentimental, and the beautifully framed.
+        </p>
+        <p class="font-body-md text-secondary leading-relaxed italic border-l-4 border-slate-300 pl-5 text-sm md:text-base">
+          "We don't just take photographs; we curate the visual heritage of families, creators, and dreamers. Every gift and frame we craft is a testament to a moment that deserved to live forever."
+        </p>
+      </div>
+      <div class="md:col-span-6">
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden">
+          <img loading="lazy" class="w-full h-80 md:h-96 object-cover rounded-lg"
+            alt="Sai Kumar Studio Workshop Setup"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/about_us_narrative.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Journey (Timeline) / Vision Area -->
+  <section class="py-16 border-y border-outline-variant" id="vision-section" style="background-color: #5C0930;">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <div class="text-center mb-14">
+        <span class="font-label-sm text-xs font-bold text-cta uppercase tracking-widest block mb-2">Our Evolution</span>
+        <h2 class="font-headline-md text-3xl md:text-4xl text-white font-bold mb-3">A Legacy of Vision (2000 &ndash; 2026)</h2>
+        <div class="h-1 w-16 bg-white mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 2000 -->
+        <div class="bg-white p-7 rounded-xl border border-outline-variant editorial-shadow">
+          <div class="text-rose-700 font-display-lg text-3xl font-bold mb-2">2000</div>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">The Beginning</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Started our journey with a vision to provide quality printing and creative solutions.</p>
+        </div>
+        <!-- 2004 -->
+        <div class="bg-white p-7 rounded-xl border border-outline-variant editorial-shadow">
+          <div class="text-pink-600 font-display-lg text-3xl font-bold mb-2">2004</div>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">Digital Printing</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Expanded into digital printing services with advanced printing technology.</p>
+        </div>
+        <!-- 2009 -->
+        <div class="bg-white p-7 rounded-xl border border-outline-variant editorial-shadow">
+          <div class="text-amber-600 font-display-lg text-3xl font-bold mb-2">2009</div>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">Customized Gifts &amp; Photo Frames</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Introduced personalized gifts, custom frames, and memorable keepsakes.</p>
+        </div>
+        <!-- 2019 -->
+        <div class="bg-white p-7 rounded-xl border border-outline-variant editorial-shadow">
+          <div class="text-orange-600 font-display-lg text-3xl font-bold mb-2">2019</div>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">UV Printing</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Adopted UV printing technology for premium-quality customized products.</p>
+        </div>
+        <!-- 2022 -->
+        <div class="bg-white p-7 rounded-xl border border-outline-variant editorial-shadow">
+          <div class="text-fuchsia-600 font-display-lg text-3xl font-bold mb-2">2022</div>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">Laser Engraving</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Added precision laser engraving services for gifts, branding, and awards.</p>
+        </div>
+        <!-- 2026 -->
+        <div class="bg-white p-7 rounded-xl border border-emerald-300 editorial-shadow relative overflow-hidden">
+          <div class="absolute top-2 right-2 bg-emerald-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Latest</div>
+          <div class="text-emerald-600 font-display-lg text-3xl font-bold mb-2">2026</div>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">CO₂ Cutouts &amp; Corporate Gifts</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Expanded into CO₂ laser cutting solutions for acrylic, MDF, wood, and decorative products. Launched customized corporate gifting solutions for businesses and organizations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Curator Section (Horizontal layout) -->
+  <section class="py-16 max-w-container-max mx-auto px-margin-desktop">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-10">
+      <div>
+        <span class="font-label-sm text-xs font-bold text-cta uppercase tracking-widest block mb-1">Our Leadership</span>
+        <h2 class="font-headline-lg text-3xl md:text-4xl text-primary font-bold">The Curator</h2>
+      </div>
+      <a class="font-label-sm text-xs font-bold text-primary uppercase tracking-widest border-b border-primary pb-1 hover:opacity-70 transition-opacity"
+        href="contact-us.html">Get in Touch</a>
+    </div>
+    <div class="p-8 md:p-10 rounded-2xl border border-outline-variant editorial-shadow" style="background-color: #5C0930;">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <!-- Left: Image -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-full aspect-square w-48 h-48 md:w-56 md:h-56 flex-shrink-0 mx-auto md:mx-0 overflow-hidden" style="background: #FFC700;">
+          <img loading="lazy" class="w-full h-full aspect-square object-cover rounded-full" alt="Sai Kumar - Founder &amp; Lead Photographer"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/curator_portrait.jpg" style="object-position: center 12%;">
+        </div>
+        <!-- Right: Name & Details -->
+        <div class="flex-1 text-center md:text-left">
+          <span class="font-label-sm text-xs font-bold text-cta uppercase tracking-widest block mb-1">Founder &amp; Lead Photographer</span>
+          <h3 class="font-headline-lg text-2xl md:text-3xl text-white font-bold mb-3">Sai Kumar</h3>
+          <p class="font-body-lg text-slate-200 text-sm md:text-base mb-5 leading-relaxed">
+            Driven by a passion for visual storytelling, creative precision, and the "perfect pause." With deep creative expertise in both traditional photography and advanced digital printmaking, he curates every collection to ensure every frame lives on as a timeless heirloom.
+          </p>
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-5 pt-3 border-t border-white/20">
+            <div class="flex items-center gap-2 text-slate-200 font-label-sm text-xs font-semibold">
+              <span class="material-symbols-outlined text-cta text-sm">photo_camera</span>
+              <span>Editorial &amp; Fine Art</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-200 font-label-sm text-xs font-semibold">
+              <span class="material-symbols-outlined text-cta text-sm">workspace_premium</span>
+              <span>26+ Years Mastery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Studio Atmosphere (6 Images) -->
+  <section class="py-16 border-y border-outline-variant" id="gallery" style="background-color: #5C0930;">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <div class="text-center mb-12">
+        <span class="font-label-sm text-xs font-bold text-cta uppercase tracking-widest block mb-1">Behind The Lens</span>
+        <h2 class="font-headline-lg text-3xl md:text-4xl text-white font-bold">Studio Atmosphere &amp; Gallery</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Image 1 -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden bg-white">
+          <img loading="lazy" class="w-full h-64 object-cover rounded-lg" alt="Studio Lighting &amp; Portrait Sessions"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/gallery_portrait_session.jpg">
+          <div class="p-3 text-center">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Studio Lighting &amp; Portrait Sessions</span>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden bg-white">
+          <img loading="lazy" class="w-full h-64 object-cover rounded-lg" alt="Bespoke Frames &amp; Custom Mounts"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/gallery_frames_showroom.jpg">
+          <div class="p-3 text-center">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Bespoke Frames &amp; Custom Mounts</span>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden bg-white">
+          <img loading="lazy" class="w-full h-64 object-cover rounded-lg" alt="Laser Engraving &amp; Cutout Station"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/gallery_laser_engraving.jpg">
+          <div class="p-3 text-center">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Laser Engraving &amp; Cutout Station</span>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden bg-white">
+          <img loading="lazy" class="w-full h-64 object-cover rounded-lg" alt="Archival Fine Art &amp; Canvas Printing"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/gallery_fine_art_canvas.jpg">
+          <div class="p-3 text-center">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Archival Fine Art &amp; Canvas Printing</span>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden bg-white">
+          <img loading="lazy" class="w-full h-64 object-cover rounded-lg" alt="Handmade Luxury Wedding Albums"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/gallery_wedding_albums.jpg">
+          <div class="p-3 text-center">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Handmade Luxury Wedding Albums</span>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="photo-mat editorial-shadow zoom-hover rounded-xl overflow-hidden bg-white">
+          <img loading="lazy" class="w-full h-64 object-cover rounded-lg" alt="Personalized Gifts &amp; Hamper Curation"
+            src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/gallery_personalized_gifts.jpg">
+          <div class="p-3 text-center">
+            <span class="font-label-sm text-xs font-semibold text-secondary">Personalized Gifts &amp; Hamper Curation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 border-t border-outline-variant" style="background-color: #5C0930;">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-8 bg-white rounded-xl border border-outline-variant editorial-shadow">
+          <span class="material-symbols-outlined text-primary text-3xl mb-4 block">camera</span>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">Precision Optics</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">We utilize world-class Sony Alpha and Nikon FX technology to capture unparalleled detail in every frame.</p>
+        </div>
+        <div class="p-8 bg-white rounded-xl border border-outline-variant editorial-shadow">
+          <span class="material-symbols-outlined text-primary text-3xl mb-4 block">auto_awesome</span>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">Artisan Finish</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Every print and frame is individually color-corrected and hand-inspected by our lead curators before delivery.</p>
+        </div>
+        <div class="p-8 bg-white rounded-xl border border-outline-variant editorial-shadow">
+          <span class="material-symbols-outlined text-primary text-3xl mb-4 block">workspace_premium</span>
+          <h3 class="font-headline-md text-xl font-bold text-primary mb-2">Legacy Quality</h3>
+          <p class="font-body-md text-secondary text-sm leading-relaxed">Our materials are archival-grade, guaranteed to resist fading and wear for decades to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-14 border-y border-outline-variant bg-white">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="font-display-lg text-4xl md:text-5xl font-bold text-primary mb-1">50k+</div>
+          <div class="font-label-sm text-xs font-bold text-secondary uppercase tracking-widest">Stories Told</div>
+        </div>
+        <div>
+          <div class="font-display-lg text-4xl md:text-5xl font-bold text-primary mb-1">26+</div>
+          <div class="font-label-sm text-xs font-bold text-secondary uppercase tracking-widest">Years Experience</div>
+        </div>
+        <div>
+          <div class="font-display-lg text-4xl md:text-5xl font-bold text-primary mb-1">100%</div>
+          <div class="font-label-sm text-xs font-bold text-secondary uppercase tracking-widest">In-House Craft</div>
+        </div>
+        <div>
+          <div class="font-display-lg text-4xl md:text-5xl font-bold text-primary mb-1">500+</div>
+          <div class="font-label-sm text-xs font-bold text-secondary uppercase tracking-widest">Corporate Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 overflow-hidden" style="background-color: #5C0930;">
+    <div class="max-w-2xl mx-auto px-margin-mobile text-center">
+      <span class="material-symbols-outlined text-white/40 text-3xl mb-4 block">format_quote</span>
+      <div class="relative">
+        <p class="font-headline-md text-base md:text-lg italic text-white leading-relaxed mb-6 font-medium">
+          "Sai Kumar Studio captured our wedding in a way that felt like a timeless film. The physical album and crystal frames we received are our most prized possessions."
+        </p>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-rose-100 mb-2.5 overflow-hidden">
+            <img loading="lazy" class="w-full h-full object-cover" alt="Happy Customer Profile"
+              src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/aboutus_assets/testimonial_profile.jpg">
+          </div>
+          <h4 class="font-headline-md text-base font-bold text-white">Julianna &amp; David R.</h4>
+          <p class="font-label-sm text-[11px] text-slate-200 uppercase tracking-widest mt-0.5">Hyderabad, Telangana</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-white text-center border-y border-outline-variant">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <h2 class="font-headline-lg text-3xl md:text-5xl font-bold mb-4 text-primary">Ready to frame your next chapter?</h2>
+      <p class="font-body-lg text-secondary text-base max-w-xl mx-auto mb-8">
+        Explore our custom gifts, book a photography session, or inquire about bulk corporate gifting solutions today.
+      </p>
+      <div class="flex flex-wrap justify-center items-center gap-4">
+        <a href="booking.html"
+          class="bg-primary text-white px-8 py-3.5 rounded-lg font-label-sm text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-colors inline-block">
+          Book a Session
+        </a>
+        <a href="corporate.html"
+          class="bg-cta text-white px-8 py-3.5 rounded-lg font-label-sm text-xs font-bold uppercase tracking-wider hover:bg-[#A81760] transition-colors inline-block">
+          Corporate Gifts
+        </a>
+        <a href="contact-us.html"
+          class="border border-primary/30 text-primary px-8 py-3.5 rounded-lg font-label-sm text-xs font-bold uppercase tracking-wider hover:bg-primary/5 transition-colors inline-block">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as Home) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo" style="height: 65px; object-fit: contain;">
+          </div>
+          <p class="desc">Capturing your moments, beautifully and creating memories forever.</p>
+          <div class="socials">
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="3" />
+                <path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM8.5 8.5C7 7 5 8 5 10c0 3 4 5 4 8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="gifts.html">Customised Gift Shop</a></li>
+            <li><a href="studio.html">Studio Services</a></li>
+            <li><a href="corporate.html">Corporate Gifts</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help &amp; Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <span>saikumardigitallab@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar, Hyderabad, Telangana 500018</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sai Kumar Digital Lab &amp; Studio. All Rights Reserved.</p>
+        <div class="pay-icons">
+          <span class="pi">VISA</span>
+          <span class="pi">Mastercard</span>
+          <span class="pi">RuPay</span>
+          <span class="pi">UPI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav class="mobile-bottom-nav">
+    <a href="index.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"></path>
+        <path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3l9 8h-2v9a1 1 0 0 1-1 1h-4v-6h-4v6H6a1 1 0 0 1-1-1v-9H3l9-8z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#signin" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20a8 6 0 0 1 16 0z"></path>
+      </svg>
+      <span>Account</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="20" cy="21" r="1.4"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6l-.7-3.5a1 1 0 0 0-1-.8H1V1z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="bottomNavCartBadge" style="display:none;">0</span>
+      </span>
+      <span>Cart</span>
+    </a>
+    <a href="#wishlist" class="bottom-nav-item" onclick="event.preventDefault(); openWishlistDrawer();">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="mobileWishlistBadge" style="display:none;">0</span>
+      </span>
+      <span>Wishlist</span>
+    </a>
+  </nav>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileMenuOverlay" onclick="closeMobileMenuDrawer()"></div>
+  <div class="cart-drawer mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="cart-drawer-header">
+      <h3>Menu</h3>
+      <button class="close-drawer-btn" onclick="closeMobileMenuDrawer()">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="gifts.html">Customised Gift Shop</a>
+      <a href="corporate.html">Corporate Gifts</a>
+      <a href="studio.html">Studio Services</a>
+      <a href="photography.html">Photography</a>
+      <a href="bulk-orders.html">Bulk Orders</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="#signin">Login / Account</a>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" onclick="closeWishlistDrawer()"></div>
+  <div class="cart-drawer" id="wishlistDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Wishlist</h3>
+      <button class="close-drawer-btn" onclick="closeWishlistDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+
+  <script src="js/shared/chatbot.js" defer></script>
+  <script src="js/shared/search.js?v=10" defer></script>
+  <script src="js/shared/bottom-nav.js"></script>
+  <script src="js/shared/home-nav.js" defer></script>
+  <script src="js/shared/api-config.js"></script>
+  <script src="js/shared/site-menu.js"></script>
+  <script src="js/shared/customer-api.js"></script>
+  <script src="js/shared/loading-ui.js"></script>
+  <script src="js/shared/auth-modal.js" defer></script>
+  <script src="js/shared/wishlist-menu.js"></script>
+</body>
+
+</html>

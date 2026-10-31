@@ -1,0 +1,572 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "target": {
+        "type": "page",
+        "page": "index"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Combo Kits",
+      "target": {
+        "type": "category",
+        "page": "corporate",
+        "category": "kits"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Welcome Kits",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Smart Joining Kits",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "kits"
+              }
+            },
+            {
+              "label": "Employee Welcome Hampers",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "kits"
+              }
+            },
+            {
+              "label": "New Hire Starter Packs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "kits"
+              }
+            },
+            {
+              "label": "Tech Onboarding Bundles",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "kits"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Corporate Combos",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Executive Gift Sets",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "sets"
+              }
+            },
+            {
+              "label": "Luxury Hamper Boxes",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "sets"
+              }
+            },
+            {
+              "label": "Pen & Diary Combos",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "sets"
+              }
+            },
+            {
+              "label": "VIP Client Packs",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "sets"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/welcome_kit.jpg",
+        "title": "Welcome Combos",
+        "subtitle": "Kits from ₹699",
+        "target": null
+      }
+    },
+    {
+      "label": "Drinkware",
+      "target": {
+        "type": "category",
+        "page": "corporate",
+        "category": "bottles"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Mugs",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Branded Ceramic Mugs",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "promotional"
+              }
+            },
+            {
+              "label": "Magic Photo Mugs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "promotional"
+              }
+            },
+            {
+              "label": "Executive Matte Cups",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "promotional"
+              }
+            },
+            {
+              "label": "Heart Handle Mugs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "promotional"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Bottles & Flasks",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Temperature LED Flasks",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "bottles"
+              }
+            },
+            {
+              "label": "Stainless Steel Insulated Flasks",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "bottles"
+              }
+            },
+            {
+              "label": "Matte Corporate Sippers",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "bottles"
+              }
+            },
+            {
+              "label": "UV Printed Logo Bottles",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "bottles"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/water%20bottle%2005.jpg",
+        "title": "Smart Drinkware",
+        "subtitle": "Flasks & Mugs from ₹149",
+        "target": null
+      }
+    },
+    {
+      "label": "Awards",
+      "target": {
+        "type": "category",
+        "page": "corporate",
+        "category": "mementos"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Mementos",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "3D Optical Crystal Awards",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "mementos"
+              }
+            },
+            {
+              "label": "Handcrafted Wooden Mementos",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "mementos"
+              }
+            },
+            {
+              "label": "Commemorative Plaques",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "mementos"
+              }
+            },
+            {
+              "label": "Star Performer Awards",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "mementos"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Shields & Trophies",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "24K Laser Engraved Shields",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "shields"
+              }
+            },
+            {
+              "label": "Mahogany Wooden Shields",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "shields"
+              }
+            },
+            {
+              "label": "Brass Citation Shields",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "shields"
+              }
+            },
+            {
+              "label": "Metal Trophy Cups",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "trophies"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/memento_shield.jpg",
+        "title": "Recognition Awards",
+        "subtitle": "Custom Shields from ₹499",
+        "target": {
+          "type": "category",
+          "page": "corporate",
+          "category": "shields"
+        }
+      }
+    },
+    {
+      "label": "Pens & Diaries",
+      "target": {
+        "type": "category",
+        "page": "corporate",
+        "category": "pens"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Executive Pens",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Laser Engraved Metal Pens",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "pens"
+              }
+            },
+            {
+              "label": "Rollerball & Ball Pens",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "pens"
+              }
+            },
+            {
+              "label": "Pen Gift Sets in Box",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "pens"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Corporate Diaries",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Leatherette Diaries",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "diaries"
+              }
+            },
+            {
+              "label": "Custom Embossed Planners",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "diaries"
+              }
+            },
+            {
+              "label": "Magnetic Loop Organizers",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "diaries"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/pen_gift_set.jpg",
+        "title": "Pens & Diaries",
+        "subtitle": "Bestsellers from ₹199",
+        "target": null
+      }
+    },
+    {
+      "label": "Wallets & Leather",
+      "target": {
+        "type": "category",
+        "page": "corporate",
+        "category": "wallets"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Executive Wallets",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Leatherette Card Wallets",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "wallets"
+              }
+            },
+            {
+              "label": "RFID Blocking Wallets",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "wallets"
+              }
+            },
+            {
+              "label": "Custom Name Leather Wallets",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "wallets"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Gift Accessories",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Keychain & Wallet Combos",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "wallets"
+              }
+            },
+            {
+              "label": "Leather Card Holders",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "wallets"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/08--wallets-01.jpg",
+        "title": "Leather Wallets",
+        "subtitle": "Bestsellers from ₹249",
+        "target": null
+      }
+    },
+    {
+      "label": "Bulk Orders",
+      "target": {
+        "type": "page",
+        "page": "bulk-orders"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "About Us",
+      "target": {
+        "type": "page",
+        "page": "about-us"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Contact Us",
+      "target": {
+        "type": "page",
+        "page": "contact-us"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    }
+  ]
+}

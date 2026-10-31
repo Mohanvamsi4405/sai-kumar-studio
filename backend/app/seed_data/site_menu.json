@@ -1,0 +1,803 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "target": {
+        "type": "page",
+        "page": "index"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Photography",
+      "target": {
+        "type": "page",
+        "page": "photography"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Weddings & Events",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Wedding Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "wedding"
+              }
+            },
+            {
+              "label": "Pre-Wedding",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "prewedding"
+              }
+            },
+            {
+              "label": "Birthday Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "birthday"
+              }
+            },
+            {
+              "label": "Event Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "event"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Family & Portraits",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Maternity Shoot",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "maternity"
+              }
+            },
+            {
+              "label": "Baby Shoot",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "baby"
+              }
+            },
+            {
+              "label": "Passport Photos",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "photo_printing"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Specialty & More",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Outdoor Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "outdoor"
+              }
+            },
+            {
+              "label": "Drone Photography",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              }
+            },
+            {
+              "label": "Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "video"
+              }
+            },
+            {
+              "label": "Album Designing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "album"
+              }
+            }
+          ]
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/wedding_photography.jpg",
+        "title": "Wedding Season '26",
+        "subtitle": "Book early & save 15%",
+        "target": null
+      }
+    },
+    {
+      "label": "Customised Gift Shop",
+      "target": {
+        "type": "page",
+        "page": "gifts"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Photo Frames",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Acrylic Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "acrylic"
+              }
+            },
+            {
+              "label": "Wooden Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "wooden"
+              }
+            },
+            {
+              "label": "Crystal Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "crystal"
+              }
+            },
+            {
+              "label": "LED Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "led"
+              }
+            },
+            {
+              "label": "Neon Frames",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "neon"
+              }
+            },
+            {
+              "label": "QR Voice Frames",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "qr"
+              }
+            },
+            {
+              "label": "Collage Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "collage"
+              }
+            },
+            {
+              "label": "Mosaic Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "mosaic"
+              }
+            },
+            {
+              "label": "Pencil Sketch Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "sketch"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Drinkware",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Magic Mugs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "magic"
+              }
+            },
+            {
+              "label": "Heart Handle Mugs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "heart"
+              }
+            },
+            {
+              "label": "Photo Water Bottles",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "bottle"
+              }
+            },
+            {
+              "heading": "Pillows",
+              "is_active": true
+            },
+            {
+              "label": "Heart Pillows",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "heart"
+              }
+            },
+            {
+              "label": "Magic Pillows",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "magic"
+              }
+            },
+            {
+              "label": "Kids Pillows",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "kids"
+              }
+            },
+            {
+              "label": "Book Pillows",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Crystal Gifts",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Crystal Cubes",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "cube"
+              }
+            },
+            {
+              "label": "Crystal Photo Stand",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "stand"
+              }
+            },
+            {
+              "label": "Rotate LED Crystal",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "rotat"
+              }
+            },
+            {
+              "heading": "Home Decor",
+              "is_active": true
+            },
+            {
+              "label": "Wall Clocks",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks"
+              }
+            },
+            {
+              "label": "Fridge Magnets",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "decor",
+                "keyword": "magnet"
+              }
+            },
+            {
+              "label": "Kiddy Banks",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "decor",
+                "keyword": "kiddy"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Accessories",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Keychains",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "accessories",
+                "keyword": "keychain"
+              }
+            },
+            {
+              "label": "Wallets",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "accessories",
+                "keyword": "wallet"
+              }
+            },
+            {
+              "label": "Diaries",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "accessories",
+                "keyword": "diary"
+              }
+            }
+          ]
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/customized_gifts_card.jpg",
+        "title": "Gift Combos",
+        "subtitle": "Bestsellers from ₹449",
+        "target": null
+      }
+    },
+    {
+      "label": "Studio Services",
+      "target": {
+        "type": "page",
+        "page": "studio"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Printing",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Photo Printing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "photo_printing"
+              }
+            },
+            {
+              "label": "Canvas Printing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "xerox_printing"
+              }
+            },
+            {
+              "label": "ID Card Printing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "id_card_printing"
+              }
+            },
+            {
+              "label": "Certificate Printing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "certificate_printing"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Editing & Restore",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Photo Restoration",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "photo_restoration"
+              }
+            },
+            {
+              "label": "Photo Editing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "photo_portrait"
+              }
+            },
+            {
+              "label": "Background Removal",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "photo_portrait"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Finishing & Digital",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Photo Lamination",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "photo_lamination"
+              }
+            },
+            {
+              "label": "Scanning",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "scanning"
+              }
+            },
+            {
+              "label": "CD/DVD Copying",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "studio",
+                "category": "cd_dvd_copying"
+              }
+            }
+          ]
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/studio_camera_setup.jpg",
+        "title": "Same-Day Prints",
+        "subtitle": "Photo prints from ₹49",
+        "target": null
+      }
+    },
+    {
+      "label": "Corporate Gifts",
+      "target": {
+        "type": "page",
+        "page": "corporate"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Gift Sets & Kits",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Corporate Gift Sets",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "sets"
+              }
+            },
+            {
+              "label": "Employee Welcome Kits",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "kits"
+              }
+            },
+            {
+              "label": "Promotional Gifts",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "promotional"
+              }
+            },
+            {
+              "label": "Customized Branding",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "page",
+                "page": "corporate"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Awards & Recognition",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Mementos",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "mementos"
+              }
+            },
+            {
+              "label": "Shields",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "shields"
+              }
+            },
+            {
+              "label": "Trophies",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "trophies"
+              }
+            },
+            {
+              "label": "Awards",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "trophies"
+              }
+            },
+            {
+              "label": "Name Plates",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "page",
+                "page": "corporate"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Office Essentials",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Pens",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "pens"
+              }
+            },
+            {
+              "label": "Diaries",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "diaries"
+              }
+            },
+            {
+              "label": "Water Bottles",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "corporate",
+                "category": "bottles"
+              }
+            }
+          ]
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/corporate_hamper.jpg",
+        "title": "Bulk Branding",
+        "subtitle": "Kits, awards & hampers",
+        "target": null
+      }
+    },
+    {
+      "label": "Bulk Orders",
+      "target": {
+        "type": "page",
+        "page": "bulk-orders"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "About Us",
+      "target": {
+        "type": "page",
+        "page": "about-us"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Contact Us",
+      "target": {
+        "type": "page",
+        "page": "contact-us"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    }
+  ]
+}

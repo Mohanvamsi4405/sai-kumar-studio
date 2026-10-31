@@ -1,0 +1,2746 @@
+/* The shared header/nav/mega-dropdown/footer/mobile-bottom-nav chrome that
+   used to be duplicated verbatim in this file now lives in
+   css/site-header.css (linked by photography.html above this file). Only
+   this page's own additional overrides for those selectors remain below -
+   look there first if a shared-chrome rule seems to be missing. */
+
+    :root {
+      --maroon: #4A0E1A;
+      /* deep header maroon */
+      --maroon-2: #5C1424;
+      /* card header */
+      --gold: #E0A82E;
+      /* CTA gold */
+      --gold-deep: #C8901A;
+      --cream: #F6EEE1;
+      /* page bg */
+      --cream-2: #FBF5EA;
+      /* card bg */
+      --rose: #EBD9D2;
+      /* active sidebar tint */
+      --ink: #2A1519;
+      /* dark text */
+      --ink-soft: #6B5A54;
+      /* muted text */
+      --line: #E7D9C8;
+      --shadow: 0 4px 18px rgba(74, 14, 26, .10);
+      --shadow-lg: 0 12px 40px rgba(74, 14, 26, .20);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    /* no global scroll-behavior:smooth — matches Studio Services, which lets normal
+   wheel/trackpad scrolling stay instant and native. Individual JS-driven scrolls
+   (hero carousel, "Categories" bottom-nav link, etc.) still pass their own
+   behavior:"smooth" option where that's actually wanted. */
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      min-height: 100vh;
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    /* ---------- STICKY HEADER WRAPPER & CATEGORY MENU BAR ---------- */
+
+    /* Invisible hover bridge: without this, the vertical gap between the nav
+       link and the mega-dropdown below it (category-menu-bar's bottom padding
+       + the dropdown's own top margin) is not part of .nav-item's hover box.
+       A cursor crossing that gap on its way down to an item breaks :hover
+       mid-transit, so the dropdown snaps display:none before the click lands.
+       This pseudo-element fills that dead strip so hover never lapses. */
+
+    /* MEGA DROPDOWN CONTAINER — ABSOLUTE CENTERING ON THE FULL-WIDTH MENU BAR */
+
+    /* LEFT SECTION: Category Items with Thumbnails & Descriptions */
+
+    /* MIDDLE SECTION: Equipment & Add-ons */
+
+    /* PACKAGES SECTION & CUSTOM CTA */
+
+    /* RIGHT SECTION: Promotional Wedding Card */
+
+    /* BOTTOM SECTION: Benefits Strip */
+
+    /* ---------- TOP NAV (Studio Services layout; top-section visuals matched to the Home page header) ---------- */
+
+    /* Keep the navbar from overflowing on narrower desktop/tablet widths */
+
+    /* ---------- MOBILE NAVBAR (Studio Services mobile layout, ported to Photography maroon/gold theme) ---------- */
+    .mobile-app-switcher {
+      display: none;
+      gap: 10px;
+      background: var(--maroon);
+      padding: 14px 14px
+    }
+
+    .app-switcher-card {
+      flex: 1;
+      display: block;
+      min-width: 0;
+      border-radius: 14px;
+      text-decoration: none
+    }
+
+    .app-switcher-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .15)
+    }
+
+    .app-switcher-card.active img {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .25)
+    }
+
+    .mobile-header-bar {
+      display: none;
+      flex-direction: column;
+      gap: 14px;
+      background: var(--maroon);
+      padding: 16px 20px 22px;
+      color: var(--cream);
+    }
+
+    .mobile-header-address {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--cream);
+      opacity: .85;
+      overflow: hidden
+    }
+
+    .mobile-header-address span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .mobile-search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--cream-2);
+      border-radius: 12px;
+      padding: 12px 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+      color: var(--ink-soft)
+    }
+
+    .mobile-search-bar input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 14px;
+      color: var(--ink);
+      min-width: 0
+    }
+
+    .mobile-search-bar input::placeholder {
+      color: var(--ink-soft)
+    }
+
+    .mobile-hero-text {
+      text-align: center;
+      padding: 0 10px
+    }
+
+    .mobile-hero-text p {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--cream);
+      opacity: .85;
+      line-height: 1.4
+    }
+
+    /* ---------- MOBILE BOTTOM NAV (Studio Services layout, photography maroon/gold theme) ---------- */
+    .mobile-bottom-nav {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      border-top: 1px solid rgba(74, 14, 26, .12);
+      box-shadow: 0 -2px 12px rgba(0, 0, 0, .06);
+      z-index: 200;
+      padding: 6px 0 max(6px, env(safe-area-inset-bottom));
+    }
+
+    .bottom-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      flex: 1;
+      padding: 4px 0;
+      text-decoration: none;
+      color: var(--ink-soft)
+    }
+
+    .bottom-nav-badge {
+      position: absolute;
+      top: -6px;
+      right: -8px;
+      min-width: 15px;
+      height: 15px;
+      padding: 0 3px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: var(--maroon);
+      font-size: 9px;
+      font-weight: 800;
+      align-items: center;
+      justify-content: center
+    }
+
+    .bottom-nav-item.active {
+      color: var(--maroon)
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .shell {
+      display: flex;
+      align-items: stretch;
+      min-height: calc(100vh - 156px)
+    }
+
+    .sidebar {
+      width: 230px;
+      flex: none;
+      background: var(--cream-2);
+      border-right: 1px solid var(--line);
+      position: sticky;
+      top: 156px;
+      height: calc(100vh - 156px);
+      overflow-y: auto;
+      overflow-x: visible;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .sidebar::-webkit-scrollbar {
+      width: 7px
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background: #c9b8a8;
+      border-radius: 8px
+    }
+
+    .sidebar-wrap {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      padding: 0;
+      margin: 0
+    }
+
+    .sf-title {
+      font-weight: 800;
+      color: var(--maroon);
+      margin-bottom: 8px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .side-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 20px;
+      cursor: pointer;
+      color: #3A2A26;
+      font-weight: 700;
+      font-size: 14.5px;
+      transition: .15s;
+      border-left: 4px solid transparent;
+    }
+
+    .side-item .si-ico {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      flex: none;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      background: #efe4d4;
+    }
+
+    .side-item .si-ico img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
+
+    .side-item .si-ico.emoji {
+      font-size: 20px
+    }
+
+    .side-item.active {
+      background: var(--rose);
+      color: var(--maroon);
+      border-left-color: var(--maroon)
+    }
+
+    .side-item.active .si-ico {
+      background: var(--maroon);
+      color: var(--gold)
+    }
+
+    .side-item:hover:not(.active) {
+      background: #f1e7d9
+    }
+
+    /* "All Services" always carries a soft highlight of its own, whether it's the active
+   item or not — a light, permanent background that sets it apart from the other rows,
+   which only pick up a background once actually selected. When it IS the active item,
+   it still gets only the soft background, not the full selected-category treatment —
+   its text, icon and border stay in their normal (non-active) styling */
+    .side-item.all-item {
+      background: var(--rose)
+    }
+
+    .side-item.all-item.active {
+      background: var(--rose);
+      color: #3A2A26;
+      border-left-color: transparent
+    }
+
+    .side-item.all-item.active .si-ico {
+      background: #efe4d4;
+      color: inherit
+    }
+
+    /* Non-clickable group headers that split the sidebar list into "Functions" and
+   "Equipment" — plain labels dropped into the same vertical flow as .side-item, so
+   the list still scrolls as one natural column on both desktop and mobile. */
+    .side-section-label {
+      padding: 16px 20px 6px;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      color: var(--maroon);
+      opacity: .7;
+    }
+
+    .main {
+      flex: 1;
+      min-width: 0;
+      padding: 22px 30px 24px;
+      overflow-y: auto
+    }
+
+    /* ================= MOBILE PROMO SLIDER (cross-site banner, matches studio.html/corporate.html/gifts.html) ================= */
+    .promo-hero-slider {
+      display: none;
+    }
+
+    @media (max-width: 760px) {
+      .promo-hero-window {
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 10px 26px rgba(92, 9, 48, .12);
+      }
+
+      .promo-hero-track {
+        display: flex;
+        width: 600%;
+        transition: transform .7s cubic-bezier(.65, 0, .35, 1);
+      }
+
+      .promo-hero-slide {
+        position: relative;
+        width: 16.6667%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        height: 150px;
+      }
+
+      .promo-hero-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .promo-hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .promo-hero-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        z-index: 4;
+      }
+
+      .promo-hero-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .6);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all .25s ease;
+      }
+
+      .promo-hero-dot.active {
+        width: 16px;
+        border-radius: 4px;
+        background: #fff;
+      }
+    }
+
+    /* ---------- PORTFOLIO (scrolling) ---------- */
+    /* ---------- HERO CAROUSEL (16:9 auto-scroll) ---------- */
+    .hero {
+      position: relative;
+      margin-bottom: 30px
+    }
+
+    .hero-track {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      padding-bottom: 6px;
+    }
+
+    .hero-track::-webkit-scrollbar {
+      display: none
+    }
+
+    .hero-track {
+      -ms-overflow-style: none;
+      scrollbar-width: none
+    }
+
+    .hero-slide {
+      flex: 0 0 calc(50% - 8px);
+      /* two 16:9 slides visible at a time */
+      aspect-ratio: 16/9;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      scroll-snap-align: start;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      /* every hero photo is shot/cropped with its subject on the left and a
+     clear, uncluttered area on the right — anchor the copy block there,
+     vertically centered, instead of over the bottom of the subject */
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      transition: transform .2s;
+    }
+
+    .hero-slide:hover {
+      transform: translateY(-3px)
+    }
+
+    .hero-slide .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .hero-slide .grad {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(92, 14, 26, .25), rgba(138, 31, 56, .15) 60%, rgba(168, 50, 79, .10));
+    }
+
+    .hero-slide .scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to left, rgba(20, 6, 10, .55) 0%, rgba(20, 6, 10, .22) 32%, transparent 58%);
+    }
+
+    .hero-body {
+      position: relative;
+      z-index: 2;
+      padding: 20px 48px 20px 24px;
+      max-width: 54%;
+      text-align: right;
+      overflow-wrap: break-word
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+      background: rgba(224, 168, 46, .95);
+      color: var(--maroon);
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 4px 11px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .hero-body h2 {
+      color: #fff;
+      font-size: 19px;
+      line-height: 1.2;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, .5)
+    }
+
+    .hero-body p {
+      color: #f3e2d4;
+      font-size: 13px;
+      margin-top: 5px
+    }
+
+    .hero-go {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--gold);
+      color: var(--maroon);
+      border: none;
+      border-radius: 9px;
+      padding: 9px 18px;
+      font-weight: 800;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .hero-go:hover {
+      background: #fff
+    }
+
+    .hero-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      background: rgba(255, 255, 255, .92);
+      color: var(--maroon);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-arrow.left {
+      left: -8px
+    }
+
+    .hero-arrow.right {
+      right: -8px
+    }
+
+    .hero-arrow:hover {
+      background: var(--maroon);
+      color: var(--gold)
+    }
+
+    .hero-dots {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      margin-top: 12px
+    }
+
+    .hero-dots span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d4c3b2;
+      cursor: pointer;
+      transition: .2s
+    }
+
+    .hero-dots span.on {
+      background: var(--gold);
+      width: 22px;
+      border-radius: 5px
+    }
+
+    @media(max-width:900px) {
+      .hero-slide {
+        flex: 0 0 100%
+      }
+    }
+
+    /* two-per-row slides are narrowest right above the single-slide breakpoint
+   (sidebar also widens again just past 1000px) — shrink the copy block so
+   it never outgrows the slide's fixed 16:9 height at this width */
+    @media(min-width:901px) and (max-width:1300px) {
+      .hero-body {
+        max-width: 48%;
+        padding: 14px 38px 14px 16px
+      }
+
+      .hero-badge {
+        font-size: 9px;
+        padding: 3px 9px;
+        margin-bottom: 5px
+      }
+
+      .hero-body h2 {
+        font-size: 14px
+      }
+
+      .hero-body p {
+        font-size: 11px;
+        margin-top: 3px
+      }
+
+      .hero-go {
+        margin-top: 7px;
+        padding: 6px 13px;
+        font-size: 11.5px
+      }
+    }
+
+    /* above this, each slide is wide enough that the longest title
+   ("Birthday/Outdoor/Drone/Wedding Photography") fits on one line
+   inside the blank-area column without touching the subject */
+    @media(min-width:1400px) {
+      .hero-body h2 {
+        white-space: nowrap
+      }
+    }
+
+    .section-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--maroon);
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      /* selectCat() scrolls the portfolio section into view via this element;
+     offset matches the sticky desktop nav's height (same 156px the sidebar
+     uses for its own sticky top) so "Our Work" lands clear of the nav, not under it */
+      scroll-margin-top: 156px;
+    }
+
+    .folio-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 14px
+    }
+
+    .folio-head h2 {
+      font-size: 23px;
+      color: var(--ink)
+    }
+
+    .folio-head p {
+      font-size: 13.5px;
+      color: #000000;
+      margin-top: 3px
+    }
+
+    .folio-scroll {
+      overflow: hidden;
+      padding: 4px 2px 14px;
+    }
+
+    .folio-track {
+      display: flex;
+      gap: 16px;
+      width: max-content;
+      animation: folioMarquee 30s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes folioMarquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .folio-card {
+      flex: none;
+      width: 270px;
+      height: 180px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      background: linear-gradient(135deg, #5c1424, #7a2338);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .folio-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .folio-card .folio-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: transform 0.4s ease;
+    }
+
+    .folio-card:hover .folio-photo {
+      transform: scale(1.08);
+    }
+
+    .folio-card .ph {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .55);
+      font-size: 11.5px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .folio-card .explore-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      opacity: 0.9;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .folio-card:hover .explore-badge {
+      background: #800020;
+      border-color: #d4af37;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .folio-card .cap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background: linear-gradient(transparent, rgba(42, 21, 25, .92));
+      color: #fff;
+      padding: 26px 14px 12px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .folio-card .cap span {
+      display: block;
+      font-weight: 500;
+      font-size: 11.5px;
+      opacity: .85;
+      color: #ffd700;
+    }
+
+    .folio-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .explore-gallery-btn {
+      background: linear-gradient(135deg, #800020, #a00028);
+      color: #ffffff !important;
+      border: 1px solid #d4af37;
+      padding: 10px 18px;
+      border-radius: 24px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(128, 0, 32, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .explore-gallery-btn:hover {
+      background: linear-gradient(135deg, #a00028, #c00030);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(128, 0, 32, 0.4);
+      color: #ffffff !important;
+    }
+
+    /* ---------- ALL SERVICES ---------- */
+    .all-services {
+      margin-bottom: 34px;
+    }
+
+    .all-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    /* Sub-headings splitting the "All Services" grid into "Functions" and "Equipment"
+   groups — same eyebrow treatment as .section-eyebrow, just secondary/smaller since
+   it sits inside a section that already has its own eyebrow. */
+    .all-services-group-label {
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      color: var(--maroon);
+      opacity: .8;
+      margin: 22px 0 12px;
+    }
+
+    .all-services-group-label:first-child {
+      margin-top: 0;
+    }
+
+    .all-service-card {
+      background: var(--cream-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: .2s;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .all-service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold)
+    }
+
+    .all-service-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      background: #efe4d4;
+    }
+
+    .all-service-body {
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .all-service-body h3 {
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .all-service-body .book-btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+
+    .all-service-body .tier {
+      margin-bottom: 0;
+    }
+
+    .all-service-body .price {
+      font-size: 18px;
+    }
+
+    /* ---------- PACKAGES ---------- */
+    .pkg-section {
+      margin-top: 34px
+    }
+
+    .pkg-head {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 16px;
+      /* "View Packages" (hero-go button) scrolls this into view; offset matches the
+     sticky desktop nav's height, same as #folioAnchor's scroll-margin-top */
+      scroll-margin-top: 156px;
+    }
+
+    .pkg-head h2 {
+      font-size: 22px;
+      color: var(--maroon)
+    }
+
+    .pkg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .pkg-grid.cols-4 {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    /* beside the sidebar, four columns get too narrow below ~1300px - 2 x 2 there */
+    @media(min-width:1001px) and (max-width:1300px) {
+      .pkg-grid.cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .pkg {
+      background: var(--cream-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px 20px 18px;
+      display: flex;
+      flex-direction: column;
+      transition: .2s;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+
+    .pkg-carousel {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      background: #efe4d4;
+      overflow: hidden;
+    }
+
+    .pkg-carousel-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-behavior: smooth;
+    }
+
+    .pkg-carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pkg-carousel-slide {
+      flex: 0 0 100%;
+      width: 100%;
+      height: 100%;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      position: relative;
+      cursor: pointer;
+    }
+
+    /* the package photos are themselves the CTA — clicking any of them opens booking
+       for that package, so say so on the carousel */
+    .pkg-carousel-hint {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: 4;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(74, 14, 26, .82);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .3px;
+      pointer-events: none;
+    }
+
+    .pkg-carousel-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .pkg-carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(43, 14, 21, 0.75);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+      z-index: 3;
+      opacity: 0;
+      transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
+      user-select: none;
+    }
+
+    .pkg-carousel:hover .pkg-carousel-btn {
+      opacity: 1;
+    }
+
+    .pkg-carousel-btn:hover {
+      background: rgba(123, 27, 43, 0.95);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .pkg-carousel-btn.prev {
+      left: 8px;
+    }
+
+    .pkg-carousel-btn.next {
+      right: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .pkg-carousel-btn {
+        opacity: 0.85;
+      }
+    }
+
+    .pkg-carousel-dots {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 3;
+      pointer-events: auto;
+    }
+
+    .pkg-carousel-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .pkg-carousel-dot.active {
+      background: var(--gold);
+      width: 18px;
+      border-radius: 9px;
+    }
+
+    .pkg:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold)
+    }
+
+    .tier {
+      display: inline-block;
+      background: var(--maroon);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border-radius: 7px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+
+    .pkg h3 {
+      font-size: 18px;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.25
+    }
+
+    .pkg ul {
+      list-style: none;
+      flex: 1;
+      margin-bottom: 16px
+    }
+
+    .pkg li {
+      display: flex;
+      gap: 9px;
+      align-items: flex-start;
+      font-size: 13.5px;
+      color: #000000;
+      padding: 4px 0;
+      line-height: 1.4;
+    }
+
+    .pkg li::before {
+      content: "✓";
+      color: #2e8b45;
+      font-weight: 800;
+      flex: none
+    }
+
+    .pkg li.pkg-more {
+      color: var(--maroon);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .pkg li.pkg-more::before {
+      content: none;
+    }
+
+    /* clamped so a long admin-written description can't push one card far taller
+       than its neighbours - the full text is on the booking page */
+    .pkg-desc {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.4;
+      margin: -6px 0 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .pkg-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto
+    }
+
+    .pkg-btns {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .details-btn {
+      background: #fff;
+      border: 1.5px solid var(--maroon);
+      color: var(--maroon);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .15s;
+    }
+
+    .details-btn:hover {
+      background: var(--maroon);
+      color: var(--gold)
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--maroon)
+    }
+
+    .book-btn {
+      background: var(--gold);
+      color: var(--maroon);
+      border: none;
+      border-radius: 10px;
+      padding: 11px 22px;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      transition: .15s;
+      letter-spacing: .3px;
+    }
+
+    .book-btn:hover {
+      background: var(--gold-deep);
+      color: #fff
+    }
+
+    /* package-card "Book Now": solid dark maroon (the gold CTA had too much white/cream
+       mixed into it to read as the primary action next to the package photos) */
+    .pkg .book-btn {
+      background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-2) 100%);
+      color: var(--gold);
+      box-shadow: 0 4px 14px rgba(74, 14, 26, .30);
+    }
+
+    .pkg .book-btn:hover {
+      background: linear-gradient(135deg, #33080f 0%, var(--maroon) 100%);
+      color: #fff;
+    }
+
+    /* ---------- PRODUCT DETAIL OVERLAY ---------- */
+    .detail {
+      position: fixed;
+      inset: 0;
+      background: #fff;
+      z-index: 100;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform .4s cubic-bezier(.7, 0, .2, 1);
+    }
+
+    .detail.open {
+      transform: translateX(0)
+    }
+
+    .detail-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 22px 40px;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 5;
+    }
+
+    .back-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: #fff;
+      cursor: pointer;
+      font-size: 20px;
+      color: var(--maroon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-btn:hover {
+      background: var(--maroon);
+      color: var(--gold)
+    }
+
+    .detail-top h1 {
+      font-size: 17px;
+      letter-spacing: 1px;
+      color: var(--ink);
+      font-weight: 800
+    }
+
+    .detail-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 34px 40px 120px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 16px
+    }
+
+    .thumbs {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .thumb {
+      width: 96px;
+      height: 96px;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid var(--line);
+      position: relative;
+      background: linear-gradient(135deg, #5c1424, #7a2338);
+    }
+
+    .thumb.active {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 2px rgba(224, 168, 46, .3)
+    }
+
+    .thumb .thumb-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1
+    }
+
+    .thumb .ph {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .55);
+      font-size: 10px;
+      text-align: center;
+      padding: 4px
+    }
+
+    .main-img {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      min-height: 440px;
+      background: linear-gradient(135deg, #5c1424, #7a2338);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-img .ph {
+      color: rgba(255, 255, 255, .45);
+      font-size: 14px;
+      text-align: center;
+      padding: 20px
+    }
+
+    .fav-btns {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .fav-btns button {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: none;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      font-size: 17px;
+      color: var(--maroon);
+    }
+
+    .detail-info .crumb {
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      margin-bottom: 12px;
+      line-height: 1.5
+    }
+
+    .detail-info h2 {
+      font-size: 24px;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 10px
+    }
+
+    .detail-info .sub {
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin-bottom: 16px
+    }
+
+    .detail-price {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--maroon);
+      margin-bottom: 20px
+    }
+
+    .delivery-box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 24px;
+      background: var(--cream-2);
+    }
+
+    .delivery-box div {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 13.5px;
+      color: var(--ink);
+      padding: 5px 0
+    }
+
+    .delivery-box .ico {
+      color: var(--maroon)
+    }
+
+    .highlights h3 {
+      font-size: 14px;
+      letter-spacing: .5px;
+      color: var(--ink);
+      margin-bottom: 12px;
+      text-transform: uppercase
+    }
+
+    .highlights ul {
+      list-style: none
+    }
+
+    .highlights li {
+      display: flex;
+      gap: 9px;
+      font-size: 14.5px;
+      color: var(--ink);
+      padding: 6px 0
+    }
+
+    .highlights li::before {
+      content: "✓";
+      color: #2e8b45;
+      font-weight: 800
+    }
+
+    .detail-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 40px;
+      z-index: 6;
+      box-shadow: 0 -4px 20px rgba(74, 14, 26, .10);
+    }
+
+    .detail-cta .dp {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--maroon);
+      flex: none
+    }
+
+    .detail-cta .cart-btn {
+      flex: 1;
+      background: #fff;
+      border: 2px solid var(--gold);
+      color: var(--maroon);
+      padding: 15px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      letter-spacing: .5px;
+    }
+
+    .detail-cta .cart-btn:hover {
+      background: var(--cream-2)
+    }
+
+    .detail-cta .buy-btn {
+      flex: 1;
+      background: var(--gold);
+      border: none;
+      color: var(--maroon);
+      padding: 15px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      letter-spacing: .5px;
+    }
+
+    .detail-cta .buy-btn:hover {
+      background: var(--gold-deep);
+      color: #fff
+    }
+
+    /* ---------- FOOTER (canonical yellow overrides for photography page) ---------- */
+    .site-footer,
+    footer {
+      background: #FFC700 !important;
+      color: #222 !important;
+      margin-top: 0;
+    }
+
+    .footer-top {
+      display: none; /* hide old footer-top layout */
+    }
+
+    .f-brand, .f-col, .f-contact { display: none; } /* hide old footer classes */
+
+    .footer-brand img {
+      height: 65px !important;
+      object-fit: contain !important;
+    }
+
+    .footer-col p.desc {
+      font-size: 13px;
+      color: rgba(0, 0, 0, .75) !important;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .footer-col h4 {
+      font-size: 14px !important;
+      font-weight: 800 !important;
+      margin-bottom: 16px !important;
+      color: #5C0930 !important;
+      letter-spacing: normal !important;
+    }
+
+    .footer-col ul li a {
+      color: rgba(0, 0, 0, .75) !important;
+    }
+
+    .footer-col ul li a:hover {
+      color: #5C0930 !important;
+      padding-left: 0 !important;
+    }
+
+    .contact-item svg {
+      color: #5C0930 !important;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(0, 0, 0, .12) !important;
+      padding: 18px 0 !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      max-width: none !important;
+      margin: 0 !important;
+    }
+
+    .footer-bottom p,
+    .footer-bottom .copy {
+      font-size: 12.5px;
+      color: rgba(0, 0, 0, .6) !important;
+    }
+
+    .pay-chip, .pay-methods { display: none; } /* hide old payment styling */
+
+    .socials a {
+      background: transparent !important;
+      color: rgba(0, 0, 0, .85) !important;
+      border: 1px solid rgba(0, 0, 0, .25) !important;
+    }
+
+    .socials a:hover {
+      background: rgba(0,0,0,0.06) !important;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media(max-width:1000px) {
+      .pkg-grid,
+      .pkg-grid.cols-4 {
+        grid-template-columns: 1fr
+      }
+
+      .detail-body {
+        grid-template-columns: 1fr;
+        gap: 26px
+      }
+
+      .sidebar {
+        width: 190px
+      }
+    }
+
+    /* Tablet / mobile: sidebar becomes a horizontal category bar */
+    @media(max-width:760px) {
+      .header-sticky-wrap,
+      .desktop-nav {
+        display: none !important
+      }
+
+      .mobile-app-switcher {
+        display: flex !important;
+        flex-shrink: 0 !important
+      }
+
+      .mobile-bottom-nav {
+        display: flex !important
+      }
+
+      /* ── MOBILE FOOTER: compact, non-intrusive ── */
+      .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 16px;
+        padding: 16px 16px 12px;
+      }
+
+      /* Brand row: logo inline + tagline hidden to save space */
+      .f-brand {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        margin-bottom: 2px;
+      }
+
+      .f-brand .f-logo {
+        width: 36px;
+        height: 30px;
+        margin-bottom: 0;
+        flex: none;
+      }
+
+      /* hide tagline on mobile — too verbose */
+      .f-brand p {
+        display: none;
+      }
+
+      /* brand name label next to logo */
+      .f-brand::after {
+        content: 'Sai Kumar Digital Lab & Studio';
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--gold);
+        line-height: 1.3;
+      }
+
+      /* Link columns: tighter heading + links */
+      .f-col h4 {
+        font-size: 11px;
+        margin-bottom: 5px;
+        letter-spacing: .3px;
+      }
+
+      .f-col li {
+        margin-bottom: 3px;
+      }
+
+      .f-col a {
+        font-size: 12px;
+      }
+
+      /* Contact Us: collapse to icon-only single-line strip */
+      .f-contact {
+        grid-column: 1 / -1;
+        border-top: 1px solid rgba(255,255,255,.1);
+        padding-top: 10px;
+        margin-top: 2px;
+      }
+
+      .f-contact h4 {
+        font-size: 11px;
+        margin-bottom: 6px;
+      }
+
+      .f-contact div {
+        font-size: 12px;
+        margin-bottom: 3px;
+        gap: 6px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 8px 16px 80px;
+      }
+
+      .footer-bottom .copy {
+        font-size: 11px;
+      }
+
+      .pay-methods {
+        gap: 6px;
+      }
+
+      .pay-chip {
+        font-size: 9.5px;
+        padding: 4px 8px;
+      }
+
+      .mobile-header-bar {
+        display: flex !important;
+        border-bottom: 1px solid rgba(74, 14, 26, .12) !important;
+        padding: 12px 16px 20px !important;
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 100 !important;
+        /* forces its own GPU-composited layer so Chromium repaints it correctly on every
+       frame during real wheel/touch scrolling instead of relying on a compositor-side
+       sticky recalculation that can lag behind and leave it visually un-stuck */
+        will-change: transform;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+      }
+
+      /* JS-driven fallback: some Chromium builds fail to repaint position:sticky in its
+     stuck position during real wheel/touch scrolling. Once JS confirms we've scrolled
+     past the app-switcher, it swaps this element to position:fixed (always reliably
+     painted) and reserves its height via #mobileHeaderBarSpacer so nothing jumps. */
+      .mobile-header-bar.js-pinned {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+      }
+
+      .nav-shell {
+        padding: 0 14px;
+        gap: 10px
+      }
+
+      .nav-logo-block {
+        padding: 8px 10px 8px 0
+      }
+
+      .nav-logo-block img {
+        height: 40px
+      }
+
+      .nav-row-primary {
+        padding: 10px 0 8px
+      }
+
+      .nav-row-secondary {
+        padding: 0 0 10px
+      }
+
+      .nav-tabs {
+        display: none !important
+      }
+
+      .nav-address-line {
+        display: none
+      }
+
+      .nav-search-container {
+        margin: 0 10px 0 0
+      }
+
+      .nav-account-link span {
+        display: none
+      }
+
+      /* Vertical left sidebar (icon over label, like Studio Services' mobile dashboard) instead
+     of a horizontal scrolling row. .shell gets a fixed viewport-relative height — roughly
+     "100vh minus the app-switcher + header bar above it" — so the sidebar and the main
+     content panel each become their own independently scrollable box, side by side, while
+     the rest of the page (including the footer) still scrolls normally underneath. */
+      .sidebar-wrap {
+        flex: 0 0 auto;
+        width: 88px;
+        align-self: stretch
+      }
+
+      .shell {
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        height: calc(100vh - 250px);
+        /* 100vh is measured against the LARGEST possible viewport (address bar hidden), so on
+           phones it overshoots the height actually visible while the browser's address/tool
+           bar is showing. As the user scrolls and that bar auto-hides/shows, the real visible
+           area changes but a plain 100vh box doesn't track it — so .shell (and the footer that
+           sits right after it) can visually shift and the footer creeps into view before the
+           last package card is really reached. 100dvh tracks the CURRENT visible viewport, so
+           browsers that support it (used only if supported — unsupported values are ignored,
+           leaving the 100vh line above as the fallback) size .shell correctly at all times. */
+        height: calc(100dvh - 250px);
+        min-height: 340px;
+      }
+
+      .sidebar {
+        width: 88px !important;
+        height: 100% !important;
+        border-bottom: none !important;
+        border-right: 1px solid var(--line) !important;
+        position: static !important;
+        max-height: none !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .sidebar::-webkit-scrollbar {
+        width: 4px
+      }
+
+      .side-item {
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        padding: 12px 6px;
+        border-left: 3px solid transparent;
+        border-bottom: 1px solid var(--line);
+        border-radius: 0;
+        font-size: 10.5px;
+        font-weight: 700;
+        line-height: 1.2;
+        width: 100%;
+      }
+
+      .side-item .si-ico {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        margin: 0 auto
+      }
+
+      .side-item.active {
+        background: #fff;
+        border-left-color: var(--maroon)
+      }
+
+      .side-item.active .si-ico {
+        background: var(--maroon);
+        color: var(--gold)
+      }
+
+      /* "All Services" always carries a soft highlight of its own, whether it's the
+     active item or not — this is what sets it apart from the other rows, which
+     only pick up a background once actually selected */
+      .side-item.all-item {
+        background: var(--rose)
+      }
+
+      .side-item.all-item.active {
+        background: var(--rose);
+        border-left-color: transparent;
+        color: #3A2A26
+      }
+
+      .side-item.all-item.active .si-ico {
+        background: #efe4d4;
+        color: inherit
+      }
+
+      .side-section-label {
+        padding: 10px 6px 4px;
+        font-size: 9.5px;
+        text-align: center;
+      }
+
+      .main {
+        padding: 16px 16px 30px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+        height: 100%;
+        overflow-y: auto !important
+      }
+
+      /* on mobile .main is its own scroll container (no sticky nav overlapping it
+     internally), so the desktop 156px nav offset isn't needed here */
+      .section-eyebrow {
+        scroll-margin-top: 12px
+      }
+
+      .pkg-head {
+        scroll-margin-top: 12px
+      }
+
+      .hero {
+        max-width: 100%;
+        overflow: hidden
+      }
+
+      .hero-track {
+        width: 100%;
+        max-width: 100%
+      }
+
+      .hero-slide {
+        flex: 0 0 100%;
+        max-width: 100%
+      }
+
+      .hero-arrow {
+        display: none
+      }
+
+      /* .main now shares its row with the 88px sidebar instead of spanning the full
+     viewport, so the hero text column needs more of what width remains */
+      .hero-body {
+        max-width: 74%;
+        padding: 10px 30px 10px 12px
+      }
+
+      .hero-badge {
+        font-size: 8px;
+        padding: 3px 8px;
+        margin-bottom: 5px
+      }
+
+      .hero-body h2 {
+        font-size: 15px
+      }
+
+      .hero-body p {
+        font-size: 10.5px;
+        margin-top: 3px
+      }
+
+      .hero-go {
+        margin-top: 7px;
+        padding: 6px 11px;
+        font-size: 11px
+      }
+
+      /* Package showcase: 2-column card grid (matches studio.html/corporate.html's
+         packages-grid on mobile) instead of the tablet breakpoint's single full-width
+         column above - card content is trimmed down to fit the narrower column. */
+      .pkg-grid,
+      .pkg-grid.cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .pkg {
+        padding: 8px 8px 10px;
+      }
+
+      .pkg-carousel {
+        margin-bottom: 8px;
+      }
+
+      .pkg-carousel-hint {
+        display: none;
+      }
+
+      .tier {
+        font-size: 9px;
+        padding: 3px 8px;
+        margin-bottom: 6px;
+      }
+
+      .pkg h3 {
+        font-size: 13px;
+        margin-bottom: 6px;
+        line-height: 1.25;
+      }
+
+      .pkg ul {
+        margin-bottom: 8px;
+      }
+
+      .pkg li {
+        font-size: 11px;
+        gap: 6px;
+        padding: 2px 0;
+      }
+
+      .pkg-desc {
+        font-size: 11px;
+        margin: -2px 0 6px;
+      }
+
+      .pkg-foot {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+      }
+
+      .price {
+        font-size: 16px;
+      }
+
+      .book-btn {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+
+      .folio-card {
+        width: 220px;
+        height: 150px
+      }
+
+      .detail-top,
+      .detail-body,
+      .detail-cta {
+        padding-left: 16px;
+        padding-right: 16px
+      }
+
+      .gallery {
+        grid-template-columns: 1fr
+      }
+
+      .thumbs {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 8px
+      }
+
+      .thumb {
+        width: 74px;
+        height: 74px;
+        flex: 0 0 auto
+      }
+
+      .detail-cta {
+        flex-wrap: wrap;
+        gap: 10px
+      }
+
+      .detail-cta .dp {
+        flex-basis: 100%
+      }
+
+      .detail-cta .cart-btn,
+      .detail-cta .buy-btn {
+        padding: 13px;
+        font-size: 14px
+      }
+
+      /* All Services (right-side content, next to the untouched left sidebar): 2 cards
+     per row instead of the base auto-fill grid's single wide column on narrow screens.
+     Image/body sizing is trimmed to fit the narrower card — same content, buttons and
+     click behavior, just laid out to match the 2-column width. */
+      .all-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .all-services-group-label {
+        font-size: 12px;
+        margin: 16px 0 10px;
+      }
+
+      .all-service-img {
+        height: 110px;
+      }
+
+      .all-service-body {
+        padding: 10px 10px 12px;
+        gap: 6px;
+      }
+
+      .all-service-body h3 {
+        font-size: 13px;
+      }
+
+      .all-service-body .book-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+    }
+
+    @media(max-width:430px) {
+
+      .nav-account-link,
+      .nav-more-link {
+        padding: 8px
+      }
+
+      .pkg-banner h1,
+      .folio-head h2 {
+        font-size: 20px
+      }
+    }
+    /* ---- EXPLORE DETAILS MODAL ---- */
+    /* ---- Pending-Equipment Sticky Banner ---- */
+    #pendingEquipBanner {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1100;
+      background: linear-gradient(90deg, #8B1A2C 0%, #C8973A 100%);
+      color: #fff;
+      padding: 12px 20px;
+      align-items: center;
+      gap: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.35);
+      animation: bannerSlideIn 0.3s ease;
+    }
+    @keyframes bannerSlideIn {
+      from { transform: translateY(-100%); opacity: 0; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+    #pendingEquipBanner .pb-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    #pendingEquipBanner .pb-text { flex: 1; line-height: 1.35; }
+    #pendingEquipBanner .pb-text strong { display: block; font-size: 15px; }
+    #pendingEquipBanner .pb-text span  { font-size: 12px; opacity: 0.88; }
+    #pendingEquipBanner .pb-cancel {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }
+    #pendingEquipBanner .pb-cancel:hover { background: rgba(255,255,255,0.3); }
+    /* push body down so banner doesn't overlap nav when visible */
+    body.has-pending-banner { padding-top: 56px; }
+
+    .equip-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(42, 21, 25, 0.75);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    .equip-modal-content {
+      background: #fff;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 920px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      position: relative;
+      border: 1px solid var(--line);
+    }
+    .equip-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.1);
+      border: none;
+      font-size: 22px;
+      color: var(--ink);
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, color 0.15s;
+    }
+    .equip-modal-close:hover {
+      background: var(--maroon);
+      color: #fff;
+    }
+
+    .modal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+    }
+    .modal-media-col {
+      background: #15080c;
+      padding: 24px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .modal-media-main {
+      position: relative;
+      aspect-ratio: 16/10;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .modal-media-main img, .modal-media-main video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .modal-gallery-thumbs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .modal-thumb {
+      aspect-ratio: 4/3;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid transparent;
+      opacity: 0.7;
+      transition: 0.15s;
+    }
+    .modal-thumb.active, .modal-thumb:hover {
+      border-color: var(--gold);
+      opacity: 1;
+    }
+    .modal-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .modal-info-col {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-header-block {
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+    }
+    .modal-header-block h3 {
+      font-size: 24px;
+      color: var(--maroon);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .modal-header-block p {
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.45;
+    }
+
+    .modal-spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .modal-spec-box {
+      background: var(--cream-2);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .modal-spec-box .lbl {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      letter-spacing: 0.4px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .modal-spec-box .val {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .modal-section-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--maroon);
+      margin: 14px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .modal-gear-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+    .modal-gear-list li {
+      font-size: 12.5px;
+      color: var(--ink);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.35;
+    }
+
+    .modal-footer-cta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      gap: 12px;
+    }
+    .modal-add-btn {
+      flex: 1;
+      background: var(--gold);
+      color: var(--maroon);
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .modal-add-btn:hover {
+      background: var(--gold-deep);
+      color: #fff;
+    }
+
+    /* ZOOM & MODAL ENHANCEMENTS */
+    .zoom-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(15, 6, 9, 0.78);
+      color: #fff;
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      pointer-events: none;
+      z-index: 5;
+      letter-spacing: 0.3px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: opacity 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .gallery-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(15, 6, 9, 0.7);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.25);
+      font-size: 26px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .gallery-nav-arrow:hover {
+      background: var(--maroon);
+      transform: translateY(-50%) scale(1.1);
+      border-color: var(--gold);
+    }
+    .gallery-nav-arrow.left { left: 12px; }
+    .gallery-nav-arrow.right { right: 12px; }
+
+    .modal-media-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .gallery-cat-badge {
+      background: rgba(212, 175, 55, 0.2);
+      color: var(--gold);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .gallery-counter-badge {
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+      font-weight: 600;
+    }
+
+    .gallery-caption-bar {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.92);
+      text-align: center;
+      margin-top: 6px;
+      letter-spacing: 0.2px;
+    }
+
+    /* ---- PORTFOLIO GALLERY MODAL — RIGHT-HAND INFORMATION PANEL ----
+       Scoped to .gallery-modal-grid wherever a shared .modal-* class is involved, so the
+       Equipment "Explore Details" modal (which reuses those classes) is left alone.
+       Everything shown here comes from the category's existing CATEGORIES / FOLIO_TITLES /
+       PORTFOLIO_FILES / PACKAGES data — no new copy or pricing. */
+    .gallery-modal-grid .modal-info-col {
+      padding: 26px 26px 0;
+    }
+    .gallery-modal-grid .modal-header-block {
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+    }
+    .gallery-modal-grid .modal-header-block h3 {
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 800;
+      color: var(--maroon);
+    }
+    /* was --ink-soft — too pale for the line that introduces the whole panel */
+    .gallery-modal-grid .modal-header-block p {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+    .gallery-modal-grid .modal-section-title {
+      font-size: 14px;
+      color: var(--maroon);
+      margin: 0 0 8px;
+    }
+
+    .gallery-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .g-stat {
+      background: var(--cream-2);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 8px;
+      text-align: center;
+    }
+    .g-stat-num {
+      display: block;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--maroon);
+      line-height: 1.2;
+    }
+    .g-stat-lbl {
+      display: block;
+      margin-top: 3px;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .gallery-pkg-hint {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .gallery-pkg-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+    .gallery-pkg-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--cream-2);
+      border: 1.5px solid var(--line);
+      border-left: 4px solid var(--gold-deep);
+      border-radius: 10px;
+      padding: 10px 14px;
+    }
+    .g-pkg-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .gallery-includes {
+      margin-bottom: 18px;
+    }
+    .gallery-includes-list {
+      list-style: none;
+      display: grid;
+      gap: 6px;
+    }
+    .gallery-includes-list li {
+      display: flex;
+      gap: 8px;
+      font-size: 13px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .gallery-includes-list li::before {
+      content: "✓";
+      color: #2e8b45;
+      font-weight: 800;
+      flex: none;
+    }
+
+    /* both CTAs sit in a bar pinned to the bottom of the panel, so neither can scroll
+       out of reach however tall the content gets */
+    .gallery-cta-stack {
+      position: sticky;
+      bottom: 0;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+      padding: 14px 0 22px;
+      background: #fff;
+      border-top: 1px solid var(--line);
+    }
+    .modal-view-pkgs-btn {
+      width: 100%;
+      padding: 13px 18px;
+      background: var(--gold);
+      color: var(--maroon);
+      border: none;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 800;
+      letter-spacing: .4px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(224, 168, 46, .35);
+      transition: background .15s, color .15s, transform .15s;
+    }
+    .modal-view-pkgs-btn:hover {
+      background: var(--gold-deep);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .g-pkg-tier {
+      font-size: 11px;
+      font-weight: 800;
+      /* was --gold-deep: too low-contrast on the cream row background */
+      color: var(--maroon);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .g-pkg-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .g-pkg-price {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--maroon);
+    }
+
+    .modal-book-btn {
+      width: 100%;
+      padding: 15px 22px;
+      background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-2) 100%);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 15.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(128, 0, 32, 0.35);
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .modal-book-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(74, 14, 26, 0.45);
+      background: linear-gradient(135deg, var(--maroon-2) 0%, #33080f 100%);
+    }
+
+    .gallery-modal-content {
+      max-width: 1040px;
+      max-height: 92vh;
+      display: flex;
+      /* the two columns scroll independently instead of the whole sheet scrolling,
+         which is what used to push the CTAs below the bottom edge */
+      overflow: hidden;
+    }
+    #galleryModalBody {
+      display: flex;
+      flex: 1 1 auto;
+      min-width: 0;
+      min-height: 0;
+    }
+    .gallery-modal-grid {
+      flex: 1 1 auto;
+      min-width: 0;
+      min-height: 0;
+    }
+    .gallery-modal-grid .modal-media-col,
+    .gallery-modal-grid .modal-info-col {
+      min-height: 0;
+      overflow-y: auto;
+    }
+
+    @media(max-width: 980px) {
+      .modal-grid { grid-template-columns: 1fr; }
+      .modal-media-col { padding: 18px; }
+      /* stacked on one column, the sheet itself scrolls again and the CTA bar simply
+         sits at the end of the content */
+      .gallery-modal-content { display: block; overflow-y: auto; }
+      #galleryModalBody { display: block; }
+      .gallery-modal-grid .modal-media-col,
+      .gallery-modal-grid .modal-info-col { overflow: visible; }
+      .gallery-cta-stack { position: static; }
+    }
+
+/* ================= FOOTER (canonical, matches homepage) ================= */
+    footer {
+      background: #FFC700 !important;
+      border-top: 1px solid rgba(0, 0, 0, .12);
+      padding: 36px 0 0;
+      margin-top: 20px;
+    }
+
+    footer .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .socials a {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, .25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 0, 0, .85);
+      text-decoration: none;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col ul li a {
+      font-size: 13.5px;
+      color: rgba(0, 0, 0, .75);
+      text-decoration: none;
+    }
+
+    /* Slide-out Cart & Wishlist Drawers Off-screen Fix */
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 380px;
+      max-width: 100%;
+      height: 100%;
+      background: #fff;
+      box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+      z-index: 10000;
+      transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart-drawer.open {
+      right: 0;
+    }
+
+    .cart-drawer-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 9999;
+      display: none;
+    }
+
+    .mobile-cart-bar {
+      display: none;
+    }
+
+    .detail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 9999;
+      display: none;
+      overflow-y: auto;
+    }
+
+    .detail.active {
+      display: block;
+    }

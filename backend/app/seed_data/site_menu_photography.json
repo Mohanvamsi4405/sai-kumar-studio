@@ -1,0 +1,1016 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "target": {
+        "type": "page",
+        "page": "index"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Weddings & Events",
+      "target": {
+        "type": "category",
+        "page": "photography",
+        "category": "wedding"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Weddings & Events",
+          "style": "cards",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Wedding Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "wedding"
+              },
+              "description": "Full ceremony & reception coverage",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/wedding.jpg"
+            },
+            {
+              "label": "Pre-Wedding",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "prewedding"
+              },
+              "description": "Cinematic outdoor & couple shoots",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/prewedding-platinum.jpg"
+            },
+            {
+              "label": "Maternity Shoot",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "maternity"
+              },
+              "description": "Precious bump & pregnancy memories",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/maternity%20standard.jpg"
+            },
+            {
+              "label": "Baby Shoot",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "baby"
+              },
+              "description": "Newborn & milestone portraits",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/baby%20shoot.jpg"
+            },
+            {
+              "label": "Birthday Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "birthday"
+              },
+              "description": "Fun party & celebration coverage",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/birthday.jpg"
+            },
+            {
+              "label": "House Warming",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "housewarming"
+              },
+              "description": "Traditional Gruhapravesam moments",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/housewarming.jpg"
+            },
+            {
+              "label": "Saree Function",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "sareefunction"
+              },
+              "description": "Half saree & traditional functions",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/saree%20ceremony.png"
+            },
+            {
+              "label": "Event Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "event"
+              },
+              "description": "Corporate & social gathering coverage",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/event.jpg"
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Equipment & Add-ons",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Candid Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "candidphoto"
+              }
+            },
+            {
+              "label": "Traditional Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalphoto"
+              }
+            },
+            {
+              "label": "Cinematic Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            },
+            {
+              "label": "Traditional Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalvideo"
+              }
+            },
+            {
+              "label": "Drone Videography",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              }
+            },
+            {
+              "label": "Album Designing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "album"
+              }
+            },
+            {
+              "label": "LED Screens",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Packages",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Standard Wedding",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "wedding"
+              }
+            },
+            {
+              "label": "Premium Wedding",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "wedding"
+              }
+            },
+            {
+              "label": "Platinum Wedding",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "wedding"
+              }
+            },
+            {
+              "label": "Custom Packages",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "wedding"
+              }
+            }
+          ],
+          "cta": {
+            "title": "Need Something Special?",
+            "text": "We customize packages to match your unique needs and budget.",
+            "button": "Contact Us",
+            "target": {
+              "type": "page",
+              "page": "contact-us"
+            }
+          }
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/portfolio/wedding-1.png",
+        "tag": "Special Offer",
+        "title": "Wedding Memories That Last Forever",
+        "subtitle": "Book early & save up to 20% on all wedding packages",
+        "button": "View All Packages →",
+        "target": null
+      }
+    },
+    {
+      "label": "Family & Portraits",
+      "target": {
+        "type": "category",
+        "page": "photography",
+        "category": "maternity"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Family & Portraits",
+          "style": "cards",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Maternity Shoot",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "maternity"
+              },
+              "description": "Precious bump & pregnancy memories",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/maternity%20standard.jpg"
+            },
+            {
+              "label": "Baby Shoot",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "baby"
+              },
+              "description": "Newborn & milestone portraits",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/baby%20shoot.jpg"
+            },
+            {
+              "label": "Birthday Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "birthday"
+              },
+              "description": "Fun party & celebration coverage",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/birthday.jpg"
+            },
+            {
+              "label": "House Warming",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "housewarming"
+              },
+              "description": "Traditional Gruhapravesam moments",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/housewarming.jpg"
+            },
+            {
+              "label": "Saree Function",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "sareefunction"
+              },
+              "description": "Half saree & traditional functions",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/saree%20ceremony.png"
+            },
+            {
+              "label": "Outdoor Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "outdoor"
+              },
+              "description": "Nature & scenic location portraits",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/outdoor.jpg"
+            },
+            {
+              "label": "Family Portraits",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalphoto"
+              },
+              "description": "Generational family portraits",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/traditional-photography.png"
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Equipment & Add-ons",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Candid Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "candidphoto"
+              }
+            },
+            {
+              "label": "Traditional Photography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalphoto"
+              }
+            },
+            {
+              "label": "Album Designing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "album"
+              }
+            },
+            {
+              "label": "Photo Frames & Canvas",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "page",
+                "page": "gifts"
+              }
+            },
+            {
+              "label": "Premium Photo Albums",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "album"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Family Packages",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Portrait Essential",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "maternity"
+              }
+            },
+            {
+              "label": "Maternity & Newborn Combo",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "maternity"
+              }
+            },
+            {
+              "label": "Birthday Special Package",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "birthday"
+              }
+            },
+            {
+              "label": "Family Grand Celebration",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "baby"
+              }
+            }
+          ],
+          "cta": {
+            "title": "Need Custom Framing?",
+            "text": "We offer bespoke printing and framing options for all shoots.",
+            "button": "Contact Us",
+            "target": {
+              "type": "page",
+              "page": "contact-us"
+            }
+          }
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/portfolio/baby_6.jpg",
+        "tag": "Family Portrait",
+        "title": "Cherish Every Family Moment",
+        "subtitle": "Special family & maternity packages with custom photo albums",
+        "button": "View Family Packages →",
+        "target": null
+      }
+    },
+    {
+      "label": "Videography",
+      "target": {
+        "type": "category",
+        "page": "photography",
+        "category": "cinematicvideo"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Videography",
+          "style": "cards",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Cinematic Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              },
+              "description": "4K movie-style video production",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/cinematic-videography.png"
+            },
+            {
+              "label": "Traditional Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalvideo"
+              },
+              "description": "Complete full-length event recording",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/videography.jpg"
+            },
+            {
+              "label": "Drone Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              },
+              "description": "Aerial 4K footage & panoramas",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/drone.jpg"
+            },
+            {
+              "label": "Pre-Wedding Film",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "prewedding"
+              },
+              "description": "Romantic cinematic teaser & video",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/prewedding-platinum.jpg"
+            },
+            {
+              "label": "Event Highlights",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "event"
+              },
+              "description": "Fast-paced social media reels",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/event.jpg"
+            },
+            {
+              "label": "Saree Function Video",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "sareefunction"
+              },
+              "description": "Traditional ritual videography",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/saree%20ceremony.png"
+            },
+            {
+              "label": "Birthday Video",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "birthday"
+              },
+              "description": "Fun party highlights & music video",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/birthday.jpg"
+            },
+            {
+              "label": "Live Streaming Setup",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              },
+              "description": "Full HD live broadcast to YouTube",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/led-screens.png"
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Equipment & Add-ons",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "4K Cinema Cameras",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            },
+            {
+              "label": "Drone / Aerial Rig",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              }
+            },
+            {
+              "label": "Gimbal Stabilization",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            },
+            {
+              "label": "Multi-Cam Live Switcher",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "video"
+              }
+            },
+            {
+              "label": "LED Screens & Video Wall",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              }
+            },
+            {
+              "label": "Wireless Mic & Audio Systems",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "video"
+              }
+            },
+            {
+              "label": "Color Grading & Editing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Video Packages",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Cinematic Teaser Package",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            },
+            {
+              "label": "Full Event Video Package",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalvideo"
+              }
+            },
+            {
+              "label": "Drone & Multi-Cam Combo",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              }
+            },
+            {
+              "label": "Premium Film Production",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            }
+          ],
+          "cta": {
+            "title": "Need Video Live Streaming?",
+            "text": "We stream your ceremonies live to guests anywhere in the world.",
+            "button": "Contact Us",
+            "target": {
+              "type": "page",
+              "page": "contact-us"
+            }
+          }
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/portfolio/cinematic-videography-1.png",
+        "tag": "4K Production",
+        "title": "Cinematic Storytelling In 4K",
+        "subtitle": "Capture every emotion with movie-grade camera gear",
+        "button": "Explore Video Packages →",
+        "target": null
+      }
+    },
+    {
+      "label": "Equipment & Add-ons",
+      "target": {
+        "type": "category",
+        "page": "photography",
+        "category": "drone"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Equipment & Add-ons",
+          "style": "cards",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Drone Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              },
+              "description": "Aerial photography & 4K video",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/drone.jpg"
+            },
+            {
+              "label": "LED Screens",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              },
+              "description": "High-res indoor & outdoor LED walls",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/led-screens.png"
+            },
+            {
+              "label": "Album Designing",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "album"
+              },
+              "description": "Flush-mount luxury photo albums",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/album.jpg"
+            },
+            {
+              "label": "Traditional Videography",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalvideo"
+              },
+              "description": "Heavy-duty Sony/Panasonic rigs",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/videography.jpg"
+            },
+            {
+              "label": "Cinematic Rig Setup",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              },
+              "description": "Gimbals, sliders & prime lenses",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/cinematic-videography.png"
+            },
+            {
+              "label": "Studio Lighting Rigs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalphoto"
+              },
+              "description": "Godox/Elinchrom softboxes & strobes",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/Photo%20icon.png"
+            },
+            {
+              "label": "Live Broadcast Gear",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              },
+              "description": "Wireless video transmitters & switcher",
+              "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/All%20Services/equip-led-screens.jpg"
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Featured Add-ons",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Candid Photography Gear",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "candidphoto"
+              }
+            },
+            {
+              "label": "Traditional Photography Setup",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "traditionalphoto"
+              }
+            },
+            {
+              "label": "Cinematic 4K Rig",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "cinematicvideo"
+              }
+            },
+            {
+              "label": "Raw Footage Hard Drive",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "video"
+              }
+            },
+            {
+              "label": "Premium Leather Albums",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "album"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Gear Packages",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Drone Aerial Add-on",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              }
+            },
+            {
+              "label": "Double LED Wall Setup",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              }
+            },
+            {
+              "label": "Live Broadcast & Switcher",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "ledscreens"
+              }
+            },
+            {
+              "label": "Complete Equipment Bundle",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "photography",
+                "category": "drone"
+              }
+            }
+          ],
+          "cta": {
+            "title": "Need Custom Gear Setup?",
+            "text": "Tailored audio, visual & camera gear setup for any venue size.",
+            "button": "Contact Us",
+            "target": {
+              "type": "page",
+              "page": "contact-us"
+            }
+          }
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/Photography_assets/assets/portfolio/drone_1.jpg",
+        "tag": "Pro Equipment",
+        "title": "High-End Professional Gear",
+        "subtitle": "Elevate your event with 4K Drones, LED Screens & Cinema Cameras",
+        "button": "View All Equipment →",
+        "target": null
+      }
+    },
+    {
+      "label": "All Packages",
+      "target": {
+        "type": "category",
+        "page": "photography",
+        "category": "wedding"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    }
+  ],
+  "benefits": [
+    {
+      "icon": "📷",
+      "title": "Expert Photographers",
+      "text": "Skilled & experienced team"
+    },
+    {
+      "icon": "⭐",
+      "title": "Premium Quality",
+      "text": "High-end cameras & gear"
+    },
+    {
+      "icon": "⏱️",
+      "title": "Timely Delivery",
+      "text": "On-time, every time"
+    },
+    {
+      "icon": "❤️",
+      "title": "100% Satisfaction",
+      "text": "We care for your moments"
+    }
+  ]
+}

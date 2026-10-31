@@ -1,0 +1,698 @@
+{
+  "photo_printing": {
+    "title": "Photo Printing",
+    "desc": "High-grade premium photographic printing in glossy, matte, or satin finishes in all standard dimensions.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/photo-printing.png",
+    "packages": [
+      {
+        "name": "Print Passport Size Photo",
+        "subtitle": "Sharp, high-quality passport size photo prints ready for official use.",
+        "price": "₹130",
+        "oldPrice": "₹146",
+        "tag": "Pack of 8",
+        "badge": "Popular",
+        "turnaround": "20 min",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p1-m1.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p1-m1.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p1-m2.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p1-m3.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p1-m4.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p1-m5.png"
+        ],
+        "highlights": [
+          "Regular Passport Photo (35x45mm)",
+          "Pack of 8 passport size photo prints",
+          "Print size: 3.5 cm x 4.5 cm",
+          "High-quality, sharp and clear output",
+          "Suitable for passport, visa, and ID applications"
+        ],
+        "quantityOptions": [
+          {
+            "label": "8 Photos",
+            "value": "8",
+            "price": 130
+          },
+          {
+            "label": "16 Photos",
+            "value": "16",
+            "price": 200
+          },
+          {
+            "label": "32 Photos",
+            "value": "32",
+            "price": 250
+          }
+        ],
+        "requiresPhotoUpload": true
+      },
+      {
+        "name": "Customized Photos Prints Personalized Mini Photos,Gift HD Color Prints | Memories, Gifts & Albums | Pack of Multiple size (4X6) 10 photos",
+        "subtitle": "Glossy/matte prints of your camera shots.",
+        "price": "₹159",
+        "oldPrice": "₹183",
+        "tag": "4x6 Inch",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p2-m1.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p2-m1.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p2-m2.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p2-m3.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p2-m4.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/photo_printing/photo-printing-p2-m5.png"
+        ],
+        "quantityOptions": [
+          {
+            "label": "8 Photos",
+            "value": "8",
+            "price": 159
+          },
+          {
+            "label": "16 Photos",
+            "value": "16",
+            "price": 318
+          },
+          {
+            "label": "32 Photos",
+            "value": "32",
+            "price": 636
+          }
+        ],
+        "purposeLabel": "Printing & Frame Size",
+        "purposeOptions": [
+          "4 x 6",
+          "5 x 7",
+          "6 x 8",
+          "6 x 9",
+          "8 x 10",
+          "8 x 12",
+          "10 x 12",
+          "10 x 15",
+          "12 x 15",
+          "12 x 18",
+          "16 x 20",
+          "20 x 24",
+          "20 x 30",
+          "30 x 40"
+        ]
+      },
+      {
+        "name": "Polaroids Photos",
+        "subtitle": "Ideal size for table display frames. Choose your photo quantity and frame size.",
+        "price": "₹200",
+        "oldPrice": "₹246",
+        "tag": "8 Photos",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_3f175k3f175k3f17.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_3f175k3f175k3f17.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_meyiatmeyiatmeyi.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_gor05rgor05rgor0.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_1a536q1a536q1a53.png"
+        ],
+        "quantityOptions": [
+          {
+            "label": "8 Photos",
+            "value": "8",
+            "price": 200
+          },
+          {
+            "label": "16 Photos",
+            "value": "16",
+            "price": 400
+          },
+          {
+            "label": "32 Photos",
+            "value": "32",
+            "price": 800
+          }
+        ],
+        "purposeLabel": "Printing & Frame Size",
+        "purposeOptions": [
+          "2 x 2",
+          "4 x 3",
+          "3 x 2.5"
+        ]
+      },
+      {
+        "name": "Visa Photos",
+        "subtitle": "Country-specific visa photo prints in the exact size required for your application.",
+        "price": "₹150",
+        "oldPrice": "₹168",
+        "tag": "Multi-Country",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_8kj3s78kj3s78kj3-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_8kj3s78kj3s78kj3-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_4k0ua34k0ua34k0u-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/f2e2d631-40f2-4610-9152-6cc88189f9ad.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_l40tdol40tdol40t-clean.png"
+        ],
+        "quantityOptions": [
+          {
+            "label": "8 Photos",
+            "value": "8",
+            "price": 150
+          },
+          {
+            "label": "16 Photos",
+            "value": "16",
+            "price": 220
+          },
+          {
+            "label": "32 Photos",
+            "value": "32",
+            "price": 280
+          }
+        ],
+        "purposeLabel": "Printing & Frame Size",
+        "purposeOptions": [
+          "35 x 45 UK",
+          "51 x 51 US",
+          "33 x 48 China",
+          "40 x 60 Dubai"
+        ],
+        "requiresPhotoUpload": true
+      }
+    ]
+  },
+  "photo_lamination": {
+    "title": "Photo Lamination",
+    "desc": "Shield your precious prints, certifications, and portraits with long-lasting water-resistant pouch lamination.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/photo-lamination.png",
+    "packages": [
+      {
+        "name": "Classic Photo Lamination",
+        "subtitle": "Ideal for ID size and small photo prints.",
+        "price": "₹30",
+        "oldPrice": "₹35",
+        "tag": "Small",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_q8xflnq8xflnq8xf-clean.jpg",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_q8xflnq8xflnq8xf-clean.jpg",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_wxydftwxydftwxyd-clean.jpg",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_t8az21t8az21t8az-clean.jpg",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_co8szkco8szkco8s-clean.png"
+        ],
+        "purposeLabel": "Printing & Frame Size",
+        "purposeOptions": [
+          "4 x 6",
+          "5 x 7",
+          "6 x 8",
+          "6 x 9",
+          "8 x 10",
+          "8 x 12",
+          "10 x 12",
+          "10 x 15",
+          "12 x 15",
+          "12 x 18",
+          "16 x 20",
+          "20 x 24",
+          "20 x 30",
+          "30 x 40"
+        ],
+        "quantityOptions": [
+          {
+            "label": "8 Photos",
+            "value": "8",
+            "price": 240
+          },
+          {
+            "label": "16 Photos",
+            "value": "16",
+            "price": 480
+          },
+          {
+            "label": "32 Photos",
+            "value": "32",
+            "price": 960
+          }
+        ]
+      }
+    ]
+  },
+  "photo_restoration": {
+    "title": "Photo Restoration",
+    "desc": "Preserve historical memories by digitally removing creases, scratches, stains, and restoring colors to old photos.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/photo-restoration.png",
+    "packages": [
+      {
+        "name": "Full Restoration & Colorization",
+        "subtitle": "Transforms B&W damaged photos into vivid color.",
+        "price": "₹399",
+        "oldPrice": "₹496",
+        "tag": "Premium",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/ChatGPT_Image_Aug_30_2026_06_31_51_PM.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/ChatGPT_Image_Aug_30_2026_06_31_51_PM.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/e0814301-a3a0-4f3d-b7df-d9892b1ca03e.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/ChatGPT_Image_Aug_30_2026_06_25_07_PM.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/ChatGPT_Image_Aug_30_2026_06_39_28_PM.png"
+        ]
+      }
+    ]
+  },
+  "photo_portrait": {
+    "title": "Photo Portrait",
+    "desc": "Professionally lit studio portraits and print-ready headshots for individuals, families, and professional profiles.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/photo-editing.png",
+    "packages": [
+      {
+        "name": "Mosaic Design",
+        "subtitle": "Custom photo mosaic artwork designed from your favorite pictures.",
+        "price": "₹300",
+        "oldPrice": "₹346",
+        "tag": "Single",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_u2y9xau2y9xau2y9-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_u2y9xau2y9xau2y9-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_eormjeormjeormje-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_tnvfg1tnvfg1tnvf-clean.png"
+        ]
+      },
+      {
+        "name": "Collage Design",
+        "subtitle": "Custom photo collage combining 5 of your favorite pictures into one artwork.",
+        "price": "₹499",
+        "oldPrice": "₹588",
+        "tag": "Pack of 5",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_m1m16vm1m16vm1m1-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_m1m16vm1m16vm1m1-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_w6xxcqw6xxcqw6xx-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_er8k01er8k01er8k_1_-clean_1.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_up47buup47buup47.png"
+        ]
+      },
+      {
+        "name": "Calendar Frame Design",
+        "subtitle": "Personalized photo calendar frame for gifting or home display.",
+        "price": "₹349",
+        "oldPrice": "₹399",
+        "tag": "Custom",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_q36ub0q36ub0q36u-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_q36ub0q36ub0q36u-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_onawgsonawgsonaw-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_pzkd45pzkd45pzkd.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_ixhg16ixhg16ixhg.png"
+        ]
+      },
+      {
+        "name": "Pencil Sketch Design",
+        "subtitle": "Hand-drawn style pencil sketch portrait converted from your photo.",
+        "price": "₹249",
+        "oldPrice": "₹288",
+        "tag": "Single",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_g0idnyg0idnyg0id-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_g0idnyg0idnyg0id-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_v7bcotv7bcotv7bc-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_r7doy7r7doy7r7do-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_wxlyabwxlyabwxly-clean.png"
+        ]
+      },
+      {
+        "name": "Anniversary Design",
+        "subtitle": "Custom photo design to celebrate your anniversary.",
+        "price": "₹399",
+        "oldPrice": "₹460",
+        "tag": "Occasion",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_zc2ak1zc2ak1zc2a-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_zc2ak1zc2ak1zc2a-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_r4qij4r4qij4r4qi-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_6tizd56tizd56tiz-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_e3dwre3dwre3dwre-clean.png"
+        ]
+      },
+      {
+        "name": "Wedding Design",
+        "subtitle": "Elegant custom photo design for wedding keepsakes.",
+        "price": "₹499",
+        "oldPrice": "₹575",
+        "tag": "Occasion",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_2f93rm2f93rm2f93-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_2f93rm2f93rm2f93-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_ho6z0kho6z0kho6z-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_pj4wdwpj4wdwpj4w-clean.png"
+        ]
+      },
+      {
+        "name": "Birthday Design",
+        "subtitle": "Fun custom photo design for birthday celebrations.",
+        "price": "₹299",
+        "oldPrice": "₹345",
+        "tag": "Occasion",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_v4ykdgv4ykdgv4yk-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_v4ykdgv4ykdgv4yk-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_2lxxn32lxxn32lxx-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_2337812337812337-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_rithm7rithm7rith-clean.png"
+        ]
+      }
+    ]
+  },
+  "id_card_printing": {
+    "title": "ID Card Printing",
+    "desc": "High-grade PVC card printing for employee badges, students, and membership cards with barcode support.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/id-card-printing.png",
+    "packages": [
+      {
+        "name": "Single PVC ID Card",
+        "subtitle": "Thick plastic ID print with cardholder hook.",
+        "price": "₹99",
+        "oldPrice": "₹115",
+        "tag": "Single",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_aulo4daulo4daulo-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_aulo4daulo4daulo-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_6mrsxi6mrsxi6mrs-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_ibzsn4ibzsn4ibzs-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_ezry6yezry6yezry-clean.png"
+        ]
+      },
+      {
+        "name": "Bulk Institution Pack (50+ Cards)",
+        "subtitle": "Uniform institutional printing with logo.",
+        "price": "₹49",
+        "oldPrice": "₹61",
+        "tag": "Bulk Rate",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fpgi7wfpgi7wfpgi-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fpgi7wfpgi7wfpgi-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fg1w9afg1w9afg1w-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_88haqj88haqj88ha-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_zbvimgzbvimgzbvi-clean.png"
+        ]
+      }
+    ]
+  },
+  "certificate_printing": {
+    "title": "Certificate Printing",
+    "desc": "Beautiful print outputs on heavy cardstock, textured linen, parchment, or gold-foil bordered certificates.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/certificate-printing.png",
+    "packages": [
+      {
+        "name": "Standard 300gsm A4 Certificate",
+        "subtitle": "Sharp, high contrast printing on thick cardstock.",
+        "price": "₹30",
+        "oldPrice": "₹34",
+        "tag": "A4 Card",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_eizyyyeizyyyeizy-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_eizyyyeizyyyeizy-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fvntwpfvntwpfvnt-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_de7mh3de7mh3de7m-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_1dh72a1dh72a1dh7-clean.png"
+        ]
+      },
+      {
+        "name": "Textured Linen Certificate",
+        "subtitle": "Elegant linen weave textured print.",
+        "price": "₹75",
+        "oldPrice": "₹87",
+        "tag": "Premium",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_cki53ycki53ycki5-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_cki53ycki53ycki5-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_k55daek55daek55d-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_lf2t8zlf2t8zlf2t-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fsrt4yfsrt4yfsrt-clean.png"
+        ]
+      },
+      {
+        "name": "Framed Achievement Certificate",
+        "subtitle": "Includes print on heavy paper + sleek black glass frame.",
+        "price": "₹299",
+        "oldPrice": "₹372",
+        "tag": "Gift Grade",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_te26tyte26tyte26-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_te26tyte26tyte26-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_62slzx62slzx62sl-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_ih1mzrih1mzrih1m-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_nz87cnnz87cnnz87-clean.png"
+        ]
+      }
+    ]
+  },
+  "scanning": {
+    "title": "Scanning",
+    "desc": "Convert documents, brochures, and print photos into searchable digital PDFs or high-resolution JPEGs.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/scanning.png",
+    "packages": [
+      {
+        "name": "High-Speed Document Scan",
+        "subtitle": "Convert papers to A4 search-enabled PDF files.",
+        "price": "₹10",
+        "oldPrice": "₹11",
+        "tag": "PDF Format",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_191xnk191xnk191x-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_191xnk191xnk191x-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_nngp6gnngp6gnngp-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_inrva7inrva7inrv-clean-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_j1hl73j1hl73j1hl-clean.png"
+        ]
+      },
+      {
+        "name": "Photo Archive Scan (600 DPI)",
+        "subtitle": "High resolution scanning to preserve print photos.",
+        "price": "₹20",
+        "oldPrice": "₹23",
+        "tag": "JPEG Format",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_6nromr6nromr6nro-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_6nromr6nromr6nro-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_t88d94t88d94t88d-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_raitsvraitsvrait-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_rlvt0yrlvt0yrlvt-clean.png"
+        ]
+      }
+    ]
+  },
+  "cd_dvd_copying": {
+    "title": "CD/DVD Copying",
+    "desc": "Copy, duplicate, recover, or transfer video archives and photos onto premium long-lasting discs.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/cd-dvd-copying.png",
+    "packages": [
+      {
+        "name": "CD/DVD Data Duplication",
+        "subtitle": "High-speed copy of media to DVD disc.",
+        "price": "₹99",
+        "oldPrice": "₹123",
+        "tag": "Per Disc",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_kio4ndkio4ndkio4-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_kio4ndkio4ndkio4-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_z8d3t5z8d3t5z8d3-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_w83oow83oow83oow-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_lg3g2clg3g2clg3g-clean.png"
+        ]
+      },
+      {
+        "name": "Video Cassette to Digital Copy",
+        "subtitle": "Digitize tape media and transfer to CD/DVD/USB.",
+        "price": "₹299",
+        "oldPrice": "₹335",
+        "tag": "Per Tape",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_qblhj5qblhj5qblh-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_qblhj5qblhj5qblh-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_qs8dsuqs8dsuqs8d-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_iicj3eiicj3eiicj-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_3oqp303oqp303oqp-clean.png"
+        ]
+      },
+      {
+        "name": "Tape to Digital Transfer (DVC/VHS/Hi8)",
+        "subtitle": "Digitize DVC, VHS, or Hi8 cassette footage to digital video.",
+        "price": "₹750",
+        "oldPrice": "₹850",
+        "tag": "1 Hour Video",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fpnoc1fpnoc1fpno-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_fpnoc1fpnoc1fpno-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_kqo556kqo556kqo5-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_49fk4n49fk4n49fk-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_anmh5uanmh5uanmh-clean.png"
+        ],
+        "purposeLabel": "Tape Format",
+        "purposeOptions": [
+          "DVC",
+          "VHS",
+          "Hi8"
+        ]
+      },
+      {
+        "name": "Tape Fungus Cleaning Service",
+        "subtitle": "Removes mold and fungus buildup from old tapes before digital transfer.",
+        "price": "₹500",
+        "oldPrice": "₹575",
+        "tag": "Add-on",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_bc4i8zbc4i8zbc4i-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_bc4i8zbc4i8zbc4i-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_wipy37wipy37wipy-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_nokom4nokom4noko-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_1ommx01ommx01omm-clean.png"
+        ]
+      },
+      {
+        "name": "CD & DVD Copying Service",
+        "subtitle": "Complete copying service for CD and DVD media sets.",
+        "price": "₹500",
+        "oldPrice": "₹575",
+        "tag": "Per Set",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_xb3czoxb3czoxb3c-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_xb3czoxb3czoxb3c-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_u6ymhou6ymhou6ym-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_xygntjxygntjxygn-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_xb3czoxb3czoxb3c.png"
+        ]
+      }
+    ]
+  },
+  "xerox_printing": {
+    "title": "Xerox & Printing",
+    "desc": "Fast black & white and color laser Xerox and print-outs on plain, card, and sticker paper in A4 and A3 sizes.",
+    "icon": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/studio_assets/side-bar-icons/canvas-printing.png",
+    "packages": [
+      {
+        "name": "B&W Laser Xerox",
+        "subtitle": "Standard black & white photocopying on A4 and A3 paper.",
+        "price": "₹3",
+        "oldPrice": "₹4",
+        "tag": "A4",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_yvw3nlyvw3nlyvw3-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_yvw3nlyvw3nlyvw3-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_gv2bu3gv2bu3gv2b-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_mwhe76mwhe76mwhe-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_z37e4iz37e4iz37e-clean.png"
+        ],
+        "qtyLabel": "Paper Size",
+        "quantityOptions": [
+          {
+            "label": "A4",
+            "value": "a4",
+            "price": 3
+          },
+          {
+            "label": "A4 Twoside",
+            "value": "a4_2s",
+            "price": 5
+          },
+          {
+            "label": "A3",
+            "value": "a3",
+            "price": 5
+          },
+          {
+            "label": "A3 Twoside",
+            "value": "a3_2s",
+            "price": 8
+          }
+        ]
+      },
+      {
+        "name": "B&W Print Out",
+        "subtitle": "Print your digital documents from USB, email, or cloud in black & white.",
+        "price": "₹5",
+        "oldPrice": "₹6",
+        "tag": "A4",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_j3yk3wj3yk3wj3yk-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_j3yk3wj3yk3wj3yk-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_t3bmi4t3bmi4t3bm-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_vl13esvl13esvl13-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_j1cqi9j1cqi9j1cq-clean.png"
+        ],
+        "highlights": [
+          "1 or 2 page print outs are ₹10 each flat rate"
+        ],
+        "qtyLabel": "Paper Size",
+        "quantityOptions": [
+          {
+            "label": "A4",
+            "value": "a4",
+            "price": 5
+          },
+          {
+            "label": "Twoside A4",
+            "value": "a4_2s",
+            "price": 8
+          },
+          {
+            "label": "A3",
+            "value": "a3",
+            "price": 8
+          },
+          {
+            "label": "Twoside A3",
+            "value": "a3_2s",
+            "price": 10
+          }
+        ]
+      },
+      {
+        "name": "Color Laser Xerox & Print Out",
+        "subtitle": "Vivid color photocopy and printing on plain, card, and sticker paper.",
+        "price": "₹20",
+        "oldPrice": "₹24",
+        "tag": "A4",
+        "img": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_xdmgvpxdmgvpxdmg-clean.png",
+        "images": [
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_xdmgvpxdmgvpxdmg-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_uip145uip145uip1-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_21odj21odj21odj2-clean.png",
+          "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Gemini_Generated_Image_z37e4iz37e4iz37e-clean.png"
+        ],
+        "qtyLabel": "Paper Type & Size",
+        "quantityOptions": [
+          {
+            "label": "A4",
+            "value": "a4",
+            "price": 20
+          },
+          {
+            "label": "A4 Twoside",
+            "value": "a4_2s",
+            "price": 30
+          },
+          {
+            "label": "A3",
+            "value": "a3",
+            "price": 40
+          },
+          {
+            "label": "A3 Twoside",
+            "value": "a3_2s",
+            "price": 60
+          },
+          {
+            "label": "A4 Card Paper",
+            "value": "a4_card",
+            "price": 50
+          },
+          {
+            "label": "12x18 Card Paper",
+            "value": "12x18_card",
+            "price": 100
+          },
+          {
+            "label": "A4 Sticker Paper",
+            "value": "a4_sticker",
+            "price": 50
+          },
+          {
+            "label": "12x18 Sticker Paper",
+            "value": "12x18_sticker",
+            "price": 100
+          }
+        ]
+      }
+    ]
+  }
+}

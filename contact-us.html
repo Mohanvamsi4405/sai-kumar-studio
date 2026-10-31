@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com https://maps.google.com https://www.google.com; object-src 'none'; base-uri 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Sai Kumar Digital Lab &amp; Studio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/shared/mobile-nav-extra.css">
+  <link rel="stylesheet" href="css/contact-us.css">
+</head>
+
+<body>
+
+  <!-- ================= DESKTOP NAVIGATION (BLINKIT STYLE, same as index.html) ================= -->
+  <div class="header-sticky-wrap">
+  <nav class="desktop-nav">
+    <div class="nav-shell">
+      <a href="index.html" class="nav-logo-block">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="nav-logo-text">Sai Kumar Digital Studio<br>&amp; Lab</span>
+      </a>
+      <div class="nav-rows">
+        <!-- Primary Row: 4 App Tabs -->
+        <div class="nav-row nav-row-primary">
+          <div class="nav-container">
+            <div class="nav-tabs">
+              <a href="gifts.html" class="nav-tab-pill tab-gifts">
+                <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-customised-gifts.png" alt="Customised Gifts">
+              </a>
+              <a href="corporate.html" class="nav-tab-pill tab-corp">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-corporate-gifts.png" alt="Corporate Gifts">
+              </a>
+              <a href="studio.html" class="nav-tab-pill tab-studio">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-studio-services.png" alt="Studio Services">
+              </a>
+              <a href="photography.html" class="nav-tab-pill tab-photo">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-photography.png" alt="Photography">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Search Bar + Account / More / Cart -->
+        <div class="nav-row nav-row-secondary">
+          <div class="nav-container">
+            <div class="nav-search-container">
+              <div class="nav-search-bar">
+                <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search for frames, gifts, mugs and more...">
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a href="#signin" class="nav-account-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+                <span>Login</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <div class="nav-more-dropdown" tabindex="0">
+                <button type="button" class="nav-more-link">
+                  <span>More</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="nav-more-menu">
+                  <a href="index.html">Home</a>
+                  <a href="photography.html">Photography</a>
+                  <a href="gifts.html">Customised Gift Shop</a>
+                  <a href="studio.html">Studio Services</a>
+                  <a href="corporate.html">Corporate Gifts</a>
+                  <a href="bulk-orders.html">Bulk Orders</a>
+                  <a href="about-us.html">About Us</a>
+                  <a href="contact-us.html" class="active">Contact Us</a>
+                  <a href="#wishlist" onclick="event.preventDefault(); openWishlistDrawer();">Wishlist</a>
+                </div>
+              </div>
+              <a href="cart.html" class="nav-cart-btn">
+                <span class="nav-cart-icon-wrap">
+                  <svg class="nav-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span class="nav-cart-badge" id="navCartBadge" style="display:none;">0</span>
+                </span>
+                <span class="nav-cart-label">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECONDARY NAVIGATION (MAIN MENU) ================= -->
+  <div class="category-menu-bar">
+    <div class="menu-container" data-site-menu>
+      <a href="index.html" class="menu-link">Home</a>
+
+      <div class="nav-item mega-left">
+        <a href="photography.html" class="menu-link">Photography
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Weddings &amp; Events</h4>
+            <a href="photography.html?category=wedding" class="mega-link">Wedding Photography</a>
+            <a href="photography.html?category=prewedding" class="mega-link">Pre-Wedding</a>
+            <a href="photography.html?category=birthday" class="mega-link">Birthday Photography</a>
+            <a href="photography.html?category=event" class="mega-link">Event Photography</a>
+          </div>
+          <div class="mega-col">
+            <h4>Family &amp; Portraits</h4>
+            <a href="photography.html?category=maternity" class="mega-link">Maternity Shoot</a>
+            <a href="photography.html?category=baby" class="mega-link">Baby Shoot</a>
+            <a href="studio.html?category=photo_printing" class="mega-link">Passport Photos</a>
+          </div>
+          <div class="mega-col">
+            <h4>Specialty &amp; More</h4>
+            <a href="photography.html?category=outdoor" class="mega-link">Outdoor Photography</a>
+            <a href="photography.html?category=drone" class="mega-link">Drone Photography <span class="mega-badge">NEW</span></a>
+            <a href="photography.html?category=video" class="mega-link">Videography</a>
+            <a href="photography.html?category=album" class="mega-link">Album Designing</a>
+          </div>
+          <a href="photography.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/wedding_photography.jpg" alt="Wedding Season">
+            <div class="mega-promo-text">
+              <strong>Wedding Season '26</strong>
+              <span>Book early &amp; save 15%</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item mega-left">
+        <a href="gifts.html" class="menu-link">Customised Gift Shop
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Photo Frames</h4>
+            <a href="gifts.html?view=category&category=frames&search=acrylic" class="mega-link">Acrylic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=wooden" class="mega-link">Wooden Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=crystal" class="mega-link">Crystal Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=led" class="mega-link">LED Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=neon" class="mega-link">Neon Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=qr" class="mega-link">QR Voice Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=collage" class="mega-link">Collage Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=mosaic" class="mega-link">Mosaic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=sketch" class="mega-link">Pencil Sketch Frames</a>
+          </div>
+          <div class="mega-col">
+            <h4>Drinkware</h4>
+            <a href="gifts.html?view=category&category=drinkware&search=magic" class="mega-link">Magic Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=heart" class="mega-link">Heart Handle Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Photo Water Bottles</a>
+            <h4 style="margin-top: 14px;">Pillows</h4>
+            <a href="gifts.html?view=category&category=pillows&search=heart" class="mega-link">Heart Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=magic" class="mega-link">Magic Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=kids" class="mega-link">Kids Pillows <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=pillows" class="mega-link">Book Pillows</a>
+          </div>
+          <div class="mega-col">
+            <h4>Crystal Gifts</h4>
+            <a href="gifts.html?view=category&category=crystal&search=cube" class="mega-link">Crystal Cubes</a>
+            <a href="gifts.html?view=category&category=crystal&search=stand" class="mega-link">Crystal Photo Stand</a>
+            <a href="gifts.html?view=category&category=crystal&search=rotat" class="mega-link">Rotate LED Crystal <span class="mega-badge">NEW</span></a>
+            <h4 style="margin-top: 14px;">Home Decor</h4>
+            <a href="gifts.html?view=category&category=clocks" class="mega-link">Wall Clocks</a>
+            <a href="gifts.html?view=category&category=decor&search=magnet" class="mega-link">Fridge Magnets <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=decor&search=kiddy" class="mega-link">Kiddy Banks <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Accessories</h4>
+            <a href="gifts.html?view=category&category=accessories&search=keychain" class="mega-link">Keychains</a>
+            <a href="gifts.html?view=category&category=accessories&search=wallet" class="mega-link">Wallets</a>
+            <a href="gifts.html?view=category&category=accessories&search=diary" class="mega-link">Diaries</a>
+          </div>
+          <a href="gifts.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/customized_gifts_card.jpg" alt="Gift Combos">
+            <div class="mega-promo-text">
+              <strong>Gift Combos</strong>
+              <span>Bestsellers from ₹449</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="studio.html" class="menu-link">Studio Services
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Printing</h4>
+            <a href="studio.html?category=photo_printing" class="mega-link">Photo Printing</a>
+            <a href="studio.html?category=xerox_printing" class="mega-link">Canvas Printing</a>
+            <a href="studio.html?category=id_card_printing" class="mega-link">ID Card Printing</a>
+            <a href="studio.html?category=certificate_printing" class="mega-link">Certificate Printing</a>
+          </div>
+          <div class="mega-col">
+            <h4>Editing &amp; Restore</h4>
+            <a href="studio.html?category=photo_restoration" class="mega-link">Photo Restoration</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Photo Editing</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Background Removal <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Finishing &amp; Digital</h4>
+            <a href="studio.html?category=photo_lamination" class="mega-link">Photo Lamination</a>
+            <a href="studio.html?category=scanning" class="mega-link">Scanning</a>
+            <a href="studio.html?category=cd_dvd_copying" class="mega-link">CD/DVD Copying</a>
+          </div>
+          <a href="studio.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/studio_camera_setup.jpg" alt="Same-Day Prints">
+            <div class="mega-promo-text">
+              <strong>Same-Day Prints</strong>
+              <span>Photo prints from ₹49</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="corporate.html" class="menu-link">Corporate Gifts
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Gift Sets &amp; Kits</h4>
+            <a href="corporate.html?category=sets" class="mega-link">Corporate Gift Sets</a>
+            <a href="corporate.html?category=kits" class="mega-link">Employee Welcome Kits</a>
+            <a href="corporate.html?category=promotional" class="mega-link">Promotional Gifts <span class="mega-badge">NEW</span></a>
+            <a href="corporate.html" class="mega-link">Customized Branding</a>
+          </div>
+          <div class="mega-col">
+            <h4>Awards &amp; Recognition</h4>
+            <a href="corporate.html?category=mementos" class="mega-link">Mementos</a>
+            <a href="corporate.html?category=shields" class="mega-link">Shields</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Trophies</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Awards</a>
+            <a href="corporate.html" class="mega-link">Name Plates</a>
+          </div>
+          <div class="mega-col">
+            <h4>Office Essentials</h4>
+            <a href="corporate.html?category=pens" class="mega-link">Pens</a>
+            <a href="corporate.html?category=diaries" class="mega-link">Diaries</a>
+            <a href="corporate.html?category=bottles" class="mega-link">Water Bottles</a>
+          </div>
+          <a href="corporate.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/corporate_hamper.jpg" alt="Bulk Branding">
+            <div class="mega-promo-text">
+              <strong>Bulk Branding</strong>
+              <span>Kits, awards &amp; hampers</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="bulk-orders.html" class="menu-link">Bulk Orders</a>
+      <a href="about-us.html" class="menu-link">About Us</a>
+      <a href="contact-us.html" class="menu-link active">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- ================= MOBILE HEADER ================= -->
+  <div class="mobile-header-bar">
+    <button class="mobile-back-btn" onclick="window.location.href='index.html'">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </button>
+    <div class="mobile-header-title">Contact Us</div>
+    <div style="width: 24px;"></div>
+  </div>
+
+  <!-- ================= HERO HEADER ================= -->
+  <section class="contact-hero">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-orb orb-a"></div>
+    <div class="hero-orb orb-b"></div>
+    <div class="hero-orb orb-c"></div>
+
+    <div class="container">
+      <span class="hero-badge"><span class="pulse-dot"></span> Replies within 2 hours</span>
+      <h1>Let's create something <span class="grad-text">worth remembering.</span></h1>
+      <p class="hero-sub">Photography, printing, customised gifts &amp; bulk orders — tell us what you need.</p>
+
+      <div class="hero-chips">
+        <a href="tel:+919876543210" class="hero-chip chip-solid">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/>
+          </svg>
+          Call Studio
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="hero-chip chip-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.1 11.1 0 0 0 4.3 3.8c1.6.6 2.2.7 3 .6a2.5 2.5 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/>
+          </svg>
+          WhatsApp Us
+        </a>
+        <a href="#messageForm" class="hero-chip chip-ghost">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M22 6l-10 7L2 6"/>
+          </svg>
+          Send a Message
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item"><strong>15+</strong><span>Years in Sanath Nagar</span></div>
+        <span class="trust-sep"></span>
+        <div class="trust-item"><strong>10,000+</strong><span>Happy Customers</span></div>
+        <span class="trust-sep"></span>
+        <div class="trust-item"><strong>7 Days</strong><span>Open a Week</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUICK CHANNEL CARDS ================= -->
+  <section class="channel-strip">
+    <div class="container">
+      <div class="channel-grid">
+        <a href="tel:+919876543210" class="channel-card reveal" style="--c1:#2563EB; --c2:#4F46E5;">
+          <svg class="channel-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          <div class="channel-icon">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/>
+            </svg>
+          </div>
+          <div class="channel-label">Call Us</div>
+          <div class="channel-value">+91 98765 43210</div>
+          <div class="channel-note">Open 7 days · 9:00 AM – 9:00 PM</div>
+        </a>
+
+        <a href="https://wa.me/919876543210?text=Hi%20Sai%20Kumar%20Digital%20Lab%2C%20I%20have%20an%20enquiry" target="_blank" rel="noopener" class="channel-card reveal" style="--c1:#22C55E; --c2:#15803D;">
+          <svg class="channel-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          <div class="channel-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5s-.6-1.4-.8-1.9-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.1 11.1 0 0 0 4.3 3.8c1.6.6 2.2.7 3 .6a2.5 2.5 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/>
+            </svg>
+          </div>
+          <div class="channel-label">WhatsApp</div>
+          <div class="channel-value">Chat Instantly</div>
+          <div class="channel-note">Share references &amp; get a quote fast</div>
+        </a>
+
+        <a href="mailto:saikumardigitallab@gmail.com" class="channel-card reveal" style="--c1:#F97316; --c2:#DB2777;">
+          <svg class="channel-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          <div class="channel-icon">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 6l-10 7L2 6"/>
+            </svg>
+          </div>
+          <div class="channel-label">Email</div>
+          <div class="channel-value">saikumardigitallab@gmail.com</div>
+          <div class="channel-note">Orders, quotes &amp; support</div>
+        </a>
+
+        <a href="https://www.google.com/maps/dir/?api=1&destination=7-2-227%20Srt%206%2C%20Bhagat%20Singh%20Nagar%2C%20Sanath%20Nagar%2C%20Hyderabad%2C%20Telangana%20500018" target="_blank" rel="noopener" class="channel-card reveal" style="--c1:#0EA5E9; --c2:#7C3AED;">
+          <svg class="channel-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          <div class="channel-icon">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="channel-label">Visit Studio</div>
+          <div class="channel-value">Sanath Nagar, Hyderabad</div>
+          <div class="channel-note">Walk in for prints &amp; gift samples</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAIN SECTION ================= -->
+  <main class="contact-body">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Map + Live Hours -->
+        <aside class="side-stack" id="location">
+          <div class="panel reveal">
+            <div class="map-frame">
+              <iframe
+                title="Sai Kumar Digital Lab &amp; Studio location map"
+                src="https://maps.google.com/maps?q=7-2-227%20Srt%206%2C%20Bhagat%20Singh%20Nagar%2C%20Sanath%20Nagar%2C%20Hyderabad%2C%20Telangana%20500018&z=15&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+              <a class="map-cta" target="_blank" rel="noopener"
+                href="https://www.google.com/maps/dir/?api=1&destination=7-2-227%20Srt%206%2C%20Bhagat%20Singh%20Nagar%2C%20Sanath%20Nagar%2C%20Hyderabad%2C%20Telangana%20500018">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Get Directions
+              </a>
+            </div>
+            <div class="panel-body">
+              <div class="panel-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Sai Kumar Digital Lab &amp; Studio
+              </div>
+              <p class="panel-addr">7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar,<br>Hyderabad, Telangana 500018</p>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <div class="status-row" id="statusRow">
+              <span class="status-pill"><span class="dot"></span><span id="statusText">Open Now</span></span>
+              <span class="status-next" id="statusNext">Closes at 9:00 PM</span>
+            </div>
+            <ul class="hours-list" id="hoursList">
+              <li data-day="1"><span class="day">Monday</span><span>9:00 AM – 9:00 PM</span></li>
+              <li data-day="2"><span class="day">Tuesday</span><span>9:00 AM – 9:00 PM</span></li>
+              <li data-day="3"><span class="day">Wednesday</span><span>9:00 AM – 9:00 PM</span></li>
+              <li data-day="4"><span class="day">Thursday</span><span>9:00 AM – 9:00 PM</span></li>
+              <li data-day="5"><span class="day">Friday</span><span>9:00 AM – 9:00 PM</span></li>
+              <li data-day="6"><span class="day">Saturday</span><span>9:00 AM – 9:00 PM</span></li>
+              <li data-day="0"><span class="day">Sunday</span><span>9:00 AM – 9:00 PM</span></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Right: Smart Contact Form -->
+        <div class="form-card reveal" id="messageForm">
+          <h2>Tell us what you need</h2>
+          <p class="form-subtitle">Pick a topic, share a few details, and we'll come back with pricing and timelines
+            within 24 hours.</p>
+
+          <span class="field-legend">I'm enquiring about</span>
+          <div class="topic-pills">
+            <input type="radio" name="topic" id="topicPhoto" value="Photography" checked>
+            <label class="topic-pill" for="topicPhoto">📸 Photography</label>
+
+            <input type="radio" name="topic" id="topicGifts" value="Customised Gifts">
+            <label class="topic-pill" for="topicGifts">🎁 Customised Gifts</label>
+
+            <input type="radio" name="topic" id="topicStudio" value="Studio &amp; Printing">
+            <label class="topic-pill" for="topicStudio">🖨️ Studio &amp; Printing</label>
+
+            <input type="radio" name="topic" id="topicCorp" value="Corporate / Bulk">
+            <label class="topic-pill" for="topicCorp">🏢 Corporate / Bulk</label>
+
+            <input type="radio" name="topic" id="topicOther" value="Something Else">
+            <label class="topic-pill" for="topicOther">💬 Something Else</label>
+          </div>
+
+          <form id="contactForm" class="message-form" novalidate>
+            <div class="fld">
+              <input type="text" id="contactName" placeholder=" " autocomplete="name" required>
+              <label for="contactName">Your Name</label>
+              <span class="err">Please enter your name</span>
+            </div>
+
+            <div class="fld">
+              <input type="tel" id="contactPhone" placeholder=" " autocomplete="tel" inputmode="numeric" required>
+              <label for="contactPhone">Phone Number</label>
+              <span class="err">Enter a valid 10-digit mobile number</span>
+            </div>
+
+            <div class="fld wide">
+              <input type="email" id="contactEmail" placeholder=" " autocomplete="email" required>
+              <label for="contactEmail">Email Address</label>
+              <span class="err">Enter a valid email address</span>
+            </div>
+
+            <div class="fld wide">
+              <input type="text" id="contactSubject" placeholder=" " required>
+              <label for="contactSubject">Subject</label>
+              <span class="err">Please add a short subject</span>
+            </div>
+
+            <div class="fld wide">
+              <textarea id="contactMessage" placeholder=" " maxlength="600" required></textarea>
+              <label for="contactMessage">Your Message</label>
+              <div class="fld-meta">
+                <span>Event date, quantity or reference photos help us quote faster.</span>
+                <span><span id="charCount">0</span>/600</span>
+              </div>
+              <span class="err">Please tell us a little about your requirement</span>
+            </div>
+
+            <div class="submit-row">
+              <button type="submit" class="form-submit-btn" id="submitBtn">
+                <span class="btn-label">Send Message</span>
+                <span class="spinner" aria-hidden="true"></span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg>
+              </button>
+              <span class="privacy-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Your details stay private — we never share them.
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Quick Answers</span>
+          <h2>Before you write to us</h2>
+          <p>The questions our studio team hears most often — you might find your answer right here.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">How soon will I get a reply?<span class="ico">+</span></button>
+            <div class="faq-a">
+              <p>Messages sent during business hours (9:00 AM – 9:00 PM) are usually answered within 2 hours. Anything
+                that arrives overnight is answered first thing the next morning.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">Do I need an appointment to visit?<span class="ico">+</span></button>
+            <div class="faq-a">
+              <p>Walk-ins are welcome for prints, frames and gift samples. For photoshoot planning or a studio session,
+                call ahead so we can reserve a slot and the right setup for you.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">How fast are photo prints and frames?<span class="ico">+</span></button>
+            <div class="faq-a">
+              <p>Standard photo prints are same-day. Customised frames, mugs and crystal gifts typically take 2–4 working
+                days depending on the finish you choose.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">Can you handle bulk corporate orders?<span class="ico">+</span></button>
+            <div class="faq-a">
+              <p>Yes — welcome kits, mementos, trophies and branded office essentials, with logo printing. Share your
+                quantity and deadline and we'll send a costed proposal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">Do you travel for weddings and events?<span class="ico">+</span></button>
+            <div class="faq-a">
+              <p>We cover events across Hyderabad and travel outstation for weddings. Travel and stay are quoted
+                separately once we know the dates and location.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button">Which payment methods do you accept?<span class="ico">+</span></button>
+            <div class="faq-a">
+              <p>UPI, all major debit and credit cards, net banking and cash at the studio. Larger orders are confirmed
+                with a part advance and the balance on delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal Overlay -->
+  <div class="modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <svg class="check-svg" viewBox="0 0 52 52" aria-hidden="true">
+        <circle class="check-circle" cx="26" cy="26" r="25"/>
+        <path class="check-mark" d="M15 27l7.5 7.5L38 19"/>
+      </svg>
+      <h2 id="modalTitle">Message sent successfully!</h2>
+      <p id="modalMessage">Thank you! Your message has been received. Our team will contact you shortly.</p>
+      <div class="modal-actions">
+        <button class="modal-close-btn" onclick="closeModal()">Done</button>
+        <a class="modal-wa-btn" href="https://wa.me/919876543210" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav class="mobile-bottom-nav">
+    <a href="index.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"></path>
+        <path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3l9 8h-2v9a1 1 0 0 1-1 1h-4v-6h-4v6H6a1 1 0 0 1-1-1v-9H3l9-8z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#signin" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20a8 6 0 0 1 16 0z"></path>
+      </svg>
+      <span>Account</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="20" cy="21" r="1.4"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6l-.7-3.5a1 1 0 0 0-1-.8H1V1z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="bottomNavCartBadge" style="display:none;">0</span>
+      </span>
+      <span>Cart</span>
+    </a>
+    <a href="#wishlist" class="bottom-nav-item" onclick="event.preventDefault(); openWishlistDrawer();">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="mobileWishlistBadge" style="display:none;">0</span>
+      </span>
+      <span>Wishlist</span>
+    </a>
+  </nav>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileMenuOverlay" onclick="closeMobileMenuDrawer()"></div>
+  <div class="cart-drawer mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="cart-drawer-header">
+      <h3>Menu</h3>
+      <button class="close-drawer-btn" onclick="closeMobileMenuDrawer()">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="gifts.html">Customised Gift Shop</a>
+      <a href="corporate.html">Corporate Gifts</a>
+      <a href="studio.html">Studio Services</a>
+      <a href="photography.html">Photography</a>
+      <a href="bulk-orders.html">Bulk Orders</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="#signin">Login / Account</a>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo" style="height: 65px; object-fit: contain;">
+          </div>
+          <p class="desc">Capturing your moments, beautifully and creating memories forever.</p>
+          <div class="socials">
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="3" />
+                <path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM8.5 8.5C7 7 5 8 5 10c0 3 4 5 4 8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="gifts.html">Customised Gift Shop</a></li>
+            <li><a href="studio.html">Studio Services</a></li>
+            <li><a href="corporate.html">Corporate Gifts</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help &amp; Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <span>saikumardigitallab@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar, Hyderabad, Telangana 500018</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sai Kumar Digital Lab &amp; Studio. All Rights Reserved.</p>
+        <div class="pay-icons">
+          <span class="pi">VISA</span>
+          <span class="pi">Mastercard</span>
+          <span class="pi">RuPay</span>
+          <span class="pi">UPI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/shared/api-config.js"></script>
+  <script src="js/shared/site-menu.js"></script>
+  <script src="js/shared/validators.js"></script>
+  <script src="js/contact-us.js"></script>
+
+  <!-- ================= CART & WISHLIST DRAWERS (same as index.html) ================= -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" onclick="closeCartDrawer()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Cart</h3>
+      <button class="close-drawer-btn" onclick="closeCartDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotalValue">₹0</span>
+      </div>
+      <button class="whatsapp-checkout-btn" onclick="location.href='cart.html'">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" onclick="closeWishlistDrawer()"></div>
+  <div class="cart-drawer" id="wishlistDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Wishlist</h3>
+      <button class="close-drawer-btn" onclick="closeWishlistDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+
+  <script src="js/shared/thumb-map.js"></script>
+  <script src="js/shared/cart-core.js"></script>
+  <script src="js/shared/cart-ui.js?v=2"></script>
+  <script src="js/contact-us-2.js"></script>
+  <script src="js/shared/chatbot.js" defer></script>
+  <script src="js/shared/search.js?v=10" defer></script>
+  <script src="js/shared/bottom-nav.js"></script>
+  <script src="js/shared/home-nav.js" defer></script>
+  <script src="js/shared/customer-api.js"></script>
+  <script src="js/shared/loading-ui.js"></script>
+  <script src="js/shared/auth-modal.js" defer></script>
+  <script src="js/shared/wishlist-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "target": {
+        "type": "page",
+        "page": "index"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Photo Printing",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "photo_printing"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Photo Lamination",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "photo_lamination"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Photo Restoration",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "photo_restoration"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Photo Portrait",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "photo_portrait"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "ID Card Printing",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "id_card_printing"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Certificate Printing",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "certificate_printing"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": false,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Scanning",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "scanning"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "CD/DVD Copying",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "cd_dvd_copying"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Xerox & Printing",
+      "target": {
+        "type": "category",
+        "page": "studio",
+        "category": "xerox_printing"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "in_more": true,
+      "columns": [],
+      "promo": null
+    }
+  ]
+}

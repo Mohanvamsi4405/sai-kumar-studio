@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com; object-src 'none'; base-uri 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Kumar Digital Lab & Studio | Photography, Gifts & Corporate Hampers</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/shared/site-chrome.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <!-- ================= MOBILE DASHBOARD (SWIGGY-STYLE) ================= -->
+  <div class="mobile-dashboard">
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="mobile-logo-text">Sai Kumar Digital Lab &amp; Studio</span>
+      </div>
+      <button type="button" class="mobile-menu-btn" onclick="openMobileMenuDrawer()" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="17" x2="21" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Search Bar -->
+    <div class="mobile-search-container">
+      <div class="mobile-search-bar">
+        <input type="text" placeholder="Search for photography, gifts & more...">
+        <svg class="mobile-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <path d="M21 21l-4.3-4.3" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Mobile Category Menu (mirrors the desktop secondary nav) -->
+    <div class="category-menu-bar">
+      <div class="menu-container" id="mobileCategoryScroll" data-site-menu="flat">
+        <a href="index.html" class="menu-link active">Home</a>
+        <a href="gifts.html" class="menu-link">Customised Gift Shop</a>
+        <a href="corporate.html" class="menu-link">Corporate Gifts</a>
+        <a href="studio.html" class="menu-link">Studio Services</a>
+        <a href="photography.html" class="menu-link">Photography</a>
+        <a href="bulk-orders.html" class="menu-link">Bulk Orders</a>
+        <a href="about-us.html" class="menu-link">About Us</a>
+        <a href="contact-us.html" class="menu-link">Contact Us</a>
+      </div>
+      <div class="menu-scroll-fade" aria-hidden="true">
+        <button type="button" class="menu-scroll-hint" aria-label="Show more categories"
+          onclick="document.getElementById('mobileCategoryScroll').scrollBy({left: 150, behavior: 'smooth'})">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 6 15 12 9 18"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Promo Banner -->
+    <div class="mobile-promo-banner">
+      <div class="mobile-promo-text">
+        <h2>Capture Moments.<br>Discover best services.<br><span class="mobile-promo-highlight">Studio it!</span></h2>
+      </div>
+      <div class="mobile-promo-img">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/image.png" alt="Photographer">
+      </div>
+    </div>
+
+    <!-- Mobile Grid Cards -->
+    <div class="mobile-grid-cards">
+      <!-- Row 1: Customised Gifts & Corporate Gifts -->
+      <div class="mobile-card-row">
+        <a href="gifts.html" class="mobile-card mobile-card-half card-gifts dots-bl">
+          <div class="mobile-card-content">
+            <div class="mobile-card-text">
+              <span class="mobile-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                  <rect x="2" y="7" width="20" height="5"></rect>
+                  <line x1="12" y1="22" x2="12" y2="7"></line>
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                </svg>
+              </span>
+              <h3>CUSTOMISED GIFT SHOP</h3>
+              <span class="mobile-card-sub">Personalized Items</span>
+              <span class="mobile-card-promo">UP TO 33% OFF</span>
+            </div>
+            <div class="mobile-card-arrow arrow-gifts">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-card-img">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/customized_gifts_card.jpg" alt="Gifts">
+          </div>
+        </a>
+        <a href="corporate.html" class="mobile-card mobile-card-half card-corporate dots-bl">
+          <div class="mobile-card-content">
+            <div class="mobile-card-text">
+              <span class="mobile-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </span>
+              <h3>CORPORATE GIFTS</h3>
+              <span class="mobile-card-sub">B2B Hampers</span>
+              <span class="mobile-card-promo">BEST BULK RATES</span>
+            </div>
+            <div class="mobile-card-arrow arrow-corporate">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-card-img">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/corporate_gifts_card.jpg" alt="Corporate Hampers">
+          </div>
+        </a>
+      </div>
+
+      <!-- Row 2: Studio Services & Photography -->
+      <div class="mobile-card-row">
+        <a href="studio.html" class="mobile-card mobile-card-half card-studio dots-bl">
+          <div class="mobile-card-content">
+            <div class="mobile-card-text">
+              <span class="mobile-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+              </span>
+              <h3>STUDIO SERVICES</h3>
+              <span class="mobile-card-sub">Printing &amp; Editing</span>
+              <span class="mobile-card-promo">24H DELIVERY</span>
+            </div>
+            <div class="mobile-card-arrow arrow-studio">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-card-img">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/personalized_keychain.jpg" alt="Studio Services">
+          </div>
+        </a>
+        <a href="photography.html" class="mobile-card mobile-card-half card-photography dots-bl">
+          <div class="mobile-card-content">
+            <div class="mobile-card-text">
+              <span class="mobile-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+              </span>
+              <h3>PHOTOGRAPHY</h3>
+              <span class="mobile-card-sub">Camera Services</span>
+              <span class="mobile-card-promo">UP TO 30% OFF</span>
+            </div>
+            <div class="mobile-card-arrow arrow-photography">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-card-img">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/studio_camera_setup.jpg" alt="Photography">
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Contact Access -->
+    <a href="contact-us.html" class="mobile-contact-strip">
+      <span class="mobile-contact-strip-icon">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/>
+        </svg>
+      </span>
+      <span class="mobile-contact-strip-text">
+        <strong>Need Help? Contact Us</strong>
+        <span>Call, WhatsApp or send us a message</span>
+      </span>
+      <span class="mobile-contact-strip-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <!-- ================= DESKTOP NAVIGATION (BLINKIT STYLE) ================= -->
+  <div class="header-sticky-wrap">
+  <nav class="desktop-nav">
+    <div class="nav-shell">
+      <a href="index.html" class="nav-logo-block">
+        <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="nav-logo-text">Sai Kumar Digital Studio<br>&amp; Lab</span>
+      </a>
+      <div class="nav-rows">
+        <!-- Primary Row: 4 App Tabs -->
+        <div class="nav-row nav-row-primary">
+          <div class="nav-container">
+            <div class="nav-tabs">
+              <a href="gifts.html" class="nav-tab-pill tab-gifts">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-customised-gifts.png" alt="Customised Gifts">
+              </a>
+              <a href="corporate.html" class="nav-tab-pill tab-corp">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-corporate-gifts.png" alt="Corporate Gifts">
+              </a>
+              <a href="studio.html" class="nav-tab-pill tab-studio">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-studio-services.png" alt="Studio Services">
+              </a>
+              <a href="photography.html" class="nav-tab-pill tab-photo">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-photography.png" alt="Photography">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Search Bar + Account / More / Cart -->
+        <div class="nav-row nav-row-secondary">
+          <div class="nav-container">
+            <div class="nav-search-container">
+              <div class="nav-search-bar">
+                <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search for frames, gifts, mugs and more...">
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a href="#signin" class="nav-account-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+                <span>Login</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <div class="nav-more-dropdown" tabindex="0">
+                <button type="button" class="nav-more-link">
+                  <span>More</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="nav-more-menu">
+                  <a href="index.html" class="active">Home</a>
+                  <a href="photography.html">Photography</a>
+                  <a href="gifts.html">Customised Gift Shop</a>
+                  <a href="studio.html">Studio Services</a>
+                  <a href="corporate.html">Corporate Gifts</a>
+                  <a href="bulk-orders.html">Bulk Orders</a>
+                  <a href="about-us.html">About Us</a>
+                  <a href="contact-us.html">Contact Us</a>
+                  <a href="#wishlist" onclick="event.preventDefault(); openWishlistDrawer();">Wishlist</a>
+                </div>
+              </div>
+              <a href="cart.html" class="nav-cart-btn">
+                <span class="nav-cart-icon-wrap">
+                  <svg class="nav-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span class="nav-cart-badge" id="navCartBadge" style="display:none;">0</span>
+                </span>
+                <span class="nav-cart-label">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECONDARY NAVIGATION (MAIN MENU) ================= -->
+  <div class="category-menu-bar">
+    <div class="menu-container" data-site-menu>
+      <a href="index.html" class="menu-link active">Home</a>
+
+      <div class="nav-item mega-left">
+        <a href="photography.html" class="menu-link">Photography
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Weddings &amp; Events</h4>
+            <a href="photography.html?category=wedding" class="mega-link">Wedding Photography</a>
+            <a href="photography.html?category=prewedding" class="mega-link">Pre-Wedding</a>
+            <a href="photography.html?category=birthday" class="mega-link">Birthday Photography</a>
+            <a href="photography.html?category=event" class="mega-link">Event Photography</a>
+          </div>
+          <div class="mega-col">
+            <h4>Family &amp; Portraits</h4>
+            <a href="photography.html?category=maternity" class="mega-link">Maternity Shoot</a>
+            <a href="photography.html?category=baby" class="mega-link">Baby Shoot</a>
+            <a href="studio.html?category=photo_printing" class="mega-link">Passport Photos</a>
+          </div>
+          <div class="mega-col">
+            <h4>Specialty &amp; More</h4>
+            <a href="photography.html?category=outdoor" class="mega-link">Outdoor Photography</a>
+            <a href="photography.html?category=drone" class="mega-link">Drone Photography <span class="mega-badge">NEW</span></a>
+            <a href="photography.html?category=video" class="mega-link">Videography</a>
+            <a href="photography.html?category=album" class="mega-link">Album Designing</a>
+          </div>
+          <a href="photography.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/wedding_photography.jpg" alt="Wedding Season">
+            <div class="mega-promo-text">
+              <strong>Wedding Season '26</strong>
+              <span>Book early &amp; save 15%</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item mega-left">
+        <a href="gifts.html" class="menu-link">Customised Gift Shop
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Photo Frames</h4>
+            <a href="gifts.html?view=category&category=frames&search=acrylic" class="mega-link">Acrylic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=wooden" class="mega-link">Wooden Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=crystal" class="mega-link">Crystal Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=led" class="mega-link">LED Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=neon" class="mega-link">Neon Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=qr" class="mega-link">QR Voice Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=collage" class="mega-link">Collage Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=mosaic" class="mega-link">Mosaic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=sketch" class="mega-link">Pencil Sketch Frames</a>
+          </div>
+          <div class="mega-col">
+            <h4>Drinkware</h4>
+            <a href="gifts.html?view=category&category=drinkware&search=magic" class="mega-link">Magic Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=heart" class="mega-link">Heart Handle Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Photo Water Bottles</a>
+            <h4 style="margin-top: 14px;">Pillows</h4>
+            <a href="gifts.html?view=category&category=pillows&search=heart" class="mega-link">Heart Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=magic" class="mega-link">Magic Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=kids" class="mega-link">Kids Pillows <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=pillows" class="mega-link">Book Pillows</a>
+          </div>
+          <div class="mega-col">
+            <h4>Crystal Gifts</h4>
+            <a href="gifts.html?view=category&category=crystal&search=cube" class="mega-link">Crystal Cubes</a>
+            <a href="gifts.html?view=category&category=crystal&search=stand" class="mega-link">Crystal Photo Stand</a>
+            <a href="gifts.html?view=category&category=crystal&search=rotat" class="mega-link">Rotate LED Crystal <span class="mega-badge">NEW</span></a>
+            <h4 style="margin-top: 14px;">Home Decor</h4>
+            <a href="gifts.html?view=category&category=clocks" class="mega-link">Wall Clocks</a>
+            <a href="gifts.html?view=category&category=decor&search=magnet" class="mega-link">Fridge Magnets <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=decor&search=kiddy" class="mega-link">Kiddy Banks <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Accessories</h4>
+            <a href="gifts.html?view=category&category=accessories&search=keychain" class="mega-link">Keychains</a>
+            <a href="gifts.html?view=category&category=accessories&search=wallet" class="mega-link">Wallets</a>
+            <a href="gifts.html?view=category&category=accessories&search=diary" class="mega-link">Diaries</a>
+          </div>
+          <a href="gifts.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/customized_gifts_card.jpg" alt="Gift Combos">
+            <div class="mega-promo-text">
+              <strong>Gift Combos</strong>
+              <span>Bestsellers from ₹449</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="studio.html" class="menu-link">Studio Services
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Printing</h4>
+            <a href="studio.html?category=photo_printing" class="mega-link">Photo Printing</a>
+            <a href="studio.html?category=xerox_printing" class="mega-link">Canvas Printing</a>
+            <a href="studio.html?category=id_card_printing" class="mega-link">ID Card Printing</a>
+            <a href="studio.html?category=certificate_printing" class="mega-link">Certificate Printing</a>
+          </div>
+          <div class="mega-col">
+            <h4>Editing &amp; Restore</h4>
+            <a href="studio.html?category=photo_restoration" class="mega-link">Photo Restoration</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Photo Editing</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Background Removal <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Finishing &amp; Digital</h4>
+            <a href="studio.html?category=photo_lamination" class="mega-link">Photo Lamination</a>
+            <a href="studio.html?category=scanning" class="mega-link">Scanning</a>
+            <a href="studio.html?category=cd_dvd_copying" class="mega-link">CD/DVD Copying</a>
+          </div>
+          <a href="studio.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/studio_camera_setup.jpg" alt="Same-Day Prints">
+            <div class="mega-promo-text">
+              <strong>Same-Day Prints</strong>
+              <span>Photo prints from ₹49</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="corporate.html" class="menu-link">Corporate Gifts
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Gift Sets &amp; Kits</h4>
+            <a href="corporate.html?category=sets" class="mega-link">Corporate Gift Sets</a>
+            <a href="corporate.html?category=kits" class="mega-link">Employee Welcome Kits</a>
+            <a href="corporate.html?category=promotional" class="mega-link">Promotional Gifts <span class="mega-badge">NEW</span></a>
+            <a href="corporate.html" class="mega-link">Customized Branding</a>
+          </div>
+          <div class="mega-col">
+            <h4>Awards &amp; Recognition</h4>
+            <a href="corporate.html?category=mementos" class="mega-link">Mementos</a>
+            <a href="corporate.html?category=shields" class="mega-link">Shields</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Trophies</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Awards</a>
+            <a href="corporate.html" class="mega-link">Name Plates</a>
+          </div>
+          <div class="mega-col">
+            <h4>Office Essentials</h4>
+            <a href="corporate.html?category=pens" class="mega-link">Pens</a>
+            <a href="corporate.html?category=diaries" class="mega-link">Diaries</a>
+            <a href="corporate.html?category=bottles" class="mega-link">Water Bottles</a>
+          </div>
+          <a href="corporate.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/corporate_hamper.jpg" alt="Bulk Branding">
+            <div class="mega-promo-text">
+              <strong>Bulk Branding</strong>
+              <span>Kits, awards &amp; hampers</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="bulk-orders.html" class="menu-link">Bulk Orders</a>
+      <a href="about-us.html" class="menu-link">About Us</a>
+      <a href="contact-us.html" class="menu-link">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+
+    <div class="hero">
+      <div class="hero-window">
+      <div class="hero-track" id="heroTrack">
+
+        <!-- Clone of Slide 4 (Corporate) prepended for seamless backward loop -->
+        <div class="hero-slide slide-corporate" aria-hidden="true">
+          <a href="corporate.html" class="hero-slide-link" tabindex="-1">
+            <img class="hero-slide-img" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/corporate_gifting_banner_1300x430.png" alt="" loading="lazy">
+          </a>
+        </div>
+
+        <!-- Slide 1: Photography -->
+        <div class="hero-slide slide-photo">
+          <a href="photography.html" class="hero-slide-link" aria-label="Explore Photography">
+            <img loading="lazy" class="hero-slide-img" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/photography_banner_1300x430.png" alt="Photography">
+          </a>
+        </div>
+
+        <!-- Slide 2: Customised Gift Shop -->
+        <div class="hero-slide slide-gifts">
+          <a href="gifts.html" class="hero-slide-link" aria-label="Explore Customised Gift Shop">
+            <img class="hero-slide-img" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/personalized_gifts_shop_now_FINAL_1300x430.png" alt="Customised Gift Shop" loading="lazy">
+          </a>
+        </div>
+
+        <!-- Slide 3: Studio Services -->
+        <div class="hero-slide slide-studio">
+          <a href="studio.html" class="hero-slide-link" aria-label="Explore Studio Services">
+            <img class="hero-slide-img" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/prints_lamination_shop_now_1300x430.png" alt="Studio Services" loading="lazy">
+          </a>
+        </div>
+
+        <!-- Slide 4: Corporate Gifts -->
+        <div class="hero-slide slide-corporate">
+          <a href="corporate.html" class="hero-slide-link" aria-label="Explore Corporate Gifts">
+            <img class="hero-slide-img" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/corporate_gifting_banner_1300x430.png" alt="Corporate Gifts" loading="lazy">
+          </a>
+        </div>
+
+        <!-- Clone of Slide 1 for seamless infinite loop -->
+        <div class="hero-slide slide-photo" aria-hidden="true">
+          <a href="photography.html" class="hero-slide-link" tabindex="-1">
+            <img class="hero-slide-img" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/hero-slide-images/photography_banner_1300x430.png" alt="" loading="lazy">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-i="0" aria-label="Photography slide"></button>
+        <button class="hero-dot" data-i="1" aria-label="Customised Gift Shop slide"></button>
+        <button class="hero-dot" data-i="2" aria-label="Studio Services slide"></button>
+        <button class="hero-dot" data-i="3" aria-label="Corporate Gifts slide"></button>
+      </div>
+      </div>
+
+      <button class="hero-arrow hero-arrow-left" id="heroPrev" aria-label="Previous slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="hero-arrow hero-arrow-right" id="heroNext" aria-label="Next slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <script src="js/index.js"></script>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="section container categories-section">
+    <div class="section-head">
+      <h2>Explore our top categories</h2>
+    </div>
+    <div class="cat-scroll" id="catScroll"></div>
+  </section>
+
+  <!-- ================= POPULAR PHOTOGRAPHY SERVICES ================= -->
+  <section class="shop-strip strip-photo">
+    <div class="container">
+      <h2 class="strip-title">Popular Photography Services</h2>
+      <div class="card-scroll" id="photoServices"></div>
+      <a href="photography.html" class="explore-btn">View More
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6">
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CUSTOMIZED GIFTS ================= -->
+  <section class="shop-strip strip-gift">
+    <div class="container">
+      <h2 class="strip-title">Customized Gifts Bestsellers</h2>
+      <div class="card-scroll" id="giftCards"></div>
+      <a href="gifts.html" class="explore-btn">View More
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6">
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= STUDIO SERVICES ================= -->
+  <section class="shop-strip strip-studio">
+    <div class="container">
+      <h2 class="strip-title">Studio Services</h2>
+      <div class="card-scroll" id="studioServices"></div>
+      <a href="studio.html" class="explore-btn">View More
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6">
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CORPORATE GIFTS ================= -->
+  <section class="shop-strip strip-corp">
+    <div class="container">
+      <h2 class="strip-title">Corporate Gifts &amp; Hampers</h2>
+      <div class="card-scroll" id="corpCards"></div>
+      <a href="corporate.html" class="explore-btn">View More
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6">
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= LOCATIONS ================= -->
+  <section class="section container">
+    <div class="section-head">
+      <h2>Our Services</h2>
+    </div>
+    <div class="cities-wrap">
+    <div class="cities-card">
+      <div class="cities-head">
+        <div class="cities-icon cities-icon--gift">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 12v9H4v-9" />
+            <path d="M2 7h20v5H2z" />
+            <path d="M12 22V7" />
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+          </svg>
+        </div>
+        <div>
+          <h3>Locations we serve</h3>
+          <p class="cities-sub">Same-day gift delivery &amp; photography coverage across Hyderabad &amp; nearby areas</p>
+        </div>
+      </div>
+      <div class="city-pills" id="citiesGifts"></div>
+      <a class="view-more" onclick="toggleCities(this)"><span class="view-more-label">View More</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="3">
+          <path d="M6 9l6 6 6-6" />
+        </svg></a>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo" style="height: 65px; object-fit: contain;">
+          </div>
+          <p class="desc">Capturing your moments, beautifully and creating memories forever.</p>
+          <div class="socials">
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="3" />
+                <path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM8.5 8.5C7 7 5 8 5 10c0 3 4 5 4 8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="gifts.html">Customised Gift Shop</a></li>
+            <li><a href="studio.html">Studio Services</a></li>
+            <li><a href="corporate.html">Corporate Gifts</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help &amp; Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <span>saikumardigitallab@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar, Hyderabad, Telangana 500018</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sai Kumar Digital Lab &amp; Studio. All Rights Reserved.</p>
+        <div class="pay-icons">
+          <span class="pi">VISA</span>
+          <span class="pi">Mastercard</span>
+          <span class="pi">RuPay</span>
+          <span class="pi">UPI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/shared/thumb-map.js"></script>
+  <script src="js/shared/api-config.js"></script>
+  <script src="js/shared/site-menu.js"></script>
+  <script src="js/shared/stock.js?v=1"></script>
+  <script src="js/shared/bulk-tiers.js?v=3"></script>
+  <script src="js/shared/cart-core.js"></script>
+  <script src="js/shared/cart-ui.js?v=2"></script>
+  <script src="js/index-2.js?v=2"></script>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+  <nav class="mobile-bottom-nav">
+    <a href="index.html" class="bottom-nav-item active" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"></path>
+        <path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3l9 8h-2v9a1 1 0 0 1-1 1h-4v-6h-4v6H6a1 1 0 0 1-1-1v-9H3l9-8z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#signin" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20a8 6 0 0 1 16 0z"></path>
+      </svg>
+      <span>Account</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="20" cy="21" r="1.4"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6l-.7-3.5a1 1 0 0 0-1-.8H1V1z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="bottomNavCartBadge" style="display:none;">0</span>
+      </span>
+      <span>Cart</span>
+    </a>
+    <a href="#wishlist" class="bottom-nav-item" onclick="event.preventDefault(); openWishlistDrawer();">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="mobileWishlistBadge" style="display:none;">0</span>
+      </span>
+      <span>Wishlist</span>
+    </a>
+  </nav>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileMenuOverlay" onclick="closeMobileMenuDrawer()"></div>
+  <div class="cart-drawer mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="cart-drawer-header">
+      <h3>Menu</h3>
+      <button class="close-drawer-btn" onclick="closeMobileMenuDrawer()">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="gifts.html">Customised Gift Shop</a>
+      <a href="corporate.html">Corporate Gifts</a>
+      <a href="studio.html">Studio Services</a>
+      <a href="photography.html">Photography</a>
+      <a href="bulk-orders.html">Bulk Orders</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="#signin">Login / Account</a>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE CART BAR & DRAWER ================= -->
+  <div class="mobile-cart-bar" id="mobileCartBar" onclick="location.href='cart.html'">
+    <div class="cart-bar-left">
+      <div class="cart-bar-thumb">
+        <img loading="lazy" id="cartBarThumb" src="" alt="Cart preview">
+      </div>
+      <div class="cart-bar-text">
+        <span class="cart-bar-title">View cart</span>
+        <span class="cart-bar-sub" id="cartBarQty">0 items</span>
+      </div>
+    </div>
+    <div class="cart-bar-right">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" onclick="closeCartDrawer()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Cart</h3>
+      <button class="close-drawer-btn" onclick="closeCartDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotalValue">₹0</span>
+      </div>
+      <button class="whatsapp-checkout-btn" onclick="location.href='cart.html'">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" onclick="closeWishlistDrawer()"></div>
+  <div class="cart-drawer" id="wishlistDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Wishlist</h3>
+      <button class="close-drawer-btn" onclick="closeWishlistDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+  <script src="js/shared/chatbot.js" defer></script>
+  <script src="js/shared/search.js?v=10" defer></script>
+  <script src="js/shared/home-nav.js" defer></script>
+  <script src="js/shared/customer-api.js"></script>
+  <script src="js/shared/loading-ui.js"></script>
+  <script src="js/shared/auth-modal.js" defer></script>
+  <script src="js/shared/wishlist-menu.js"></script>
+</body>
+
+</html>

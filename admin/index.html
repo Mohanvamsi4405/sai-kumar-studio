@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com; object-src 'none'; base-uri 'self';">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Studio Admin — Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Cache-busting query string ("v=N") on every admin asset below - bump it
+     whenever admin/css or admin/js changes, so staff browsers fetch the new
+     file instead of quietly reusing yesterday's cached copy (StaticFiles sets
+     Last-Modified/ETag, but browsers can still serve a heuristically "fresh"
+     cached response without revalidating). -->
+<link rel="stylesheet" href="css/admin.css?v=13">
+</head>
+<body>
+  <div class="login-shell">
+    <div class="login-card">
+      <h1>Sai Kumar Studio</h1>
+      <p class="sub">Admin dashboard login</p>
+      <div id="msg"></div>
+      <form id="loginForm">
+        <label>Email</label>
+        <input type="email" id="email" required autocomplete="username">
+        <label>Password</label>
+        <input type="password" id="password" required autocomplete="current-password">
+        <button class="btn" type="submit" style="width:100%;margin-top:20px;">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/api.js?v=11"></script>
+  <script>
+    if (getToken()) location.href = "dashboard.html";
+
+    document.getElementById("loginForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const msg = document.getElementById("msg");
+      msg.innerHTML = "";
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      try {
+        const { access_token } = await Api.login(email, password);
+        setToken(access_token);
+        location.href = "dashboard.html";
+      } catch (err) {
+        msg.innerHTML = `<div class="msg error">${err.message}</div>`;
+      }
+    });
+  </script>
+</body>
+</html>

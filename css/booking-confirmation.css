@@ -1,0 +1,95 @@
+
+:root{
+  --maroon:#4A0E1A; --maroon-2:#5C1424;
+  --gold:#E0A82E; --gold-deep:#C8901A;
+  --cream:#F6EEE1; --cream-2:#FBF5EA; --rose:#EBD9D2;
+  --ink:#2A1519; --ink-soft:#6B5A54; --line:#E7D9C8;
+  --shadow:0 4px 18px rgba(74,14,26,.10);
+  --shadow-lg:0 12px 40px rgba(74,14,26,.20);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;max-width:100%}
+a{color:inherit}
+
+/* ---- TOP BARS ---- */
+.utilbar{background:var(--maroon);color:#f3e7d8;font-size:12.5px;padding:7px 26px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.utilbar .loc{display:flex;align-items:center;gap:6px;opacity:.9}
+.utilbar .right{margin-left:auto;display:flex;gap:18px}
+.utilbar a{text-decoration:none;opacity:.95}
+.utilbar a:hover{color:var(--gold)}
+.topbar{background:var(--maroon-2);padding:12px 26px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.logo{width:60px;height:50px;border-radius:11px;overflow:hidden;background:radial-gradient(circle at 40% 35%,#7a2338,#3a0a15);border:1px solid rgba(224,168,46,.4);flex:none;display:block}
+.logo img{width:100%;height:100%;object-fit:cover;display:block}
+.mainnav{display:flex;gap:20px;flex-wrap:wrap}
+.mainnav a{color:#f0e2d3;text-decoration:none;font-size:14px;font-weight:600}
+.mainnav a:hover,.mainnav a.on{color:var(--gold)}
+
+/* ---- MOBILE HEADER (hidden by default, shown at <=620px) ---- */
+.mobile-header-bar{display:none;align-items:center;justify-content:space-between;gap:12px;background:var(--maroon);padding:14px 18px;color:var(--cream)}
+.mobile-back-btn{background:none;border:none;color:var(--cream);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.mobile-header-title{font-size:16px;font-weight:800;color:var(--cream);flex:1;text-align:center}
+.mobile-quick-nav{display:none;justify-content:space-between;background:var(--cream-2);padding:10px 14px;border-bottom:1px solid var(--line)}
+.mqn-item{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:var(--ink-soft);flex:1;font-size:10.5px;font-weight:700}
+.mqn-icon{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#fff;color:var(--maroon);box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.mqn-item.active{color:var(--maroon)}
+.mqn-item.active .mqn-icon{outline:2px solid var(--gold)}
+
+/* ---- WRAP ---- */
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px;width:100%}
+
+/* ---- CONFIRMATION ---- */
+.confirm-section{padding:44px 0 60px}
+.success{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:44px 34px;text-align:center;max-width:640px;margin:0 auto}
+.success .tick{width:74px;height:74px;border-radius:50%;background:#2e8b45;color:#fff;font-size:38px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.success h2{font-size:24px;color:var(--ink);margin-bottom:10px}
+.success p{color:var(--ink-soft);font-size:15px;line-height:1.6;margin-bottom:8px}
+.success .sum{background:var(--cream-2);border:1px solid var(--line);border-radius:12px;padding:16px;margin:20px 0;text-align:left;font-size:14px;line-height:1.9}
+.success .sum b{color:var(--maroon)}
+.success a.back{display:inline-block;margin-top:8px;background:var(--maroon);color:var(--gold);text-decoration:none;padding:12px 26px;border-radius:10px;font-weight:800;font-size:14px}
+.success a.back:hover{background:var(--maroon-2)}
+
+/* ---- FOOTER ---- */
+.site-footer{background:var(--maroon);color:#f3e7d8}
+.footer-top{max-width:1240px;margin:0 auto;padding:20px 24px 12px;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr 1fr;column-gap:34px;row-gap:8px}
+.f-brand .f-logo{width:70px;height:58px;border-radius:12px;overflow:hidden;margin-bottom:8px;background:radial-gradient(circle at 40% 35%,#7a2338,#3a0a15);border:1px solid rgba(224,168,46,.4);display:block}
+.f-brand .f-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.f-brand p{color:#e7d3c2;font-size:14px;line-height:1.5;max-width:280px}
+.f-col h4{color:var(--gold);font-size:15px;font-weight:800;margin-bottom:8px}
+.f-col ul{list-style:none}
+.f-col li{margin-bottom:4px}
+.f-col a{color:#f0e2d3;text-decoration:none;font-size:13.5px}
+.f-col a:hover{color:var(--gold)}
+.f-contact div{display:flex;gap:9px;align-items:flex-start;color:#f0e2d3;font-size:13.5px;margin-bottom:5px;line-height:1.4}
+.f-contact .ico{color:var(--gold);flex:none}
+.f-contact a{color:#f0e2d3;text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);max-width:1240px;margin:0 auto;padding:8px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer-bottom .copy{color:#d8c4b3;font-size:13px}
+.pay-methods{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pay-methods .lbl{color:#d8c4b3;font-size:12.5px}
+.pay-chip{background:#fff;color:var(--maroon);font-size:11.5px;font-weight:800;padding:6px 12px;border-radius:7px}
+
+/* ---- RESPONSIVE ---- */
+/* Tablet: this page previously jumped straight from desktop to the <=620px
+   phone layout with nothing in between. Follows the same narrow-the-grid-
+   first convention as catalog.css's 1024px breakpoint and my-account.css's
+   900px breakpoint (reduce multi-column grids before the phone breakpoint
+   collapses things further). */
+@media(max-width:1024px) and (min-width:621px){
+  .wrap{padding:0 20px}
+  .confirm-section{padding:36px 0 48px}
+  .success{padding:38px 26px}
+  .footer-top{grid-template-columns:1.2fr 1fr 1fr;row-gap:18px}
+  .f-brand{grid-column:1 / -1}
+  .f-brand p{max-width:420px}
+}
+
+@media(max-width:620px){
+  .mobile-header-bar,.mobile-quick-nav{display:flex}
+  .wrap{padding:0 16px}
+  .success{padding:34px 22px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:20px 16px}
+  .f-brand{grid-column:1 / -1}
+  .f-brand p{max-width:100%}
+  .footer-bottom{flex-direction:column;align-items:flex-start;padding:10px 16px}
+}

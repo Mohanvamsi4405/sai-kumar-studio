@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Opening service… — Sai Kumar Digital Lab &amp; Studio</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+         font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f8f3ea; color: #5c0930; }
+  a { color: #5c0930; }
+</style>
+</head>
+<body>
+<!-- This page used to be a hard-coded copy of each equipment service (taglines,
+     galleries, prices) that drifted from the database. Equipment cards now open the
+     service's real product page (booking.html), so this only forwards old links such
+     as equipment-details.html?item=drone to it. The retired page is kept in
+     unused/retired-pages/. -->
+<p id="msg">Opening the service… <a href="photography.html">Go to Photography</a></p>
+<script src="js/shared/api-config.js"></script>
+<script>
+(function () {
+  var item = new URLSearchParams(location.search).get("item") || "";
+  var fallback = item ? "photography.html?category=" + encodeURIComponent(item) : "photography.html";
+  if (!item) { location.replace(fallback); return; }
+  fetch((window.SAI_API_BASE || "") + "/api/catalog/photography")
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status)); })
+    .then(function (data) {
+      var p = ((data.packages || {})[item] || [])[0];
+      if (!p) return location.replace(fallback);
+      var q = new URLSearchParams({
+        pid: p.id, category: item, package: p.title,
+        tier: (p.tier || "").toLowerCase(), price: p.price, feats: (p.feat || []).join("|")
+      });
+      location.replace("booking.html?" + q.toString());
+    })
+    .catch(function () { location.replace(fallback); });
+})();
+</script>
+</body>
+</html>

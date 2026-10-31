@@ -1,0 +1,21 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+pydantic==2.10.3
+pydantic-settings==2.7.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.19
+boto3==1.35.74
+razorpay==1.4.2
+# razorpay 1.4.2 does "import pkg_resources", which only setuptools provides and
+# Python 3.12 venvs no longer include. Without it every real (non-mock) checkout
+# fails on import. setuptools 81+ drops pkg_resources, hence the cap.
+setuptools==80.10.2
+Pillow==11.0.0
+pillow-avif-plugin==1.6.0
+pytest==8.3.4
+httpx==0.28.1
+cloudinary==1.41.0

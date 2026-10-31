@@ -1,0 +1,148 @@
+
+:root{
+  --maroon:#4A0E1A; --maroon-2:#5C1424;
+  --gold:#E0A82E; --gold-deep:#C8901A;
+  --cream:#F6EEE1; --cream-2:#FBF5EA; --rose:#EBD9D2;
+  --ink:#2A1519; --ink-soft:#6B5A54; --line:#E7D9C8;
+  --shadow:0 4px 18px rgba(74,14,26,.10);
+  --shadow-lg:0 12px 40px rgba(74,14,26,.20);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;max-width:100%}
+a{color:inherit}
+
+/* ---- TOP BARS ---- */
+.utilbar{background:var(--maroon);color:#f3e7d8;font-size:12.5px;padding:7px 26px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.utilbar .loc{display:flex;align-items:center;gap:6px;opacity:.9}
+.utilbar .right{margin-left:auto;display:flex;gap:18px}
+.utilbar a{text-decoration:none;opacity:.95}
+.utilbar a:hover{color:var(--gold)}
+.topbar{background:var(--maroon-2);padding:12px 26px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.logo{width:60px;height:50px;border-radius:11px;overflow:hidden;background:radial-gradient(circle at 40% 35%,#7a2338,#3a0a15);border:1px solid rgba(224,168,46,.4);flex:none;display:block}
+.logo img{width:100%;height:100%;object-fit:cover;display:block}
+.mainnav{display:flex;gap:20px;flex-wrap:wrap}
+.mainnav a{color:#f0e2d3;text-decoration:none;font-size:14px;font-weight:600}
+.mainnav a:hover,.mainnav a.on{color:var(--gold)}
+
+/* ---- MOBILE HEADER (hidden by default, shown at <=620px) ---- */
+.mobile-header-bar{display:none;align-items:center;justify-content:space-between;gap:12px;background:var(--maroon);padding:14px 18px;color:var(--cream)}
+.mobile-back-btn{background:none;border:none;color:var(--cream);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.mobile-header-title{font-size:16px;font-weight:800;color:var(--cream);flex:1;text-align:center}
+.mobile-quick-nav{display:none;justify-content:space-between;background:var(--cream-2);padding:10px 14px;border-bottom:1px solid var(--line)}
+.mqn-item{display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;color:var(--ink-soft);flex:1;font-size:10.5px;font-weight:700}
+.mqn-icon{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#fff;color:var(--maroon);box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.mqn-item.active{color:var(--maroon)}
+.mqn-item.active .mqn-icon{outline:2px solid var(--gold)}
+
+/* ---- WRAP ---- */
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px;width:100%}
+
+/* ---- BOOKING FORM ---- */
+.booking{padding:36px 0 60px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;max-width:760px;margin:0 auto}
+.card-head{background:var(--maroon);color:#fff;padding:22px 30px}
+.card-back-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:none;color:#e7d3c2;font-size:13.5px;font-weight:700;padding:0;margin-bottom:12px;cursor:pointer;font-family:inherit}
+.card-back-btn:hover{color:#fff}
+.card-head h2{font-size:20px;margin-bottom:6px}
+.card-head p{font-size:13.5px;color:#e7d3c2}
+.lock-row{background:var(--rose);border-bottom:1px solid var(--line);padding:14px 30px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.lock-row .lk{font-size:14px;color:var(--maroon);font-weight:700}
+.lock-row a{color:var(--maroon);font-size:13px;font-weight:700;text-decoration:underline}
+.form-grid{padding:28px 30px;display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1 / -1}
+/* read-only echo of the Equipment & Coverage add-ons picked on booking.html — they
+   are chosen there, so they are shown (not re-editable) alongside the form here */
+.selected-equip-box{background:var(--cream-2);border:1.5px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.equip-tag{background:#fff;border:1px solid var(--gold-deep);color:var(--maroon);padding:6px 12px;border-radius:8px;font-size:12.5px;font-weight:700}
+.field label{font-size:13px;font-weight:700;color:var(--ink)}
+.field label .req{color:#c0392b}
+.field input,.field select,.field textarea{border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14.5px;font-family:inherit;color:var(--ink);background:#fff;transition:.15s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(224,168,46,.2)}
+.field textarea{resize:vertical;min-height:96px}
+/* Replace the browser's native dropdown arrow with a fixed-size custom one and reserve
+   room for it in the right padding — the native arrow's width varies by browser/OS and
+   was overlapping/clipping short option text (e.g. "AM") in the narrow time selects. */
+.field select{
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  padding-right:32px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%236B5A54' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='5 8 10 13 15 8'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 10px center;
+  background-size:13px;
+}
+.time-row{display:flex;gap:8px;align-items:center}
+.time-row select{flex:1;min-width:0;padding-left:10px;padding-right:26px}
+.time-sep{font-weight:800;color:var(--ink-soft)}
+.event-row{border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;background:var(--cream-2);display:flex;gap:12px;align-items:flex-start;transition:border-color .15s}
+.event-row.invalid{border-color:#c0392b}
+.event-row .ev-fields{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.event-row .field{gap:6px}
+.remove-event-btn{flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--ink-soft);font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;margin-top:2px;transition:.15s}
+.remove-event-btn:hover{border-color:#c0392b;color:#c0392b}
+.add-event-btn{align-self:flex-start;background:none;border:1.5px dashed var(--gold-deep);color:var(--maroon);font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:10px;cursor:pointer;transition:.15s}
+.add-event-btn:hover{background:var(--rose);border-color:var(--maroon)}
+.submit-row{padding:6px 30px 30px}
+.confirm-btn{width:100%;background:var(--gold);color:var(--maroon);border:none;border-radius:12px;padding:16px;font-size:16px;font-weight:800;cursor:pointer;letter-spacing:.4px;transition:.15s}
+.confirm-btn:hover{background:var(--gold-deep);color:#fff}
+.confirm-btn:disabled{opacity:.6;cursor:not-allowed}
+.submit-error{background:#fdecea;color:#c0392b;border:1px solid #f3b8b0;border-radius:10px;padding:11px 14px;font-size:13px;font-weight:600;margin-bottom:12px}
+.err{color:#c0392b;font-size:12px;display:none}
+
+/* ---- LOGIN GATE (email OTP, shown before a booking is saved) ---- */
+.login-gate{background:var(--cream-2);border:1.5px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.login-gate-title{font-size:16px;color:var(--maroon);margin-bottom:6px}
+.login-gate-sub{font-size:13px;color:var(--ink-soft);line-height:1.5;margin-bottom:16px}
+.login-gate .field{margin-bottom:0}
+.login-gate-actions{display:flex;gap:10px;margin-top:14px}
+.login-gate-actions .confirm-btn{flex:1;padding:13px}
+.btn-secondary-booking{flex:none;padding:13px 16px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink-soft);font-size:13.5px;font-weight:700;cursor:pointer;transition:.15s}
+.btn-secondary-booking:hover{background:var(--rose);border-color:var(--maroon)}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#c0392b}
+.field.invalid .err{display:block}
+
+/* ---- FOOTER ---- */
+.site-footer{background:var(--maroon);color:#f3e7d8}
+.footer-top{max-width:1240px;margin:0 auto;padding:20px 24px 12px;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr 1fr;column-gap:34px;row-gap:8px}
+.f-brand .f-logo{width:70px;height:58px;border-radius:12px;overflow:hidden;margin-bottom:8px;background:radial-gradient(circle at 40% 35%,#7a2338,#3a0a15);border:1px solid rgba(224,168,46,.4);display:block}
+.f-brand .f-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.f-brand p{color:#e7d3c2;font-size:14px;line-height:1.5;max-width:280px}
+.f-col h4{color:var(--gold);font-size:15px;font-weight:800;margin-bottom:8px}
+.f-col ul{list-style:none}
+.f-col li{margin-bottom:4px}
+.f-col a{color:#f0e2d3;text-decoration:none;font-size:13.5px}
+.f-col a:hover{color:var(--gold)}
+.f-contact div{display:flex;gap:9px;align-items:flex-start;color:#f0e2d3;font-size:13.5px;margin-bottom:5px;line-height:1.4}
+.f-contact .ico{color:var(--gold);flex:none}
+.f-contact a{color:#f0e2d3;text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);max-width:1240px;margin:0 auto;padding:8px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer-bottom .copy{color:#d8c4b3;font-size:13px}
+.pay-methods{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pay-methods .lbl{color:#d8c4b3;font-size:12.5px}
+.pay-chip{background:#fff;color:var(--maroon);font-size:11.5px;font-weight:800;padding:6px 12px;border-radius:7px}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:860px){
+  .footer-top{grid-template-columns:repeat(3,1fr);gap:14px 10px;padding:14px 16px 10px}
+  .f-brand{grid-column:1 / -1}
+  .f-contact{grid-column:1 / -1}
+  .event-row .ev-fields{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+  .event-row{flex-direction:column}
+  .event-row .ev-fields{grid-template-columns:1fr}
+  .remove-event-btn{align-self:flex-end}
+}
+@media(max-width:620px){
+  .utilbar,.topbar{display:none}
+  .mobile-header-bar,.mobile-quick-nav{display:flex}
+  .card-back-btn{display:none}
+  .wrap{padding:0 16px}
+  .booking{padding:16px 0 16px}
+  .form-grid{grid-template-columns:1fr;padding:22px 18px}
+  .card-head,.lock-row,.submit-row{padding-left:18px;padding-right:18px}
+  .footer-top{grid-template-columns:repeat(3,1fr);gap:12px 8px;padding:12px 16px 8px}
+  .f-brand p{max-width:100%}
+  .footer-bottom{flex-direction:column;align-items:flex-start;padding:8px 16px;gap:8px}
+}

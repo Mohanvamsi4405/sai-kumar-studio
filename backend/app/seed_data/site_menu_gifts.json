@@ -1,0 +1,878 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "target": {
+        "type": "page",
+        "page": "index"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [],
+      "promo": null
+    },
+    {
+      "label": "Photo Frames",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "frames"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Modern & LED Frames",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Mosaic Frames",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "mosaic"
+              }
+            },
+            {
+              "label": "Crystal Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "crystal"
+              }
+            },
+            {
+              "label": "Neon Frames",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "neon"
+              }
+            },
+            {
+              "label": "LED Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "led"
+              }
+            },
+            {
+              "label": "QR Voice Frames",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "qr"
+              }
+            },
+            {
+              "label": "Collage Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "collage"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Acrylic & Wooden",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Acrylic Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "acrylic"
+              }
+            },
+            {
+              "label": "Wooden Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "wooden"
+              }
+            },
+            {
+              "label": "Engraved Plaques",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "plaque"
+              }
+            },
+            {
+              "label": "Cutout Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "cutout"
+              }
+            },
+            {
+              "label": "Pencil Sketch Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "sketch"
+              }
+            },
+            {
+              "label": "Balaji Frames",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "frames",
+                "keyword": "balaji"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-photo%20frames.jpg",
+        "title": "Photo Frames",
+        "subtitle": "Bestsellers from ₹599",
+        "target": null
+      }
+    },
+    {
+      "label": "Magic Mirrors",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "mirror"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Mirror Models",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Round LED Magic Mirror",
+              "badge": "BESTSELLER",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror",
+                "keyword": "round"
+              }
+            },
+            {
+              "label": "Heart Shape LED Mirror",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror",
+                "keyword": "heart"
+              }
+            },
+            {
+              "label": "Heart Glow Table Lamp",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror",
+                "keyword": "lamp"
+              }
+            },
+            {
+              "label": "Classic Square Mirror",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror",
+                "keyword": "square"
+              }
+            },
+            {
+              "label": "Tabletop LED Mirror",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror",
+                "keyword": "tabletop"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Features & Styles",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Glowing Photo Reveal",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror"
+              }
+            },
+            {
+              "label": "USB & Battery Operated",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror"
+              }
+            },
+            {
+              "label": "Touch Sensor Lamp",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror"
+              }
+            },
+            {
+              "label": "Night Lamp Mode",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "mirror"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/34--magic%20mirror%20round.webp",
+        "title": "Magic Mirrors",
+        "subtitle": "Bestsellers from ₹699",
+        "target": null
+      }
+    },
+    {
+      "label": "Wall Clocks",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "clocks"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Acrylic Photo Clocks",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "12 Photos Wall Clock",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "12 photo"
+              }
+            },
+            {
+              "label": "Personalised Wall Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "acrylic"
+              }
+            },
+            {
+              "label": "Designer Wall Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "designer"
+              }
+            },
+            {
+              "label": "Diamond Geometric Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "diamond"
+              }
+            },
+            {
+              "label": "Roman Numerals Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "roman"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Wooden & Shapes",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Vintage Wooden Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "vintage"
+              }
+            },
+            {
+              "label": "Circular 12-Photo Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "12 photo"
+              }
+            },
+            {
+              "label": "Square Photo Clock",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "diamond"
+              }
+            },
+            {
+              "label": "Gold Roman Clock",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "clocks",
+                "keyword": "roman"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-wall%20clock.jpg",
+        "title": "Wall Clocks",
+        "subtitle": "Bestsellers from ₹899",
+        "target": null
+      }
+    },
+    {
+      "label": "Drinkware",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "drinkware"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Mugs",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Magic Mugs",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "magic"
+              }
+            },
+            {
+              "label": "Heart Handle Mugs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "heart"
+              }
+            },
+            {
+              "label": "Photo Mugs",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "ceramic"
+              }
+            },
+            {
+              "label": "Ceramic Coffee Cups",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "ceramic"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Bottles & Flasks",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Photo Water Bottles",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "bottle"
+              }
+            },
+            {
+              "label": "Steel Insulated Bottles",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "bottle"
+              }
+            },
+            {
+              "label": "Sipper Bottles",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "drinkware",
+                "keyword": "bottle"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-mugs.jpg",
+        "title": "Drinkware",
+        "subtitle": "Bestsellers from ₹299",
+        "target": null
+      }
+    },
+    {
+      "label": "Pillows & Cushions",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "pillows"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Pillow Shapes",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Heart Pillow",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "heart"
+              }
+            },
+            {
+              "label": "Square Pillow",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "square"
+              }
+            },
+            {
+              "label": "Velvet Fur Pillow",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "velvet"
+              }
+            },
+            {
+              "label": "Couple Pillow",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Special Cushions",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Magic Pillow",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "sequins"
+              }
+            },
+            {
+              "label": "Kids Pillow",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "kids"
+              }
+            },
+            {
+              "label": "Panda Pillow",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "kids"
+              }
+            },
+            {
+              "label": "Sequin Cushion",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "pillows",
+                "keyword": "sequins"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-photo%20pillow.png",
+        "title": "Photo Pillows",
+        "subtitle": "Bestsellers from ₹399",
+        "target": null
+      }
+    },
+    {
+      "label": "Crystal Gifts",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "crystal"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Crystal Cubes",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Crystal Cubes",
+              "badge": "HOT",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "cube"
+              }
+            },
+            {
+              "label": "Rotate LED Crystal",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "rotate"
+              }
+            },
+            {
+              "label": "3D Laser Cube",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "cube"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Stands & Plaques",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Crystal Photo Stand",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "stand"
+              }
+            },
+            {
+              "label": "XXL Crystal Frame",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "xxl"
+              }
+            },
+            {
+              "label": "Showcase Crystal",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "crystal",
+                "keyword": "stand"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-crystal%20gifts.jpg",
+        "title": "Crystal Gifts",
+        "subtitle": "Bestsellers from ₹999",
+        "target": null
+      }
+    },
+    {
+      "label": "Accessories & Decor",
+      "target": {
+        "type": "category",
+        "page": "gifts",
+        "category": "accessories"
+      },
+      "is_active": true,
+      "dropdown_active": true,
+      "columns": [
+        {
+          "title": "Accessories",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Keychains",
+              "badge": "POPULAR",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "accessories",
+                "keyword": "keychain"
+              }
+            },
+            {
+              "label": "Wallets",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "accessories",
+                "keyword": "wallet"
+              }
+            },
+            {
+              "label": "Diaries",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "accessories",
+                "keyword": "diary"
+              }
+            }
+          ],
+          "cta": null
+        },
+        {
+          "title": "Home Decor & Combos",
+          "style": "list",
+          "is_active": true,
+          "links": [
+            {
+              "label": "Fridge Magnets",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "decor",
+                "keyword": "magnet"
+              }
+            },
+            {
+              "label": "Kiddy Banks",
+              "badge": "NEW",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "decor",
+                "keyword": "bank"
+              }
+            },
+            {
+              "label": "Gift Combos & Hampers",
+              "badge": "",
+              "is_active": true,
+              "target": {
+                "type": "category",
+                "page": "gifts",
+                "category": "combos"
+              }
+            }
+          ],
+          "cta": null
+        }
+      ],
+      "promo": {
+        "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/10--dairy%20combos-02.webp",
+        "title": "Gift Combos",
+        "subtitle": "Bestsellers from ₹449",
+        "target": {
+          "type": "category",
+          "page": "gifts",
+          "category": "combos"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com; object-src 'none'; base-uri 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personalised gifts from Sai Kumar Digital Lab & Studio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Be+Vietnam+Pro:wght@400;500;600;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared/mobile-nav-extra.css">
+  <link rel="stylesheet" href="css/shared/product-fields.css?v=10">
+  <link rel="stylesheet" href="css/shared/site-chrome.css">
+  <link rel="stylesheet" href="css/gifts.css?v=1790000000010">
+  <!-- Shared product-view rules. MUST stay after the page stylesheet above: it wins on source order. -->
+  <link rel="stylesheet" href="css/shared/product-view.css?v=7">
+</head>
+
+<body>
+  <!-- ================= DESKTOP NAVIGATION (BLINKIT STYLE) ================= -->
+  <div class="header-sticky-wrap">
+  <nav class="desktop-nav">
+    <div class="nav-shell">
+      <a href="index.html" class="nav-logo-block">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="nav-logo-text">Sai Kumar Digital Studio<br>&amp; Lab</span>
+      </a>
+      <div class="nav-rows">
+        <!-- Primary Row: 4 App Tabs -->
+        <div class="nav-row nav-row-primary">
+          <div class="nav-container">
+            <div class="nav-tabs">
+              <a href="gifts.html" class="nav-tab-pill tab-gifts active">
+                <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-customised-gifts.png" alt="Customised Gifts">
+              </a>
+              <a href="corporate.html" class="nav-tab-pill tab-corp">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-corporate-gifts.png" alt="Corporate Gifts">
+              </a>
+              <a href="studio.html" class="nav-tab-pill tab-studio">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-studio-services.png" alt="Studio Services">
+              </a>
+              <a href="photography.html" class="nav-tab-pill tab-photo">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-photography.png" alt="Photography">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Search Bar + Account / More / Cart -->
+        <div class="nav-row nav-row-secondary">
+          <div class="nav-container">
+            <div class="nav-search-container">
+              <div class="nav-search-bar">
+                <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search for frames, gifts, mugs and more...">
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a href="#signin" class="nav-account-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+                <span>Login</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <div class="nav-more-dropdown" tabindex="0">
+                <button type="button" class="nav-more-link">
+                  <span>More</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="nav-more-menu">
+                  <a href="index.html">Home</a>
+                  <a href="photography.html">Photography</a>
+                  <a href="gifts.html" class="active">Customised Gift Shop</a>
+                  <a href="studio.html">Studio Services</a>
+                  <a href="corporate.html">Corporate Gifts</a>
+                  <a href="bulk-orders.html">Bulk Orders</a>
+                  <a href="about-us.html">About Us</a>
+                  <a href="contact-us.html">Contact Us</a>
+                  <a href="#wishlist" onclick="event.preventDefault(); openWishlistDrawer();">Wishlist</a>
+                </div>
+              </div>
+              <a href="cart.html" class="nav-cart-btn">
+                <span class="nav-cart-icon-wrap">
+                  <svg class="nav-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span class="nav-cart-badge" id="navCartBadge" style="display:none;">0</span>
+                </span>
+                <span class="nav-cart-label">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECONDARY NAVIGATION (GIFTS CATEGORIES MENU) ================= -->
+  <!-- ================= SECONDARY NAVIGATION (GIFTS CATEGORIES MENU WITH PRODUCTS) ================= -->
+  <!-- ================= SECONDARY NAVIGATION (GIFTS CATEGORIES MENU WITH SUBCATEGORY PRODUCTS) ================= -->
+  <!-- ================= SECONDARY NAVIGATION (GIFTS CATEGORIES MENU) ================= -->
+  <div class="category-menu-bar">
+    <div class="menu-container" data-site-menu="gifts">
+      <a href="index.html" class="menu-link">Home</a>
+
+      <!-- 1. Photo Frames Dropdown -->
+      <div class="nav-item mega-left">
+        <a href="gifts.html?view=category&category=frames" class="menu-link">Photo Frames
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Modern &amp; LED Frames</h4>
+            <a href="gifts.html?view=category&category=frames&search=mosaic" class="mega-link">Mosaic Frames <span class="mega-badge">HOT</span></a>
+            <a href="gifts.html?view=category&category=frames&search=crystal" class="mega-link">Crystal Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=neon" class="mega-link">Neon Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=led" class="mega-link">LED Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=qr" class="mega-link">QR Voice Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=collage" class="mega-link">Collage Frames</a>
+          </div>
+          <div class="mega-col">
+            <h4>Acrylic &amp; Wooden</h4>
+            <a href="gifts.html?view=category&category=frames&search=acrylic" class="mega-link">Acrylic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=wooden" class="mega-link">Wooden Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=plaque" class="mega-link">Engraved Plaques</a>
+            <a href="gifts.html?view=category&category=frames&search=cutout" class="mega-link">Cutout Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=sketch" class="mega-link">Pencil Sketch Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=balaji" class="mega-link">Balaji Frames</a>
+          </div>
+          <a href="gifts.html?view=category&category=frames" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-photo%20frames.jpg" alt="Photo Frames">
+            <div class="mega-promo-text">
+              <strong>Photo Frames</strong>
+              <span>Bestsellers from ₹599</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Magic Mirrors Dropdown -->
+      <div class="nav-item">
+        <a href="gifts.html?view=category&category=mirror" class="menu-link">Magic Mirrors
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Mirror Models</h4>
+            <a href="gifts.html?view=category&category=mirror&search=round" class="mega-link">Round LED Magic Mirror <span class="mega-badge">BESTSELLER</span></a>
+            <a href="gifts.html?view=category&category=mirror&search=heart" class="mega-link">Heart Shape LED Mirror</a>
+            <a href="gifts.html?view=category&category=mirror&search=lamp" class="mega-link">Heart Glow Table Lamp</a>
+            <a href="gifts.html?view=category&category=mirror&search=square" class="mega-link">Classic Square Mirror</a>
+            <a href="gifts.html?view=category&category=mirror&search=tabletop" class="mega-link">Tabletop LED Mirror</a>
+          </div>
+          <div class="mega-col">
+            <h4>Features &amp; Styles</h4>
+            <a href="gifts.html?view=category&category=mirror" class="mega-link">Glowing Photo Reveal</a>
+            <a href="gifts.html?view=category&category=mirror" class="mega-link">USB &amp; Battery Operated</a>
+            <a href="gifts.html?view=category&category=mirror" class="mega-link">Touch Sensor Lamp <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=mirror" class="mega-link">Night Lamp Mode</a>
+          </div>
+          <a href="gifts.html?view=category&category=mirror" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/34--magic%20mirror%20round.webp" alt="Magic Mirrors">
+            <div class="mega-promo-text">
+              <strong>Magic Mirrors</strong>
+              <span>Bestsellers from ₹699</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Wall Clocks Dropdown -->
+      <div class="nav-item">
+        <a href="gifts.html?view=category&category=clocks" class="menu-link">Wall Clocks
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Acrylic Photo Clocks</h4>
+            <a href="gifts.html?view=category&category=clocks&search=12+photo" class="mega-link">12 Photos Wall Clock <span class="mega-badge">POPULAR</span></a>
+            <a href="gifts.html?view=category&category=clocks&search=acrylic" class="mega-link">Personalised Wall Clock</a>
+            <a href="gifts.html?view=category&category=clocks&search=designer" class="mega-link">Designer Wall Clock</a>
+            <a href="gifts.html?view=category&category=clocks&search=diamond" class="mega-link">Diamond Geometric Clock</a>
+            <a href="gifts.html?view=category&category=clocks&search=roman" class="mega-link">Roman Numerals Clock</a>
+          </div>
+          <div class="mega-col">
+            <h4>Wooden &amp; Shapes</h4>
+            <a href="gifts.html?view=category&category=clocks&search=vintage" class="mega-link">Vintage Wooden Clock</a>
+            <a href="gifts.html?view=category&category=clocks&search=12+photo" class="mega-link">Circular 12-Photo Clock</a>
+            <a href="gifts.html?view=category&category=clocks&search=diamond" class="mega-link">Square Photo Clock</a>
+            <a href="gifts.html?view=category&category=clocks&search=roman" class="mega-link">Gold Roman Clock <span class="mega-badge">NEW</span></a>
+          </div>
+          <a href="gifts.html?view=category&category=clocks" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-wall%20clock.jpg" alt="Wall Clocks">
+            <div class="mega-promo-text">
+              <strong>Wall Clocks</strong>
+              <span>Bestsellers from ₹899</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. Drinkware Dropdown -->
+      <div class="nav-item">
+        <a href="gifts.html?view=category&category=drinkware" class="menu-link">Drinkware
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Mugs</h4>
+            <a href="gifts.html?view=category&category=drinkware&search=magic" class="mega-link">Magic Mugs <span class="mega-badge">HOT</span></a>
+            <a href="gifts.html?view=category&category=drinkware&search=heart" class="mega-link">Heart Handle Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=ceramic" class="mega-link">Photo Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=ceramic" class="mega-link">Ceramic Coffee Cups</a>
+          </div>
+          <div class="mega-col">
+            <h4>Bottles &amp; Flasks</h4>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Photo Water Bottles</a>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Steel Insulated Bottles <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Sipper Bottles</a>
+          </div>
+          <a href="gifts.html?view=category&category=drinkware" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-mugs.jpg" alt="Drinkware">
+            <div class="mega-promo-text">
+              <strong>Drinkware</strong>
+              <span>Bestsellers from ₹299</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. Pillows & Cushions Dropdown -->
+      <div class="nav-item">
+        <a href="gifts.html?view=category&category=pillows" class="menu-link">Pillows &amp; Cushions
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Pillow Shapes</h4>
+            <a href="gifts.html?view=category&category=pillows&search=heart" class="mega-link">Heart Pillow <span class="mega-badge">POPULAR</span></a>
+            <a href="gifts.html?view=category&category=pillows&search=square" class="mega-link">Square Pillow</a>
+            <a href="gifts.html?view=category&category=pillows&search=velvet" class="mega-link">Velvet Fur Pillow</a>
+            <a href="gifts.html?view=category&category=pillows" class="mega-link">Couple Pillow</a>
+          </div>
+          <div class="mega-col">
+            <h4>Special Cushions</h4>
+            <a href="gifts.html?view=category&category=pillows&search=sequins" class="mega-link">Magic Pillow <span class="mega-badge">HOT</span></a>
+            <a href="gifts.html?view=category&category=pillows&search=kids" class="mega-link">Kids Pillow <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=pillows&search=kids" class="mega-link">Panda Pillow</a>
+            <a href="gifts.html?view=category&category=pillows&search=sequins" class="mega-link">Sequin Cushion</a>
+          </div>
+          <a href="gifts.html?view=category&category=pillows" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-photo%20pillow.png" alt="Pillows &amp; Cushions">
+            <div class="mega-promo-text">
+              <strong>Photo Pillows</strong>
+              <span>Bestsellers from ₹399</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. Crystal Gifts Dropdown -->
+      <div class="nav-item">
+        <a href="gifts.html?view=category&category=crystal" class="menu-link">Crystal Gifts
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Crystal Cubes</h4>
+            <a href="gifts.html?view=category&category=crystal&search=cube" class="mega-link">Crystal Cubes <span class="mega-badge">HOT</span></a>
+            <a href="gifts.html?view=category&category=crystal&search=rotate" class="mega-link">Rotate LED Crystal <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=crystal&search=cube" class="mega-link">3D Laser Cube</a>
+          </div>
+          <div class="mega-col">
+            <h4>Stands &amp; Plaques</h4>
+            <a href="gifts.html?view=category&category=crystal&search=stand" class="mega-link">Crystal Photo Stand</a>
+            <a href="gifts.html?view=category&category=crystal&search=xxl" class="mega-link">XXL Crystal Frame</a>
+            <a href="gifts.html?view=category&category=crystal&search=stand" class="mega-link">Showcase Crystal</a>
+          </div>
+          <a href="gifts.html?view=category&category=crystal" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-crystal%20gifts.jpg" alt="Crystal Gifts">
+            <div class="mega-promo-text">
+              <strong>Crystal Gifts</strong>
+              <span>Bestsellers from ₹999</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 7. Accessories & Decor Dropdown -->
+      <div class="nav-item mega-right">
+        <a href="gifts.html?view=category&category=accessories" class="menu-link">Accessories &amp; Decor
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Accessories</h4>
+            <a href="gifts.html?view=category&category=accessories&search=keychain" class="mega-link">Keychains <span class="mega-badge">POPULAR</span></a>
+            <a href="gifts.html?view=category&category=accessories&search=wallet" class="mega-link">Wallets</a>
+            <a href="gifts.html?view=category&category=accessories&search=diary" class="mega-link">Diaries</a>
+          </div>
+          <div class="mega-col">
+            <h4>Home Decor &amp; Combos</h4>
+            <a href="gifts.html?view=category&category=decor&search=magnet" class="mega-link">Fridge Magnets <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=decor&search=bank" class="mega-link">Kiddy Banks <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=combos" class="mega-link">Gift Combos &amp; Hampers</a>
+          </div>
+          <a href="gifts.html?view=category&category=combos" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/10--dairy%20combos-02.webp" alt="Combos &amp; Accessories">
+            <div class="mega-promo-text">
+              <strong>Gift Combos</strong>
+              <span>Bestsellers from ₹449</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- ================= MOBILE APP SWITCHER ================= -->
+  <div class="mobile-app-switcher">
+    <a href="gifts.html" class="app-switcher-card active">
+      <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-mobile/mobile-nav-card-customised.png" alt="Customised Gift Shop">
+    </a>
+    <a href="corporate.html" class="app-switcher-card">
+      <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-mobile/mobile-nav-card-corporate.png" alt="Corporate Gifts">
+    </a>
+    <a href="studio.html" class="app-switcher-card">
+      <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-mobile/mobile-nav-card-studio.png" alt="Studio Services">
+    </a>
+    <a href="photography.html" class="app-switcher-card">
+      <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-mobile/mobile-nav-card-photography.png" alt="Photography">
+    </a>
+  </div>
+
+  <!-- ================= MOBILE HERO HEADER ================= -->
+  <div class="mobile-header-bar">
+
+    <div class="mobile-search-bar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="mobileSearchInput" placeholder="Search for frames, gifts, mugs and more...">
+    </div>
+
+    <div class="mobile-hero-text">
+      <p>Personalised gifts, crafted with your photos and memories.</p>
+    </div>
+  </div>
+
+  <main id="giftsHomeMain">
+    <section class="hero" aria-label="Featured customised gifts">
+      <div class="hero-window">
+        <div class="hero-track" id="heroTrack">
+          <div class="hero-slide active" onclick="filterCategory('frames')" title="Explore Photo Frames">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <button class="hero-slide-btn hero-btn-1" onclick="event.stopPropagation(); filterCategory('frames')" aria-label="Explore Photo Frames"></button>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slide" onclick="filterCategory('crystal')" title="Explore Crystal Gifts">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <button class="hero-slide-btn hero-btn-2" onclick="event.stopPropagation(); filterCategory('crystal')" aria-label="Explore Crystal Gifts"></button>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slide" onclick="filterCategory('drinkware')" title="Explore Drinkware">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <button class="hero-slide-btn hero-btn-3" onclick="event.stopPropagation(); filterCategory('drinkware')" aria-label="Explore Drinkware"></button>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slide" onclick="filterCategory('decor')" title="Explore Home Decor">
+            <div class="hero-inner container">
+              <div class="hero-copy">
+                <button class="hero-slide-btn hero-btn-4" onclick="event.stopPropagation(); filterCategory('decor')" aria-label="Explore Home Decor"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="hero-arrow prev" onclick="moveHero(-1)" aria-label="Previous slide">‹</button>
+        <button class="hero-arrow next" onclick="moveHero(1)" aria-label="Next slide">›</button>
+        <div class="hero-dots" id="heroDots"><button class="hero-dot active" onclick="goToHero(0)"
+            aria-label="Slide 1"></button><button class="hero-dot" onclick="goToHero(1)"
+            aria-label="Slide 2"></button><button class="hero-dot" onclick="goToHero(2)"
+            aria-label="Slide 3"></button><button class="hero-dot" onclick="goToHero(3)" aria-label="Slide 4"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gifts-catalog-intro container">
+      <div class="filter-bar">
+        <div class="sort-by-field">
+          <label for="giftsSortFilter">Sort by :</label>
+          <select id="giftsSortFilter" onchange="setSortFilter(this.value)">
+            <option value="popular" selected>Popular</option>
+            <option value="lowToHigh">Price: Low to High</option>
+            <option value="highToLow">Price: High to Low</option>
+          </select>
+          <svg class="filter-chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <div class="category-header" id="giftsCategoryHeader">
+        <h1 id="giftsCatTitle">All Gift Products</h1>
+        <p id="giftsCatDesc">Discover our complete range of personalised photo frames, magic mirrors, wall clocks, drinkware, pillows, crystal gifts and home decor, crafted with your photos and memories.</p>
+      </div>
+    </section>
+
+    <section class="section category-showcase container" id="categories">
+      <div class="category-sticky">
+        <div class="category-heading">
+          <span>MADE FOR YOU</span>
+          <h2>Shop by <em>Category</em></h2>
+        </div>
+        <div class="category-carousel">
+          <button class="category-nav prev" id="categoryPrev" type="button" onclick="moveCategoryCarousel(-1)"
+            aria-label="Previous gift categories">‹</button>
+          <div class="categories" id="categoryList" tabindex="0" role="region" aria-label="Gift categories carousel">
+          </div>
+          <button class="category-nav next" id="categoryNext" type="button" onclick="moveCategoryCarousel(1)"
+            aria-label="Next gift categories">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP BY BESTSELLERS SECTION -->
+    <section class="section bestsellers-section" id="bestsellers" aria-label="Shop By Bestsellers">
+      <div class="container">
+        <div class="bestsellers-header">
+          <h2 class="bestsellers-title">Shop By Bestsellers</h2>
+          <p class="bestsellers-subtitle">Discover India's favourite gifting options, curated bestsellers that make every celebration extra special</p>
+        </div>
+
+        <div class="bestsellers-tabs-container">
+          <div class="bestsellers-tabs-scroll" id="bestsellerTabsScroll">
+            <div class="bestsellers-tabs" id="bestsellerTabs" role="tablist" aria-label="Bestseller category tabs">
+            </div>
+          </div>
+        </div>
+
+        <div class="bestsellers-carousel-container">
+          <button class="bestsellers-nav-btn prev" id="bestsellerPrevBtn" type="button" aria-label="Previous products" onclick="moveBestsellersCarousel(-1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          
+          <div class="bestsellers-products-track" id="bestsellerProductsTrack" tabindex="0" role="region" aria-label="Bestseller products carousel">
+          </div>
+
+          <button class="bestsellers-nav-btn next" id="bestsellerNextBtn" type="button" aria-label="Next products" onclick="moveBestsellersCarousel(1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="bestsellers-footer">
+          <a class="bestsellers-view-all-btn" id="bestsellersViewAllBtn" href="gifts.html?view=category&category=all">
+            <span id="bestsellersViewAllText">View All Bestsellers</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="view-all-arrow">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="personalized-showcase container" id="personalizedShowcase" aria-labelledby="personalizedTitle">
+      <div class="personalized-heading">
+        <div><span id="personalizedEyebrow">Made especially for you</span>
+          <h2 id="personalizedTitle">Personalized Gifts</h2>
+        </div>
+        <p class="personalized-header-tagline"><span class="tagline-icon">✨</span>Thoughtful keepsakes made with your
+          <em>photographs</em>, <em>words</em> and <em>favourite memories</em>.
+        </p>
+      </div>
+      <div class="personalized-layout">
+        <div class="personalized-featured" id="personalizedFeatured"
+          aria-label="Featured personalized gift collections"></div>
+        <div class="personalized-promo" id="personalizedPromo" aria-roledescription="carousel"
+          aria-label="Personalized gift promotions">
+          <div class="personalized-loading" id="personalizedLoading">Loading personalized gifts…</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how container">
+      <div class="section-heading"><span class="mini">→</span><span class="mini">♙</span>
+        <h2>How it Works</h2>
+      </div>
+      <div class="process">
+        <div class="process-item"><span class="process-icon">♙</span>
+          <div><b>1. Choose Product</b>
+            <p>Select your favorite gift from our collection</p>
+          </div>
+        </div>
+        <div class="process-item"><span class="process-icon">✎</span>
+          <div><b>2. Customise</b>
+            <p>Upload photo, add text and personalise it</p>
+          </div>
+        </div>
+        <div class="process-item"><span class="process-icon">▣</span>
+          <div><b>3. Preview</b>
+            <p>See a preview of your customised gift</p>
+          </div>
+        </div>
+        <div class="process-item"><span class="process-icon">🛒</span>
+          <div><b>4. Place Order</b>
+            <p>Add to cart and place your order</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <div class="section-heading"><span class="mini">→</span><span class="mini">♡</span>
+        <h2>Loved by Thousands</h2><span class="mini">♡</span>
+      </div>
+      <div class="reviews">
+        <article class="review"><span class="avatar">P</span>
+          <div>
+            <h3>Priya Sharma</h3>
+            <div class="stars">★★★★★</div>
+            <p>The frame quality is excellent and the print came out so beautiful. My parents loved the gift!</p>
+          </div>
+        </article>
+        <article class="review"><span class="avatar">R</span>
+          <div>
+            <h3>Rohit Verma</h3>
+            <div class="stars">★★★★★</div>
+            <p>Amazing crystal gift! The preview helped me customise it perfectly.</p>
+          </div>
+        </article>
+        <article class="review"><span class="avatar">A</span>
+          <div>
+            <h3>Anjali Mehta</h3>
+            <div class="stars">★★★★★</div>
+            <p>Fast delivery and great customer support. Highly recommended!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="giftsHomeFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo" style="height: 65px; object-fit: contain;">
+          </div>
+          <p class="desc">Capturing your moments, beautifully and creating memories forever.</p>
+          <div class="socials">
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="3" />
+                <path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM8.5 8.5C7 7 5 8 5 10c0 3 4 5 4 8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="gifts.html">Customised Gift Shop</a></li>
+            <li><a href="studio.html">Studio Services</a></li>
+            <li><a href="corporate.html">Corporate Gifts</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help &amp; Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <span>saikumardigitallab@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar, Hyderabad, Telangana 500018</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sai Kumar Digital Lab &amp; Studio. All Rights Reserved.</p>
+        <div class="pay-icons">
+          <span class="pi">VISA</span>
+          <span class="pi">Mastercard</span>
+          <span class="pi">RuPay</span>
+          <span class="pi">UPI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h2>My Cart</h2><button onclick="closeCart()" aria-label="Close cart">×</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <div class="drawer-foot">
+      <div class="subtotal"><span>Subtotal</span><span id="subtotal">₹0</span></div><button class="whatsapp"
+        onclick="goToCartCheckout()">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+    <a href="index.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"></path>
+        <path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3l9 8h-2v9a1 1 0 0 1-1 1h-4v-6h-4v6H6a1 1 0 0 1-1-1v-9H3l9-8z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#signin" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20a8 6 0 0 1 16 0z"></path>
+      </svg>
+      <span>Account</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="20" cy="21" r="1.4"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6l-.7-3.5a1 1 0 0 0-1-.8H1V1z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="bottomNavCartBadge" style="display:none;">0</span>
+      </span>
+      <span>Cart</span>
+    </a>
+    <a href="#wishlist" class="bottom-nav-item" onclick="event.preventDefault(); openWishlistDrawer();">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="mobileWishlistBadge" style="display:none;">0</span>
+      </span>
+      <span>Wishlist</span>
+    </a>
+  </nav>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileMenuOverlay" onclick="closeMobileMenuDrawer()"></div>
+  <div class="cart-drawer mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="cart-drawer-header">
+      <h3>Menu</h3>
+      <button class="close-drawer-btn" onclick="closeMobileMenuDrawer()">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="gifts.html">Customised Gift Shop</a>
+      <a href="corporate.html">Corporate Gifts</a>
+      <a href="studio.html">Studio Services</a>
+      <a href="photography.html">Photography</a>
+      <a href="bulk-orders.html">Bulk Orders</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="#signin">Login / Account</a>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" onclick="closeWishlistDrawer()"></div>
+  <div class="cart-drawer" id="wishlistDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Wishlist</h3>
+      <button class="close-drawer-btn" onclick="closeWishlistDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+
+  <!-- ================= CART TOAST ================= -->
+  <div class="cart-toast" id="cartToast">
+    <span>Item added to cart</span>
+    <button type="button" onclick="goToCartFromToast()">GO TO CART</button>
+  </div>
+
+  <script src="js/shared/loading-ui.js"></script>
+  <script src="js/shared/api-config.js"></script>
+  <script src="js/shared/site-menu.js"></script>
+  <script src="js/shared/customer-api.js"></script>
+  <script src="js/shared/thumb-map.js"></script>
+  <script src="js/shared/product-fields.js?v=16"></script>
+  <script src="js/shared/stock.js?v=1"></script>
+  <script src="js/shared/bulk-tiers.js?v=3"></script>
+  <script src="js/shared/cart-core.js"></script>
+  <script src="js/shared/cart-ui.js?v=2"></script>
+  <script src="js/shared/product-media.js?v=2"></script>
+  <script src="js/shared/related-more.js?v=2"></script>
+  <script src="js/gifts.js?v=15"></script>
+  <script src="js/gifts-2.js"></script>
+  <script src="js/shared/bottom-nav.js"></script>
+  <script src="js/shared/home-nav.js" defer></script>
+  <script src="js/shared/auth-modal.js" defer></script>
+  <script src="js/shared/search.js?v=10" defer></script>
+  <script src="js/shared/wishlist-menu.js"></script>
+</body>
+
+</html>

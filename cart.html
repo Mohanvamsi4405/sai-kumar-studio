@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com; object-src 'none'; base-uri 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart - Sai Kumar Digital Lab & Studio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/shared/mobile-nav-extra.css">
+  <link rel="stylesheet" href="css/shared/site-chrome.css">
+  <link rel="stylesheet" href="css/cart.css?v=4">
+</head>
+
+<body>
+
+  <!-- ================= DESKTOP NAVIGATION (same header as index.html) ================= -->
+  <div class="header-sticky-wrap">
+  <nav class="desktop-nav">
+    <div class="nav-shell">
+      <a href="index.html" class="nav-logo-block">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="nav-logo-text">Sai Kumar Digital Studio<br>&amp; Lab</span>
+      </a>
+      <div class="nav-rows">
+        <!-- Primary Row: 4 App Tabs -->
+        <div class="nav-row nav-row-primary">
+          <div class="nav-container">
+            <div class="nav-tabs">
+              <a href="gifts.html" class="nav-tab-pill tab-gifts">
+                <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-customised-gifts.png" alt="Customised Gifts">
+              </a>
+              <a href="corporate.html" class="nav-tab-pill tab-corp">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-corporate-gifts.png" alt="Corporate Gifts">
+              </a>
+              <a href="studio.html" class="nav-tab-pill tab-studio">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-studio-services.png" alt="Studio Services">
+              </a>
+              <a href="photography.html" class="nav-tab-pill tab-photo">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-photography.png" alt="Photography">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Search Bar + Account / More / Cart -->
+        <div class="nav-row nav-row-secondary">
+          <div class="nav-container">
+            <div class="nav-search-container">
+              <div class="nav-search-bar">
+                <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search for frames, gifts, mugs and more...">
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a href="#signin" class="nav-account-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+                <span>Login</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <div class="nav-more-dropdown" tabindex="0">
+                <button type="button" class="nav-more-link">
+                  <span>More</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="nav-more-menu">
+                  <a href="index.html">Home</a>
+                  <a href="photography.html">Photography</a>
+                  <a href="gifts.html">Customised Gift Shop</a>
+                  <a href="studio.html">Studio Services</a>
+                  <a href="corporate.html">Corporate Gifts</a>
+                  <a href="bulk-orders.html">Bulk Orders</a>
+                  <a href="about-us.html">About Us</a>
+                  <a href="contact-us.html">Contact Us</a>
+                  <a href="#wishlist" onclick="event.preventDefault(); openWishlistDrawer();">Wishlist</a>
+                </div>
+              </div>
+              <a href="cart.html" class="nav-cart-btn">
+                <span class="nav-cart-icon-wrap">
+                  <svg class="nav-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span class="nav-cart-badge" id="navCartBadge" style="display:none;">0</span>
+                </span>
+                <span class="nav-cart-label">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECONDARY NAVIGATION (MAIN MENU) ================= -->
+  <div class="category-menu-bar">
+    <div class="menu-container" data-site-menu>
+      <a href="index.html" class="menu-link">Home</a>
+
+      <div class="nav-item mega-left">
+        <a href="photography.html" class="menu-link">Photography
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Weddings &amp; Events</h4>
+            <a href="photography.html?category=wedding" class="mega-link">Wedding Photography</a>
+            <a href="photography.html?category=prewedding" class="mega-link">Pre-Wedding</a>
+            <a href="photography.html?category=birthday" class="mega-link">Birthday Photography</a>
+            <a href="photography.html?category=event" class="mega-link">Event Photography</a>
+          </div>
+          <div class="mega-col">
+            <h4>Family &amp; Portraits</h4>
+            <a href="photography.html?category=maternity" class="mega-link">Maternity Shoot</a>
+            <a href="photography.html?category=baby" class="mega-link">Baby Shoot</a>
+            <a href="studio.html?category=photo_printing" class="mega-link">Passport Photos</a>
+          </div>
+          <div class="mega-col">
+            <h4>Specialty &amp; More</h4>
+            <a href="photography.html?category=outdoor" class="mega-link">Outdoor Photography</a>
+            <a href="photography.html?category=drone" class="mega-link">Drone Photography <span class="mega-badge">NEW</span></a>
+            <a href="photography.html?category=video" class="mega-link">Videography</a>
+            <a href="photography.html?category=album" class="mega-link">Album Designing</a>
+          </div>
+          <a href="photography.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/wedding_photography.jpg" alt="Wedding Season">
+            <div class="mega-promo-text">
+              <strong>Wedding Season '26</strong>
+              <span>Book early &amp; save 15%</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item mega-left">
+        <a href="gifts.html" class="menu-link">Customised Gift Shop
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Photo Frames</h4>
+            <a href="gifts.html?view=category&category=frames&search=acrylic" class="mega-link">Acrylic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=wooden" class="mega-link">Wooden Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=crystal" class="mega-link">Crystal Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=led" class="mega-link">LED Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=neon" class="mega-link">Neon Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=qr" class="mega-link">QR Voice Frames <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=frames&search=collage" class="mega-link">Collage Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=mosaic" class="mega-link">Mosaic Frames</a>
+            <a href="gifts.html?view=category&category=frames&search=sketch" class="mega-link">Pencil Sketch Frames</a>
+          </div>
+          <div class="mega-col">
+            <h4>Drinkware</h4>
+            <a href="gifts.html?view=category&category=drinkware&search=magic" class="mega-link">Magic Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=heart" class="mega-link">Heart Handle Mugs</a>
+            <a href="gifts.html?view=category&category=drinkware&search=bottle" class="mega-link">Photo Water Bottles</a>
+            <h4 style="margin-top: 14px;">Pillows</h4>
+            <a href="gifts.html?view=category&category=pillows&search=heart" class="mega-link">Heart Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=magic" class="mega-link">Magic Pillows</a>
+            <a href="gifts.html?view=category&category=pillows&search=kids" class="mega-link">Kids Pillows <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=pillows" class="mega-link">Book Pillows</a>
+          </div>
+          <div class="mega-col">
+            <h4>Crystal Gifts</h4>
+            <a href="gifts.html?view=category&category=crystal&search=cube" class="mega-link">Crystal Cubes</a>
+            <a href="gifts.html?view=category&category=crystal&search=stand" class="mega-link">Crystal Photo Stand</a>
+            <a href="gifts.html?view=category&category=crystal&search=rotat" class="mega-link">Rotate LED Crystal <span class="mega-badge">NEW</span></a>
+            <h4 style="margin-top: 14px;">Home Decor</h4>
+            <a href="gifts.html?view=category&category=clocks" class="mega-link">Wall Clocks</a>
+            <a href="gifts.html?view=category&category=decor&search=magnet" class="mega-link">Fridge Magnets <span class="mega-badge">NEW</span></a>
+            <a href="gifts.html?view=category&category=decor&search=kiddy" class="mega-link">Kiddy Banks <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Accessories</h4>
+            <a href="gifts.html?view=category&category=accessories&search=keychain" class="mega-link">Keychains</a>
+            <a href="gifts.html?view=category&category=accessories&search=wallet" class="mega-link">Wallets</a>
+            <a href="gifts.html?view=category&category=accessories&search=diary" class="mega-link">Diaries</a>
+          </div>
+          <a href="gifts.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/customized_gifts_card.jpg" alt="Gift Combos">
+            <div class="mega-promo-text">
+              <strong>Gift Combos</strong>
+              <span>Bestsellers from ₹449</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="studio.html" class="menu-link">Studio Services
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Printing</h4>
+            <a href="studio.html?category=photo_printing" class="mega-link">Photo Printing</a>
+            <a href="studio.html?category=xerox_printing" class="mega-link">Canvas Printing</a>
+            <a href="studio.html?category=id_card_printing" class="mega-link">ID Card Printing</a>
+            <a href="studio.html?category=certificate_printing" class="mega-link">Certificate Printing</a>
+          </div>
+          <div class="mega-col">
+            <h4>Editing &amp; Restore</h4>
+            <a href="studio.html?category=photo_restoration" class="mega-link">Photo Restoration</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Photo Editing</a>
+            <a href="studio.html?category=photo_portrait" class="mega-link">Background Removal <span class="mega-badge">NEW</span></a>
+          </div>
+          <div class="mega-col">
+            <h4>Finishing &amp; Digital</h4>
+            <a href="studio.html?category=photo_lamination" class="mega-link">Photo Lamination</a>
+            <a href="studio.html?category=scanning" class="mega-link">Scanning</a>
+            <a href="studio.html?category=cd_dvd_copying" class="mega-link">CD/DVD Copying</a>
+          </div>
+          <a href="studio.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/studio_camera_setup.jpg" alt="Same-Day Prints">
+            <div class="mega-promo-text">
+              <strong>Same-Day Prints</strong>
+              <span>Photo prints from ₹49</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="corporate.html" class="menu-link">Corporate Gifts
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Gift Sets &amp; Kits</h4>
+            <a href="corporate.html?category=sets" class="mega-link">Corporate Gift Sets</a>
+            <a href="corporate.html?category=kits" class="mega-link">Employee Welcome Kits</a>
+            <a href="corporate.html?category=promotional" class="mega-link">Promotional Gifts <span class="mega-badge">NEW</span></a>
+            <a href="corporate.html" class="mega-link">Customized Branding</a>
+          </div>
+          <div class="mega-col">
+            <h4>Awards &amp; Recognition</h4>
+            <a href="corporate.html?category=mementos" class="mega-link">Mementos</a>
+            <a href="corporate.html?category=shields" class="mega-link">Shields</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Trophies</a>
+            <a href="corporate.html?category=trophies" class="mega-link">Awards</a>
+            <a href="corporate.html" class="mega-link">Name Plates</a>
+          </div>
+          <div class="mega-col">
+            <h4>Office Essentials</h4>
+            <a href="corporate.html?category=pens" class="mega-link">Pens</a>
+            <a href="corporate.html?category=diaries" class="mega-link">Diaries</a>
+            <a href="corporate.html?category=bottles" class="mega-link">Water Bottles</a>
+          </div>
+          <a href="corporate.html" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/assets/corporate_hamper.jpg" alt="Bulk Branding">
+            <div class="mega-promo-text">
+              <strong>Bulk Branding</strong>
+              <span>Kits, awards &amp; hampers</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="bulk-orders.html" class="menu-link">Bulk Orders</a>
+      <a href="about-us.html" class="menu-link">About Us</a>
+      <a href="contact-us.html" class="menu-link">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- ================= MOBILE HEADER ================= -->
+  <div class="mobile-header-bar">
+    <button class="mobile-back-btn" onclick="window.location.href='index.html'">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </button>
+    <div class="mobile-header-title">My Cart</div>
+    <div style="width: 24px;"></div>
+  </div>
+
+  <!-- ================= CART PAGE ================= -->
+  <section class="cart-page-section">
+    <div class="container">
+      <div class="cart-breadcrumb">
+        <a href="index.html">Home</a> / <span>My Cart</span>
+      </div>
+      <h1 class="cart-page-title">My Cart</h1>
+
+      <div id="cartFlow">
+        <!-- ---------- step indicator ---------- -->
+        <div class="cart-steps" id="cartSteps">
+          <div class="cart-step active" data-step="1"><span class="cart-step-num">1</span><span class="cart-step-lbl">Cart</span></div>
+          <div class="cart-step-line"></div>
+          <div class="cart-step" data-step="2"><span class="cart-step-num">2</span><span class="cart-step-lbl">Your Details</span></div>
+          <div class="cart-step-line"></div>
+          <div class="cart-step" data-step="3"><span class="cart-step-num">3</span><span class="cart-step-lbl">Payment</span></div>
+        </div>
+
+        <!-- ---------- step 1: cart review ---------- -->
+        <div id="attentionBanner" class="attention-banner" style="display:none;">
+          <div class="attention-banner-head">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <span id="attentionBannerTitle">1 item needs your attention before checkout</span>
+          </div>
+          <div id="attentionBannerList" class="attention-banner-list"></div>
+        </div>
+
+        <div class="cart-layout" id="cartHasItems" style="display: none;">
+          <div class="cart-items-panel" id="cartItemsList"></div>
+          <div class="cart-summary-card">
+            <h3>Order Summary</h3>
+            <div class="cart-summary-row">
+              <span>Items</span>
+              <span id="cartItemCount">0 items</span>
+            </div>
+            <div class="cart-summary-row">
+              <span>Subtotal</span>
+              <span id="cartSubtotalValue">₹0</span>
+            </div>
+            <div class="cart-summary-row cart-summary-saving" id="cartBulkRow" style="display:none;">
+              <span>Quantity discount</span>
+              <span id="cartBulkValue">-₹0</span>
+            </div>
+            <div class="cart-summary-total">
+              <span>Total</span>
+              <span id="cartTotalValue">₹0</span>
+            </div>
+            <div class="cart-bulk-nudge" id="cartBulkNudge" style="display:none;"></div>
+            <button class="btn-primary-cart" id="proceedToCheckoutBtn" onclick="goToCartStep(2)">
+              Proceed to Checkout
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <a href="index.html" class="cart-continue-link" onclick="return continueShoppingBack(event)">&larr; Continue Shopping</a>
+          </div>
+        </div>
+
+        <div class="cart-empty-state" id="cartEmptyState">
+          <div class="cart-empty-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </div>
+          <h2>Your cart is empty</h2>
+          <p>Looks like you haven't added anything yet. Browse Photography, Customised Gifts, Studio Services or
+            Corporate Gifts to get started.</p>
+          <a href="index.html" class="cart-continue-btn">
+            Start Shopping
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- ---------- step 2: customer details ---------- -->
+        <div class="cart-layout" id="cartStepDetails" style="display:none;">
+          <div class="cart-details-panel">
+            <h3 class="panel-title">Delivery Details</h3>
+            <div id="detailsFormMsg" class="cart-form-msg" style="display:none;"></div>
+
+            <div class="saved-address-section" id="savedAddressSection" style="display:none;">
+              <div class="saved-address-heading">Recommended from your account</div>
+              <div class="saved-address-list" id="savedAddressList"><!-- filled dynamically --></div>
+              <button type="button" class="saved-address-new-btn" id="savedAddressNewBtn" onclick="useNewAddressForm()">+ Enter a new address</button>
+            </div>
+
+            <div class="cart-field-grid" id="deliveryFieldGrid">
+              <div class="field-col-6">
+                <label class="cart-field-label">Full Name</label>
+                <input type="text" id="custName" class="cart-field-input" placeholder="Your name" autocomplete="name">
+              </div>
+              <div class="field-col-6">
+                <label class="cart-field-label">Mobile Number</label>
+                <input type="tel" id="custPhone" class="cart-field-input" placeholder="10-digit mobile number" autocomplete="tel" maxlength="10">
+              </div>
+              <div class="field-col-6">
+                <label class="cart-field-label">D.No / House No. &amp; Building</label>
+                <input type="text" id="custDno" class="cart-field-input" placeholder="e.g. 7-2-227" autocomplete="address-line1">
+              </div>
+              <div class="field-col-6">
+                <label class="cart-field-label">Street / Area</label>
+                <input type="text" id="custStreet" class="cart-field-input" placeholder="e.g. Bhagat Singh Nagar" autocomplete="address-line2">
+              </div>
+              <div class="field-col-12">
+                <label class="cart-field-label">Landmark <span class="optional-tag">(optional)</span></label>
+                <input type="text" id="custLandmark" class="cart-field-input" placeholder="e.g. Near City Hospital">
+              </div>
+              <div class="field-col-5">
+                <label class="cart-field-label">City</label>
+                <input type="text" id="custCity" class="cart-field-input" placeholder="City" autocomplete="address-level2">
+              </div>
+              <div class="field-col-4">
+                <label class="cart-field-label">State</label>
+                <select id="custState" class="cart-field-input" autocomplete="address-level1">
+                  <option value="">Select state</option>
+                  <option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option>
+                  <option>Bihar</option><option>Chhattisgarh</option><option>Goa</option><option>Gujarat</option>
+                  <option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option>
+                  <option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option>
+                  <option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option>
+                  <option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option>
+                  <option>Sikkim</option><option>Tamil Nadu</option><option selected>Telangana</option>
+                  <option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option>
+                  <option>West Bengal</option><option>Delhi</option><option>Jammu and Kashmir</option>
+                  <option>Ladakh</option><option>Chandigarh</option><option>Puducherry</option>
+                </select>
+              </div>
+              <div class="field-col-3">
+                <label class="cart-field-label">Pincode</label>
+                <input type="text" id="custPincode" class="cart-field-input" placeholder="500018" inputmode="numeric" maxlength="6">
+              </div>
+              <div class="field-col-12 save-address-row" id="saveAddressRow" style="display:none;">
+                <label class="save-address-checkbox">
+                  <input type="checkbox" id="custSaveAddress" checked>
+                  Save this address to my account for faster checkout next time
+                </label>
+              </div>
+            </div>
+            <div class="cart-step-actions">
+              <button class="btn-secondary-cart" onclick="goToCartStep(1)">&larr; Back to Cart</button>
+              <button class="btn-primary-cart" onclick="confirmDetailsAndContinue()">Continue to Payment &rarr;</button>
+            </div>
+          </div>
+          <div class="cart-summary-card">
+            <h3>Order Summary</h3>
+            <div id="cartReviewMiniList" class="cart-mini-list"></div>
+            <div class="cart-coupon-row" style="margin:12px 0;">
+              <label class="cart-field-label" for="cartCouponInput">Have a coupon code?</label>
+              <input type="text" id="cartCouponInput" class="cart-field-input" placeholder="Enter coupon code" autocapitalize="characters">
+            </div>
+            <div class="cart-summary-row cart-summary-saving" id="cartBulkRowStep2" style="display:none;">
+              <span>Quantity discount</span>
+              <span id="cartBulkValueStep2">-₹0</span>
+            </div>
+            <div class="cart-summary-total">
+              <span>Total</span>
+              <span id="cartTotalValueStep2">₹0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- step 3: login + payment ---------- -->
+        <div class="cart-layout" id="cartStepPayment" style="display:none;">
+          <div class="cart-details-panel">
+
+            <!-- login gate: shown until the customer verifies an email OTP -->
+            <div id="cartLoginGate">
+              <h3 class="panel-title">Verify Your Email to Continue</h3>
+              <p class="cart-login-sub">We only ask you to sign in at this last step, so you can browse and build your cart freely. Order confirmations and updates go to this email.</p>
+              <div id="cartLoginMsg" class="cart-form-msg" style="display:none;"></div>
+
+              <div id="cartLoginEmailStep">
+                <label class="cart-field-label">Email Address</label>
+                <input type="email" id="cartLoginEmail" class="cart-field-input" placeholder="you@example.com" autocomplete="email">
+                <div class="cart-step-actions">
+                  <button class="btn-secondary-cart" onclick="goToCartStep(2)">&larr; Back</button>
+                  <button class="btn-primary-cart" id="cartSendOtpBtn" onclick="sendCartOtp()">Send OTP</button>
+                </div>
+              </div>
+
+              <div id="cartLoginOtpStep" style="display:none;">
+                <label class="cart-field-label">6-Digit Code <span id="cartOtpSentTo"></span></label>
+                <input type="text" id="cartLoginOtp" class="cart-field-input" placeholder="000000" inputmode="numeric" maxlength="6">
+                <div class="cart-step-actions">
+                  <button class="btn-secondary-cart" onclick="backToCartEmailStep()">&larr; Change Email</button>
+                  <button class="btn-primary-cart" id="cartVerifyOtpBtn" onclick="verifyCartOtp()">Verify &amp; Continue</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- payment: shown once verified -->
+            <div id="cartPaymentBody" style="display:none;">
+              <h3 class="panel-title">Choose Payment Method</h3>
+              <div id="cartPaymentMsg" class="cart-form-msg" style="display:none;"></div>
+              <div id="cartPaymentLoading" class="cart-payment-loading" style="display:none;">
+                <span class="spinner"></span>
+                <span>Preparing your order&hellip;</span>
+              </div>
+              <div class="payment-option selected" id="payCOD" onclick="selectCartPayment('cod')">
+                <div class="payment-option-radio"></div>
+                <div class="payment-option-info">
+                  <span class="payment-option-title">Cash on Delivery</span>
+                  <span class="payment-option-sub">Pay when your order is delivered</span>
+                </div>
+                <span class="payment-option-price" id="codPriceLabel">₹0</span>
+              </div>
+              <div class="payment-option" id="payOnline" onclick="selectCartPayment('online')">
+                <div class="payment-option-radio"></div>
+                <div class="payment-option-info">
+                  <span class="payment-option-title">Pay Online</span>
+                  <span class="payment-option-sub">UPI / Card / Netbanking via Razorpay</span>
+                </div>
+                <span class="payment-option-price" id="onlinePriceLabel">₹0</span>
+              </div>
+              <div class="cart-step-actions">
+                <button class="btn-secondary-cart" onclick="goToCartStep(2)">&larr; Back</button>
+                <button class="btn-primary-cart" id="placeCartOrderBtn" onclick="placeCartOrder()">
+                  <span class="pco-label">Place Order (Cash on Delivery)</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="cart-summary-card">
+            <h3>Order Summary</h3>
+            <div id="cartReviewMiniList2" class="cart-mini-list"></div>
+            <div id="cartCouponMsg2" style="display:none;font-size:13px;margin-bottom:8px;"></div>
+            <div class="cart-summary-row cart-summary-saving" id="cartBulkRowStep3" style="display:none;">
+              <span>Quantity discount</span>
+              <span id="cartBulkValueStep3">-₹0</span>
+            </div>
+            <div class="cart-summary-row" id="cartDiscountRow" style="display:none;">
+              <span>Coupon discount</span>
+              <span id="cartDiscountValue">-₹0</span>
+            </div>
+            <div class="cart-summary-total">
+              <span>Payable Amount</span>
+              <span id="cartFinalPayable">₹0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- step 4: success ---------- -->
+        <div class="cart-success-state" id="cartSuccessState" style="display:none;">
+          <div class="cart-success-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h2 id="cartSuccessTitle">Order Placed!</h2>
+          <p id="cartSuccessMsg">Your order has been placed. Our team will reach out shortly.</p>
+          <a href="index.html" class="cart-continue-btn">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav class="mobile-bottom-nav">
+    <a href="index.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"></path>
+        <path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3l9 8h-2v9a1 1 0 0 1-1 1h-4v-6h-4v6H6a1 1 0 0 1-1-1v-9H3l9-8z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#signin" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20a8 6 0 0 1 16 0z"></path>
+      </svg>
+      <span>Account</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="20" cy="21" r="1.4"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6l-.7-3.5a1 1 0 0 0-1-.8H1V1z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="bottomNavCartBadge" style="display:none;">0</span>
+      </span>
+      <span>Cart</span>
+    </a>
+    <a href="#wishlist" class="bottom-nav-item" onclick="event.preventDefault(); openWishlistDrawer();">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="mobileWishlistBadge" style="display:none;">0</span>
+      </span>
+      <span>Wishlist</span>
+    </a>
+  </nav>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileMenuOverlay" onclick="closeMobileMenuDrawer()"></div>
+  <div class="cart-drawer mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="cart-drawer-header">
+      <h3>Menu</h3>
+      <button class="close-drawer-btn" onclick="closeMobileMenuDrawer()">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="photography.html">Photography</a>
+      <a href="gifts.html">Customised Gift Shop</a>
+      <a href="studio.html">Studio Services</a>
+      <a href="corporate.html">Corporate Gifts</a>
+      <a href="bulk-orders.html">Bulk Orders</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="#signin">Login / Account</a>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </div>
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" onclick="closeWishlistDrawer()"></div>
+  <div class="cart-drawer" id="wishlistDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Wishlist</h3>
+      <button class="close-drawer-btn" onclick="closeWishlistDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo" style="height: 65px; object-fit: contain;">
+          </div>
+          <p class="desc">Capturing your moments, beautifully and creating memories forever.</p>
+          <div class="socials">
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="3" />
+                <path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM8.5 8.5C7 7 5 8 5 10c0 3 4 5 4 8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="gifts.html">Customised Gift Shop</a></li>
+            <li><a href="studio.html">Studio Services</a></li>
+            <li><a href="corporate.html">Corporate Gifts</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help &amp; Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <span>saikumardigitallab@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar, Hyderabad, Telangana 500018</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sai Kumar Digital Lab &amp; Studio. All Rights Reserved.</p>
+        <div class="pay-icons">
+          <span class="pi">VISA</span>
+          <span class="pi">Mastercard</span>
+          <span class="pi">RuPay</span>
+          <span class="pi">UPI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="imagePreviewOverlay" class="image-preview-overlay" style="display:none;" onclick="closeImagePreview()">
+    <img loading="lazy" id="imagePreviewOverlayImg" src="" alt="Uploaded photo preview">
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/shared/search.js?v=10" defer></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+  <script src="js/shared/loading-ui.js"></script>
+  <script src="js/shared/api-config.js"></script>
+  <script src="js/shared/site-menu.js"></script>
+  <script src="js/shared/customer-api.js"></script>
+  <script src="js/shared/thumb-map.js"></script>
+  <script src="js/shared/stock.js?v=1"></script>
+  <script src="js/shared/bulk-tiers.js?v=3"></script>
+  <script src="js/shared/cart-core.js"></script>
+  <script src="js/shared/validators.js"></script>
+  <script src="js/shared/cart-ui.js?v=2"></script>
+  <script src="js/cart.js?v=4"></script>
+  <script src="js/shared/home-nav.js" defer></script>
+  <script src="js/shared/auth-modal.js" defer></script>
+  <script src="js/shared/chatbot.js" defer></script>
+  <script src="js/shared/bottom-nav.js"></script>
+  <script src="js/shared/wishlist-menu.js"></script>
+</body>
+
+</html>

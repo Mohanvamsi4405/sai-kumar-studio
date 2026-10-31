@@ -1,0 +1,346 @@
+/* ================= MY ACCOUNT PAGE ================= */
+/* Extends css/cart.css (brand vars, .cart-details-panel, .cart-field-input, etc.) */
+
+.acct-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(120deg, #1E1E1E, #322E28 60%, #1E1E1E);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.acct-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #1E1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 900;
+  flex-shrink: 0;
+  border: 3px solid rgba(200, 155, 60, 0.35);
+}
+
+.acct-hero-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.acct-hero-info h2 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin-bottom: 3px;
+}
+
+.acct-hero-info p {
+  color: #C7BEB0;
+  font-size: 13.5px;
+  margin-bottom: 12px;
+}
+
+.acct-trust-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.acct-trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(200, 155, 60, 0.18);
+  color: var(--orange);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 5px 11px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.acct-trust-chip svg {
+  flex-shrink: 0;
+}
+
+.acct-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+.acct-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.acct-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.acct-panel-head .panel-title {
+  margin-bottom: 0;
+}
+
+.acct-link-more {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--orange-dark);
+}
+
+.acct-link-more:hover {
+  text-decoration: underline;
+}
+
+/* ---------- profile save state ---------- */
+.acct-save-ok {
+  background: rgba(34, 197, 94, 0.1) !important;
+  color: #16803d !important;
+}
+
+/* ---------- address cards ---------- */
+.acct-address-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.acct-address-card {
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  position: relative;
+  background: var(--bg);
+}
+
+.acct-address-card.is-default {
+  border-color: var(--orange);
+  background: var(--orange-light);
+}
+
+.acct-address-label-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.acct-address-label {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--gray-800);
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.acct-default-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  color: #1E1E1E;
+  background: var(--orange);
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.acct-address-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 2px;
+}
+
+.acct-address-text {
+  font-size: 12.5px;
+  color: var(--gray-700);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.acct-address-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.acct-address-actions button {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--gray-700);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.acct-address-actions button:hover {
+  background: #fff;
+  border-color: var(--orange-dark);
+  color: var(--orange-dark);
+}
+
+.acct-address-actions button.acct-danger:hover {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+.acct-empty-mini {
+  font-size: 13px;
+  color: var(--gray-500);
+  padding: 18px 4px;
+  text-align: center;
+}
+
+/* ---------- order preview rows ---------- */
+.acct-order-mini {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--gray-200);
+  flex-wrap: wrap;
+}
+
+.acct-order-mini:last-child {
+  border-bottom: none;
+}
+
+.acct-order-mini-info b {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+
+.acct-order-mini-info span {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+/* ---------- side column ---------- */
+.acct-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.acct-side-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.acct-side-card h4 {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 14px;
+}
+
+.acct-trust-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acct-trust-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--gray-700);
+  line-height: 1.4;
+}
+
+.acct-trust-list svg {
+  color: var(--orange-dark);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.acct-side-card p {
+  font-size: 12.5px;
+  color: var(--gray-600);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.acct-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-900);
+  padding: 9px 0;
+  border-top: 1px solid var(--gray-200);
+}
+
+.acct-contact-row:first-of-type {
+  border-top: none;
+}
+
+.acct-contact-row svg {
+  color: var(--orange-dark);
+  flex-shrink: 0;
+}
+
+.acct-signout-btn {
+  width: 100%;
+  color: var(--error);
+  border-color: #f0c6c2;
+}
+
+.acct-signout-btn:hover {
+  background: rgba(179, 38, 30, 0.06);
+}
+
+@media (max-width: 900px) {
+  .acct-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .acct-address-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .acct-hero {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .acct-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 19px;
+  }
+
+  .acct-hero-info h2 {
+    font-size: 18px;
+  }
+}

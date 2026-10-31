@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://checkout.razorpay.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' data: https:; connect-src 'self' https://*.trycloudflare.com http://127.0.0.1:8000 https://api.razorpay.com https://lumberjack.razorpay.com; frame-src https://api.razorpay.com https://checkout.razorpay.com; object-src 'none'; base-uri 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Gifts &amp; Hampers - Sai Kumar Digital Lab &amp; Studio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/shared/mobile-nav-extra.css">
+  <link rel="stylesheet" href="css/shared/product-fields.css?v=10">
+  <link rel="stylesheet" href="css/shared/site-chrome.css">
+  <link rel="stylesheet" href="css/corporate.css?v=1790000000002">
+  <!-- Shared product-view rules. MUST stay after the page stylesheet above: it wins on source order. -->
+  <link rel="stylesheet" href="css/shared/product-view.css?v=7">
+  <style>
+    /* Keep the Corporate product information column as one continuous surface. */
+    .product-detail-modal .modal-info-col {
+      box-sizing: border-box;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px 24px 24px;
+    }
+
+    @media (max-width: 1023px) {
+      .product-detail-modal .modal-info-col {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body class="theme-corporate">
+
+  <!-- ================= DESKTOP NAVIGATION (BLINKIT STYLE) ================= -->
+  <div class="header-sticky-wrap">
+  <nav class="desktop-nav">
+    <div class="nav-shell">
+      <a href="index.html" class="nav-logo-block">
+        <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo">
+        <span class="nav-logo-text">Sai Kumar Digital Studio<br>&amp; Lab</span>
+      </a>
+      <div class="nav-rows">
+        <!-- Primary Row: 4 App Tabs -->
+        <div class="nav-row nav-row-primary">
+          <div class="nav-container">
+            <div class="nav-tabs">
+              <a href="gifts.html" class="nav-tab-pill tab-gifts">
+                <img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-customised-gifts.png" alt="Customised Gifts">
+              </a>
+              <a href="corporate.html" class="nav-tab-pill tab-corp active">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-corporate-gifts.png" alt="Corporate Gifts">
+              </a>
+              <a href="studio.html" class="nav-tab-pill tab-studio">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-studio-services.png" alt="Studio Services">
+              </a>
+              <a href="photography.html" class="nav-tab-pill tab-photo">
+                <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/navbar-icons-desktop/primary-nav-photography.png" alt="Photography">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Row: Search Bar + Account / More / Cart -->
+        <div class="nav-row nav-row-secondary">
+          <div class="nav-container">
+            <div class="nav-search-container">
+              <div class="nav-search-bar">
+                <svg class="nav-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="Search for frames, gifts, mugs and more...">
+              </div>
+            </div>
+
+            <div class="nav-actions">
+              <a href="#signin" class="nav-account-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+                <span>Login</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
+              <div class="nav-more-dropdown" tabindex="0">
+                <button type="button" class="nav-more-link">
+                  <span>More</span>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="nav-more-menu">
+                  <a href="index.html">Home</a>
+                  <a href="photography.html">Photography</a>
+                  <a href="gifts.html">Customised Gift Shop</a>
+                  <a href="studio.html">Studio Services</a>
+                  <a href="corporate.html" class="active">Corporate Gifts</a>
+                  <a href="bulk-orders.html">Bulk Orders</a>
+                  <a href="about-us.html">About Us</a>
+                  <a href="contact-us.html">Contact Us</a>
+                  <a href="#wishlist" onclick="event.preventDefault(); openWishlistDrawer();">Wishlist</a>
+                </div>
+              </div>
+              <a href="cart.html" class="nav-cart-btn">
+                <span class="nav-cart-icon-wrap">
+                  <svg class="nav-cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                  <span class="nav-cart-badge" id="navCartBadge" style="display:none;">0</span>
+                </span>
+                <span class="nav-cart-label">Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= SECONDARY NAVIGATION (MAIN MENU) ================= -->
+  <!-- ================= SECONDARY NAVIGATION (CORPORATE CATEGORIES MENU) ================= -->
+  <!-- ================= SECONDARY NAVIGATION (CORPORATE CATEGORIES MENU) ================= -->
+  <div class="category-menu-bar">
+    <div class="menu-container" data-site-menu="corporate">
+      <a href="index.html" class="menu-link" id="menuLinkHome">Home</a>
+
+      <!-- 1. Combo Kits Dropdown -->
+      <div class="nav-item mega-left">
+        <a href="javascript:void(0)" onclick="switchCategory('kits')" class="menu-link">Combo Kits
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Welcome Kits</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('kits')" class="mega-link">Smart Joining Kits <span class="mega-badge">HOT</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('kits')" class="mega-link">Employee Welcome Hampers</a>
+            <a href="javascript:void(0)" onclick="switchCategory('kits')" class="mega-link">New Hire Starter Packs</a>
+            <a href="javascript:void(0)" onclick="switchCategory('kits')" class="mega-link">Tech Onboarding Bundles</a>
+          </div>
+          <div class="mega-col">
+            <h4>Corporate Combos</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('sets')" class="mega-link">Executive Gift Sets <span class="mega-badge">POPULAR</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('sets')" class="mega-link">Luxury Hamper Boxes</a>
+            <a href="javascript:void(0)" onclick="switchCategory('sets')" class="mega-link">Pen &amp; Diary Combos</a>
+            <a href="javascript:void(0)" onclick="switchCategory('sets')" class="mega-link">VIP Client Packs <span class="mega-badge">NEW</span></a>
+          </div>
+          <a href="javascript:void(0)" onclick="switchCategory('kits')" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/welcome_kit.jpg" alt="Combo Kits & Welcome Hampers">
+            <div class="mega-promo-text">
+              <strong>Welcome Combos</strong>
+              <span>Kits from ₹699</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Drinkware Dropdown -->
+      <div class="nav-item mega-left">
+        <a href="javascript:void(0)" onclick="switchCategory('bottles')" class="menu-link">Drinkware
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Mugs</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('promotional')" class="mega-link">Branded Ceramic Mugs <span class="mega-badge">HOT</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('promotional')" class="mega-link">Magic Photo Mugs</a>
+            <a href="javascript:void(0)" onclick="switchCategory('promotional')" class="mega-link">Executive Matte Cups</a>
+            <a href="javascript:void(0)" onclick="switchCategory('promotional')" class="mega-link">Heart Handle Mugs</a>
+          </div>
+          <div class="mega-col">
+            <h4>Bottles &amp; Flasks</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('bottles')" class="mega-link">Temperature LED Flasks <span class="mega-badge">POPULAR</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('bottles')" class="mega-link">Stainless Steel Insulated Flasks</a>
+            <a href="javascript:void(0)" onclick="switchCategory('bottles')" class="mega-link">Matte Corporate Sippers</a>
+            <a href="javascript:void(0)" onclick="switchCategory('bottles')" class="mega-link">UV Printed Logo Bottles</a>
+          </div>
+          <a href="javascript:void(0)" onclick="switchCategory('bottles')" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/water%20bottle%2005.jpg" alt="Bottles & Flasks">
+            <div class="mega-promo-text">
+              <strong>Smart Drinkware</strong>
+              <span>Flasks &amp; Mugs from ₹149</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Awards Dropdown -->
+      <div class="nav-item">
+        <a href="javascript:void(0)" onclick="switchCategory('mementos')" class="menu-link">Awards
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Mementos</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('mementos')" class="mega-link">3D Optical Crystal Awards <span class="mega-badge">HOT</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('mementos')" class="mega-link">Handcrafted Wooden Mementos</a>
+            <a href="javascript:void(0)" onclick="switchCategory('mementos')" class="mega-link">Commemorative Plaques</a>
+            <a href="javascript:void(0)" onclick="switchCategory('mementos')" class="mega-link">Star Performer Awards</a>
+          </div>
+          <div class="mega-col">
+            <h4>Shields &amp; Trophies</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('shields')" class="mega-link">24K Laser Engraved Shields <span class="mega-badge">POPULAR</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('shields')" class="mega-link">Mahogany Wooden Shields</a>
+            <a href="javascript:void(0)" onclick="switchCategory('shields')" class="mega-link">Brass Citation Shields</a>
+            <a href="javascript:void(0)" onclick="switchCategory('trophies')" class="mega-link">Metal Trophy Cups <span class="mega-badge">NEW</span></a>
+          </div>
+          <a href="javascript:void(0)" onclick="switchCategory('shields')" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/memento_shield.jpg" alt="Award Shields & Mementos">
+            <div class="mega-promo-text">
+              <strong>Recognition Awards</strong>
+              <span>Custom Shields from ₹499</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. Pens & Diaries Dropdown -->
+      <div class="nav-item">
+        <a href="javascript:void(0)" onclick="switchCategory('pens')" class="menu-link">Pens &amp; Diaries
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Executive Pens</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('pens')" class="mega-link">Laser Engraved Metal Pens <span class="mega-badge">HOT</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('pens')" class="mega-link">Rollerball &amp; Ball Pens</a>
+            <a href="javascript:void(0)" onclick="switchCategory('pens')" class="mega-link">Pen Gift Sets in Box</a>
+          </div>
+          <div class="mega-col">
+            <h4>Corporate Diaries</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('diaries')" class="mega-link">Leatherette Diaries <span class="mega-badge">POPULAR</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('diaries')" class="mega-link">Custom Embossed Planners</a>
+            <a href="javascript:void(0)" onclick="switchCategory('diaries')" class="mega-link">Magnetic Loop Organizers</a>
+          </div>
+          <a href="javascript:void(0)" onclick="switchCategory('pens')" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/pen_gift_set.jpg" alt="Pens & Diaries">
+            <div class="mega-promo-text">
+              <strong>Pens &amp; Diaries</strong>
+              <span>Bestsellers from ₹199</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. Wallets & Accessories Dropdown -->
+      <div class="nav-item mega-right">
+        <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="menu-link">Wallets &amp; Leather
+          <svg class="menu-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="mega-dropdown">
+          <div class="mega-col">
+            <h4>Executive Wallets</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="mega-link">Leatherette Card Wallets <span class="mega-badge">NEW</span></a>
+            <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="mega-link">RFID Blocking Wallets</a>
+            <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="mega-link">Custom Name Leather Wallets</a>
+          </div>
+          <div class="mega-col">
+            <h4>Gift Accessories</h4>
+            <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="mega-link">Keychain &amp; Wallet Combos</a>
+            <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="mega-link">Leather Card Holders</a>
+          </div>
+          <a href="javascript:void(0)" onclick="switchCategory('wallets')" class="mega-promo">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/08--wallets-01.jpg" alt="Wallets & Leather">
+            <div class="mega-promo-text">
+              <strong>Leather Wallets</strong>
+              <span>Bestsellers from ₹249</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <a href="bulk-orders.html" class="menu-link">Bulk Orders</a>
+      <a href="about-us.html" class="menu-link">About Us</a>
+      <a href="contact-us.html" class="menu-link">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- ================================================================
+    MOBILE STICKY HEADER WRAPPER
+    Groups all 3 mobile header rows into one sticky unit:
+      Row 1: 4 app tab buttons (.mobile-app-switcher)
+      Row 2: Address + Search  (.mobile-header-bar)
+      Row 3: Category circles  (#mobileCatScroll, JS-rendered)
+    Hidden on desktop (> 767px) via CSS; replaces desktop-nav on mobile.
+  ================================================================ -->
+  <div class="mobile-sticky-header">
+
+    <!-- ── Row 1: App Switcher — 4 Service Tab Buttons ── -->
+    <div class="mobile-app-switcher">
+      <a href="gifts.html" class="app-switcher-card">
+        <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mobile-nav-card-customised.png" alt="Customised Gift Shop">
+      </a>
+      <a href="corporate.html" class="app-switcher-card active">
+        <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mobile-nav-card-corporate.png" alt="Corporate Gifts">
+      </a>
+      <a href="studio.html" class="app-switcher-card">
+        <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mobile-nav-card-studio.png" alt="Studio Services">
+      </a>
+      <a href="photography.html" class="app-switcher-card">
+        <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mobile-nav-card-photography.png" alt="Photography">
+      </a>
+    </div>
+
+    <!-- ── Row 2: Address + Search Bar ── -->
+    <div class="mobile-header-bar">
+      <div class="mobile-search-bar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="mobileSearchInput" placeholder='Search corporate gifts e.g. "welcome kit"'
+          oninput="handleGlobalHeaderSearch(event)">
+      </div>
+
+      <div class="mobile-hero-text">
+        <p>Premium corporate gifts &amp; welcome kits, delivered on time.</p>
+      </div>
+    </div>
+
+    <!-- ── Row 3: Category Circles (Second Header) — JS-rendered by initSidebar(), see js/corporate.js ── -->
+    <div class="mobile-cat-scroll" id="mobileCatScroll" role="navigation" aria-label="Browse categories"></div>
+  </div><!-- end .mobile-sticky-header -->
+
+  <!-- ================= DASHBOARD LAYOUT (shell + sidebar-wrap + main) =================
+       Same structure as photography.html's .shell > .sidebar-wrap > aside.sidebar
+       + main.main pattern: sidebar-wrap is just a shrink-wrap column around the
+       sidebar (css/corporate.css), and main.main is the single scrolling content
+       column beside it - no separate .corp-main-col wrapper anymore. ================= -->
+  <div class="corp-dashboard">
+    <!-- Desktop Sidebar -->
+    <div class="sidebar-wrap">
+    <aside class="sidebar">
+      <div class="sidebar-title">Categories</div>
+      <div class="sidebar-list sidebar-sticky-inner" id="desktopSidebar">
+        <div class="sidebar-item active" onclick="switchCategory('all')" data-key="all">
+          <span class="sidebar-item-icon"><img src="https://img.icons8.com/color/96/briefcase.png" alt="All Items" loading="lazy"></span>
+          <span class="sidebar-item-label">All Items</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('sets')" data-key="sets">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/executive_diary_set.jpg" alt="Corporate Gift Sets" loading="lazy"></span>
+          <span class="sidebar-item-label">Corporate Gift Sets</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('kits')" data-key="kits">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/welcome_kit.jpg" alt="Employee Welcome Kits" loading="lazy"></span>
+          <span class="sidebar-item-label">Employee Welcome Kits</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('pens')" data-key="pens">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/pen_gift_set.jpg" alt="Pens" loading="lazy"></span>
+          <span class="sidebar-item-label">Pens</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('diaries')" data-key="diaries">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/executive_diary_set.jpg" alt="Diaries" loading="lazy"></span>
+          <span class="sidebar-item-label">Diaries</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('bottles')" data-key="bottles">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/water%20bottle%2005.jpg" alt="Water Bottles" loading="lazy"></span>
+          <span class="sidebar-item-label">Water Bottles</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('mementos')" data-key="mementos">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/glass%20momentos%2001.png" alt="Mementos" loading="lazy"></span>
+          <span class="sidebar-item-label">Mementos</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('shields')" data-key="shields">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/memento_shield.jpg" alt="Shields" loading="lazy"></span>
+          <span class="sidebar-item-label">Shields</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('trophies')" data-key="trophies">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/trophies%2001.avif" alt="Trophies" loading="lazy"></span>
+          <span class="sidebar-item-label">Trophies</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('promotional')" data-key="promotional">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mugs%2001.jpg" alt="Mugs" loading="lazy"></span>
+          <span class="sidebar-item-label">Mugs</span>
+        </div>
+        <div class="sidebar-item" onclick="switchCategory('wallets')" data-key="wallets">
+          <span class="sidebar-item-icon"><img src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/08--wallets-01.jpg" alt="Wallets" loading="lazy"></span>
+          <span class="sidebar-item-label">Wallets</span>
+        </div>
+      </div>
+    </aside>
+    </div><!-- end .sidebar-wrap -->
+
+  <main class="main main-wrapper" id="mainContent">
+
+  <!-- ================= PREMIUM HERO SLIDER ================= -->
+  <section class="hero-zone" id="heroZone">
+    <div class="hero-rail" id="heroRail">
+      <!-- Side Navigation Arrow Buttons -->
+      <button class="hero-nav-btn hero-nav-prev" onclick="moveHeroSlide(-1)" aria-label="Previous Slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="hero-nav-btn hero-nav-next" onclick="moveHeroSlide(1)" aria-label="Next Slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="hero-rail-track" id="heroRailTrack">
+        <!-- Slide Clone 10: Mugs (Prepend Clone for Seamless Left Rotation) -->
+        <div class="slide category-hero-slide theme-mugs slide-clone">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_mugs.jpg" alt="Custom printed corporate mugs" class="bg">
+          <div class="s-body">
+            <span class="s-tag">☕ EXECUTIVE LOGO PRINTED MUGS</span>
+            <h1 class="s-title">Branded Ceramic &amp;<br><em>Corporate Mugs</em></h1>
+            <p>High-definition custom ceramic mugs printed with corporate logos, personalized names &amp; leadership
+              quotes.</p>
+            <a href="#packagesGrid" onclick="switchCategory('promotional')" class="btn btn-gold">
+              <span>EXPLORE DRINKWARE</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 1: Welcome Kits -->
+        <div class="slide active theme-welcome-kits" onclick="switchCategory('kits')" style="cursor: pointer;" title="Explore Welcome Kits">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/user_hero_bg.jpg" alt="Smart Joining Kits & Welcome Hampers" class="bg">
+          <div class="s-body">
+            <span class="s-tag">✨ EXECUTIVE ONBOARDING</span>
+            <h1 class="s-title">Smart Joining Kits &amp;<br><em>Welcome Hampers</em></h1>
+            <p>Customized welcome kits with laser-engraved pens, leatherette diaries, flasks &amp; custom logo printed
+              gift boxes.</p>
+            <a href="#packagesGrid" onclick="switchCategory('kits')" class="btn btn-gold">
+              <span>EXPLORE WELCOME KITS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 2: Executive Hampers -->
+        <div class="slide theme-exec-hampers" onclick="switchCategory('sets')" style="cursor: pointer;" title="Shop Hampers">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/corporate_hamper.jpg" alt="Premium Executive Combo Gift Sets" class="bg">
+          <div class="s-body">
+            <span class="s-tag">💼 LUXURY CORPORATE GIFTING</span>
+            <h1 class="s-title">Premium Executive Combo<br><em>Gift Sets</em></h1>
+            <p>Curated executive combos with laser-engraved metal pens, wallets, temperature LED bottles &amp;
+              organizers.</p>
+            <a href="#packagesGrid" onclick="switchCategory('sets')" class="btn btn-gold">
+              <span>EXPLORE COMBO KITS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 3: Mementos & Awards -->
+        <div class="slide awards-slide theme-mementos-awards" onclick="switchCategory('trophies')" style="cursor: pointer;" title="Explore Awards">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/awards_hero_banner.jpg" alt="Engraved Mementos & Achievement Awards" class="bg">
+          <div class="s-body">
+            <span class="s-tag">🏆 RECOGNITION &amp; AWARDS</span>
+            <h1 class="s-title">Engraved Mementos &amp;<br><em>Achievement Awards</em></h1>
+            <p>Honor star performers with 3D optical crystal blocks, mahogany wooden mementos &amp; annual trophies.</p>
+            <a href="#packagesGrid" onclick="switchCategory('trophies')" class="btn btn-gold">
+              <span>EXPLORE AWARDS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 4: Custom Pens -->
+        <div class="slide category-hero-slide theme-custom-pens" onclick="switchCategory('pens')" style="cursor: pointer;" title="Shop Pens">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_pens.jpg" alt="Premium custom corporate pens" class="bg">
+          <div class="s-body">
+            <span class="s-tag">🖋️ CUSTOM BRANDING</span>
+            <h1 class="s-title">Premium Engraved<br><em>Corporate Pens</em></h1>
+            <p>Executive metal pens, rollerballs, and branded writing gifts for every business occasion.</p>
+            <a href="#packagesGrid" onclick="switchCategory('pens')" class="btn btn-gold">
+              <span>EXPLORE CUSTOM PENS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 5: Diaries -->
+        <div class="slide category-hero-slide theme-diaries" onclick="switchCategory('diaries')" style="cursor: pointer;" title="Shop Diaries">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_diaries.jpg" alt="Premium corporate diaries and planners" class="bg">
+          <div class="s-body">
+            <span class="s-tag">📓 EXECUTIVE ESSENTIALS</span>
+            <h1 class="s-title">Personalized<br><em>Corporate Diaries</em></h1>
+            <p>Premium planners and leatherette diaries made for thoughtful professional gifting.</p>
+            <a href="#packagesGrid" onclick="switchCategory('diaries')" class="btn btn-gold">
+              <span>EXPLORE DIARIES</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 6: Bottles -->
+        <div class="slide category-hero-slide theme-bottles" onclick="switchCategory('bottles')" style="cursor: pointer;" title="Shop Bottles">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_bottles.jpg" alt="Premium insulated corporate bottles" class="bg">
+          <div class="s-body">
+            <span class="s-tag">💧 EVERYDAY UTILITY</span>
+            <h1 class="s-title">Branded Steel<br><em>Bottles &amp; Flasks</em></h1>
+            <p>Customizable insulated bottles and flasks that keep your brand in daily view.</p>
+            <a href="#packagesGrid" onclick="switchCategory('bottles')" class="btn btn-gold">
+              <span>EXPLORE BOTTLES</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 7: Wallets -->
+        <div class="slide category-hero-slide theme-wallets" onclick="switchCategory('wallets')" style="cursor: pointer;" title="Shop Wallets">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_wallets.jpg" alt="Executive leatherette wallets and card holders" class="bg">
+          <div class="s-body">
+            <span class="s-tag">👛 EXECUTIVE GIFTS</span>
+            <h1 class="s-title">Refined<br><em>Wallets &amp; Holders</em></h1>
+            <p>Professional leatherette wallets and card holders that make a polished gift.</p>
+            <a href="#packagesGrid" onclick="switchCategory('wallets')" class="btn btn-gold">
+              <span>EXPLORE WALLETS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 8: Mementos -->
+        <div class="slide category-hero-slide theme-mementos" onclick="switchCategory('mementos')" style="cursor: pointer;" title="Shop Mementos">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_mementos.jpg" alt="Glass mementos and recognition plaques" class="bg">
+          <div class="s-body">
+            <span class="s-tag">💎 RECOGNITION GIFTS</span>
+            <h1 class="s-title">Memorable<br><em>Corporate Mementos</em></h1>
+            <p>Glass awards, wooden plaques, and commemorative gifts for meaningful recognition.</p>
+            <a href="#packagesGrid" onclick="switchCategory('mementos')" class="btn btn-gold">
+              <span>EXPLORE MEMENTOS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide 9: Shields -->
+        <div class="slide category-hero-slide theme-shields" onclick="switchCategory('shields')" style="cursor: pointer;" title="Explore Shields">
+          <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/hero_shields.jpg" alt="Laser Engraved Achievement Award Shields" class="bg">
+          <div class="s-body">
+            <span class="s-tag">🛡️ 24K LASER ENGRAVED SHIELDS</span>
+            <h1 class="s-title">Achievement &amp; Honor<br><em>Award Shields</em></h1>
+            <p>Custom laser-engraved recognition shields with mahogany wooden backing &amp; 24K polished brass citation
+              plates.</p>
+            <a href="#packagesGrid" onclick="switchCategory('shields')" class="btn btn-gold">
+              <span>EXPLORE AWARD SHIELDS</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+          <button class="dot" onclick="setHeroSlide(7)" aria-label="Mementos & Award Shields"></button>
+          <button class="dot" onclick="setHeroSlide(8)" aria-label="Award Shields & Mugs"></button>
+        </div>
+      </div>
+  </section>
+
+    <!-- ================= 8. PRODUCTS CATALOG ================= -->
+    <div class="content-layout catalog-container" id="catalogContainer">
+
+      <!-- Products Grid Panel -->
+      <div class="products-panel">
+
+        <!-- ============ FILTER BAR ============ -->
+        <div class="filter-bar">
+          <div class="sort-by-field">
+            <label for="filterSort">Sort by :</label>
+            <select id="filterSort" onchange="setSortFilter(this.value)">
+              <option value="popular" selected>Popular</option>
+              <option value="lowToHigh">Price: Low to High</option>
+              <option value="highToLow">Price: High to Low</option>
+            </select>
+            <svg class="filter-chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Category Banner / Info -->
+        <div class="category-header" id="categoryHeader">
+          <h1 id="catTitle">All Corporate Gifts</h1>
+          <p id="catDesc">Explore our complete range of customized executive gift sets, welcome kits, corporate diaries, pens, awards, and promotional materials.</p>
+        </div>
+
+        <h2 class="section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFC700" stroke-width="2.5">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Select Products
+        </h2>
+
+        <div class="packages-grid" id="packagesGrid">
+            <!-- Filled from the database by renderContent() (js/corporate.js) once
+                 GET /api/catalog/corporate loads. This used to hold 38 hard-coded
+                 product cards that the "All" view showed instead of the real catalog. -->
+            <div class="corp-grid-loading" style="grid-column:1/-1;padding:40px 16px;text-align:center;color:#8a7a62;">Loading corporate gifts…</div>
+          </div>
+
+
+
+      </div>
+    </div>
+
+  </main>
+
+  </div><!-- end .corp-dashboard -->
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/legacy/Sai_digital_lab_logo.png" alt="Sai Kumar Digital Lab & Studio Logo" style="height: 65px; object-fit: contain;">
+          </div>
+          <p class="desc">Capturing your moments, beautifully and creating memories forever.</p>
+          <div class="socials">
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 22v-9h3l1-4h-4V7c0-1 .3-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9z" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="3" />
+                <path d="M10 9l6 3-6 3z" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="#"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                  d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zM8.5 8.5C7 7 5 8 5 10c0 3 4 5 4 8" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="gifts.html">Customised Gift Shop</a></li>
+            <li><a href="studio.html">Studio Services</a></li>
+            <li><a href="corporate.html">Corporate Gifts</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help &amp; Support</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 6l-10 7L2 6" />
+            </svg>
+            <span>saikumardigitallab@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>7-2-227 Srt 6, Bhagat Singh Nagar, Sanath Nagar, Hyderabad, Telangana 500018</span>
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Sai Kumar Digital Lab &amp; Studio. All Rights Reserved.</p>
+        <div class="pay-icons">
+          <span class="pi">VISA</span>
+          <span class="pi">Mastercard</span>
+          <span class="pi">RuPay</span>
+          <span class="pi">UPI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= MOBILE CART BAR & DRAWER ================= -->
+  <div class="mobile-cart-bar" id="mobileCartBar" onclick="location.href='cart.html'">
+    <div class="cart-bar-left">
+      <div class="cart-bar-thumb">
+        <img loading="lazy" id="cartBarThumb" src="" alt="Cart preview">
+      </div>
+      <div class="cart-bar-text">
+        <span class="cart-bar-title">View cart</span>
+        <span class="cart-bar-sub" id="cartBarQty">0 items</span>
+      </div>
+    </div>
+    <div class="cart-bar-right">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" onclick="closeCartDrawer()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Cart</h3>
+      <button class="close-drawer-btn" onclick="closeCartDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotalValue">₹0</span>
+      </div>
+      <button class="whatsapp-checkout-btn" onclick="location.href='cart.html'">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <div class="cart-drawer-overlay" id="wishlistDrawerOverlay" onclick="closeWishlistDrawer()"></div>
+  <div class="cart-drawer" id="wishlistDrawer">
+    <div class="cart-drawer-header">
+      <h3>My Wishlist</h3>
+      <button class="close-drawer-btn" onclick="closeWishlistDrawer()">×</button>
+    </div>
+    <div class="cart-drawer-items" id="wishlistDrawerItems">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+    <nav class="mobile-bottom-nav">
+    <a href="index.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l9-8 9 8"></path>
+        <path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3l9 8h-2v9a1 1 0 0 1-1 1h-4v-6h-4v6H6a1 1 0 0 1-1-1v-9H3l9-8z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#signin" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+      </svg>
+      <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="8" r="4"></circle>
+        <path d="M4 20a8 6 0 0 1 16 0z"></path>
+      </svg>
+      <span>Account</span>
+    </a>
+    <a href="cart.html" class="bottom-nav-item" onclick="setActiveBottomNav(this)">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="20" cy="21" r="1.4"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6l-.7-3.5a1 1 0 0 0-1-.8H1V1z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="bottomNavCartBadge" style="display:none;">0</span>
+      </span>
+      <span>Cart</span>
+    </a>
+    <a href="#wishlist" class="bottom-nav-item" onclick="event.preventDefault(); openWishlistDrawer();">
+      <span class="bottom-nav-icon-wrap">
+        <svg class="nav-icon-outline" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <svg class="nav-icon-filled" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <span class="bottom-nav-badge" id="mobileWishlistBadge" style="display:none;">0</span>
+      </span>
+      <span>Wishlist</span>
+    </a>
+  </nav>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div class="cart-drawer-overlay" id="mobileMenuOverlay" onclick="closeMobileMenuDrawer()"></div>
+  <div class="cart-drawer mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="cart-drawer-header">
+      <h3>Menu</h3>
+      <button class="close-drawer-btn" onclick="closeMobileMenuDrawer()">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="gifts.html">Customised Gift Shop</a>
+      <a href="corporate.html">Corporate Gifts</a>
+      <a href="studio.html">Studio Services</a>
+      <a href="photography.html">Photography</a>
+      <a href="bulk-orders.html">Bulk Orders</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a href="#signin">Login / Account</a>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </div>
+
+  <!-- ================= E-COMMERCE PRODUCT DETAIL MODAL (SHADCN COMPONENT) ================= -->
+  <div class="product-detail-overlay" id="productDetailOverlay" onclick="closeProductDetailModal(event)">
+    <div class="product-detail-modal" id="productDetailModal" onclick="event.stopPropagation()">
+
+      <!-- Topbar (Back Button + Title) -->
+      <div class="detail-topbar">
+        <div class="detail-topbar-inner">
+          <button class="close-modal-btn" onclick="closeProductDetailModal()" aria-label="Back">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <span class="detail-topbar-title">Product Details</span>
+        </div>
+      </div>
+
+      <div class="detail-scroll">
+      <div class="modal-grid">
+
+        <!-- Breadcrumb + product name. Its own block, a sibling of the gallery and
+             the buy column rather than the first thing inside the buy column, so the
+             name can sit above the images on mobile and beside them on desktop -
+             the same structure gifts.html's .details-copy has. Matching the three
+             product views means matching this. IDs are unchanged, so js/corporate.js
+             still finds #modalProductTitle / #modalBreadcrumbName. -->
+        <div class="modal-title-block">
+          <p class="modal-breadcrumb"><span class="breadcrumb-link">Home</span> / <span class="breadcrumb-link">Corporate Gifts</span> / <span id="modalBreadcrumbName">Product</span></p>
+          <div class="modal-info-header">
+            <h2 class="modal-product-title" id="modalProductTitle">Modern Minimalist Gift Set</h2>
+          </div>
+        </div>
+
+        <!-- Gallery Left Column -->
+        <div class="modal-gallery-col">
+          <div class="modal-gallery-thumbs" id="modalThumbsContainer">
+            <!-- Dynamically populated -->
+          </div>
+          <div class="modal-gallery-main">
+            <img loading="lazy" id="modalMainImg" src="" alt="Product View">
+            <!-- Shown in place of the image above when the selected gallery item is a
+                 video an admin attached to this product (see setModalMainImg in
+                 js/corporate.js). Kept as a sibling rather than swapping the <img>'s
+                 tag so the arrows/wishlist/share buttons stay put across both. -->
+            <video id="modalMainVideo" class="modal-gallery-video" controls playsinline preload="metadata" style="display:none;"></video>
+            <button class="gallery-arrow-btn prev" onclick="navigateModalGallery(-1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22H21a.75.75 0 010 1.5H4.81l6.22 6.22a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <button class="gallery-arrow-btn next" onclick="navigateModalGallery(1)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <button type="button" class="gallery-float-btn gallery-wishlist-btn" aria-label="Save" onclick="this.classList.toggle('active')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+              </svg>
+            </button>
+            <button type="button" class="gallery-float-btn gallery-share-btn" aria-label="Share" onclick="shareModalProduct()">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Info Right Column -->
+        <div class="modal-info-col">
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalProductPrice">₹1,299</span>
+            <span class="stock-badge" id="modalStockBadge">In stock</span>
+          </div>
+
+          <div class="bulk-offer-box" id="modalBulkOffers" style="display:none;"></div>
+
+
+          <div class="pf-fields" id="modalCustomFields" style="display:none;"></div>
+
+          <div class="detail-action-bar">
+            <div class="modal-qty-selector-wrap">
+              <span class="modal-qty-label">Quantity</span>
+              <div class="modal-qty-selector">
+                <button class="modal-qty-btn" onclick="adjustModalQty(-1)" aria-label="Decrease quantity">−</button>
+                <span class="modal-qty-num" id="modalQtyNum">1</span>
+                <button class="modal-qty-btn" onclick="adjustModalQty(1)" aria-label="Increase quantity">+</button>
+              </div>
+              <div class="qty-cap-note" id="modalQtyCapNote" style="display:none;"></div>
+            </div>
+            <div class="detail-action-buttons">
+              <button class="modal-add-cart-btn" id="modalAddCartBtn" onclick="addModalItemToCart()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                </svg>
+                <span>Add to cart</span>
+              </button>
+              <button class="modal-buy-now-btn" id="modalBuyNowBtn" onclick="modalBuyNow()">Buy Now</button>
+            </div>
+          </div>
+
+          <section class="corporate-details-accordion" aria-labelledby="corporateDetailsTitle">
+            <div class="about-product-header">
+              <h3 id="corporateDetailsTitle">About the product</h3>
+              <span class="about-product-code" id="modalProductCode"></span>
+            </div>
+            <div class="corporate-accordion-item">
+              <button type="button" class="corporate-accordion-trigger" aria-expanded="true">
+                <span><span class="corporate-accordion-icon">ⓘ</span>Description</span><span class="corporate-accordion-chevron">⌄</span>
+              </button>
+              <div class="corporate-accordion-content">
+                <div class="corporate-accordion-inner">
+                  <p id="modalDescriptionText"></p>
+                  <ul class="highlights-list" id="modalHighlightsList"></ul>
+                </div>
+              </div>
+            </div>
+            <div class="corporate-accordion-item">
+              <button type="button" class="corporate-accordion-trigger" aria-expanded="false">
+                <span><span class="corporate-accordion-icon">▣</span>Delivery Info</span><span class="corporate-accordion-chevron">⌄</span>
+              </button>
+              <div class="corporate-accordion-content"><p id="modalDeliveryInfoText">Delivered in 2-3 business days across India. 30-day hassle-free replacement and quality warranty.</p></div>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+
+      <section class="related-section" id="modalRelatedSection" aria-labelledby="modalRelatedTitle">
+        <div class="related-heading">
+          <div><span class="eyebrow">More to explore</span><h2 id="modalRelatedTitle">You May Also Like</h2></div>
+          <p>Similar corporate gifts from our collection.</p>
+        </div>
+        <div class="related-grid" id="modalRelatedProducts"></div>
+      </section>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= AI CUSTOM PRODUCT DESIGN STUDIO MODAL ================= -->
+  <div id="aiStudioModal" class="ai-studio-modal-overlay" style="display: none;">
+    <div class="ai-studio-modal-container">
+
+      <!-- Studio Header -->
+      <div class="ai-studio-header">
+        <div class="studio-title-group">
+          <span class="studio-badge">✨ AI POWERED DESIGN VISUALIZER</span>
+          <h2>Custom Product & Branding Studio</h2>
+          <p>Design any product live, inspect AI realistic finish mockups, & place instant custom orders</p>
+        </div>
+        <button type="button" class="studio-close-btn" onclick="closeAIStudioModal()"
+          aria-label="Close Studio">&times;</button>
+      </div>
+
+      <!-- Main Studio Body Grid -->
+      <div class="ai-studio-body">
+
+        <!-- LEFT SIDEBAR: DESIGN CONTROLS -->
+        <div class="studio-sidebar-left">
+
+          <!-- Step 1: Select Product Template -->
+          <div class="studio-card">
+            <div class="studio-card-header">
+              <h3>1. Select Product Template</h3>
+            </div>
+
+            <!-- Catalog Selector Pane -->
+            <div id="catalogSelectView" class="source-view-pane active">
+              <label class="control-label">Choose Product Item to Brand:</label>
+              <div class="preset-product-grid">
+                <div class="preset-card active"
+                  onclick="selectPresetProduct('bottle', 'https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/water%20bottle%2005.jpg', 'Smart Temperature LED Bottle')">
+                  <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/water%20bottle%2005.jpg" alt="Bottle">
+                  <span>Flask</span>
+                </div>
+                <div class="preset-card"
+                  onclick="selectPresetProduct('diary', 'https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/executive_diary_set.jpg', 'Executive Leatherette Diary')">
+                  <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/executive_diary_set.jpg" alt="Diary">
+                  <span>Diary</span>
+                </div>
+                <div class="preset-card"
+                  onclick="selectPresetProduct('mug', 'https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mugs%2001.jpg', 'Custom Printed Ceramic Mug')">
+                  <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/mugs%2001.jpg" alt="Mug">
+                  <span>Magic Mug</span>
+                </div>
+                <div class="preset-card"
+                  onclick="selectPresetProduct('keychain', 'https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/personalized_keychain.jpg', 'Leatherette Keychain')">
+                  <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/personalized_keychain.jpg" alt="Keychain">
+                  <span>Keychain</span>
+                </div>
+                <div class="preset-card"
+                  onclick="selectPresetProduct('trophy', 'https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/trophies%2001.avif', 'Golden Achievement Award')">
+                  <img loading="lazy" src="https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/corporate_assets/trophies%2001.avif" alt="Trophy">
+                  <span>Trophy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Logo & Branding Upload -->
+          <div class="studio-card">
+            <div class="studio-card-header">
+              <h3>2. Upload Logo & Custom Name</h3>
+            </div>
+
+            <div class="studio-field">
+              <label class="control-label">Upload Brand Logo (PNG/SVG/JPG):</label>
+              <div class="logo-drop-area" onclick="document.getElementById('studioLogoInput').click()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="17 8 12 3 7 8" />
+                  <line x1="12" y1="3" x2="12" y2="15" />
+                </svg>
+                <span id="studioLogoStatus">Click to Upload Logo File</span>
+                <input type="file" id="studioLogoInput" accept="image/*" style="display: none;"
+                  onchange="handleStudioLogoUpload(event)">
+              </div>
+
+              <!-- Auto Centering & BG Removal AI Status -->
+              <div id="studioLogoControls" class="ai-autofix-badge" style="display: none; margin-top: 10px;">
+                <span>✨ <strong>AI Auto-Fit:</strong> Logo background removed & centered on product</span>
+              </div>
+            </div>
+
+            <div class="studio-field">
+              <label class="control-label">Custom Name / Text to Engrave/Print:</label>
+              <input type="text" id="studioTextInput" placeholder="e.g. Acme Corp / John Doe"
+                oninput="updateStudioText(this.value)">
+            </div>
+
+            <div class="studio-field">
+              <label class="control-label">Typography Style:</label>
+              <select id="studioFontSelect" onchange="updateStudioFont(this.value)">
+                <option value="Outfit">Modern Sans (Outfit)</option>
+                <option value="Fraunces">Executive Serif (Fraunces)</option>
+                <option value="Inter">Clean Corporate (Inter)</option>
+                <option value="Courier New">Monospace Code</option>
+                <option value="Brush Script MT">Cursive Signature</option>
+              </select>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- CENTER WORKSPACE: INTERACTIVE CANVAS VISUALIZER -->
+        <div class="studio-workspace">
+
+          <div class="workspace-toolbar">
+            <div class="toolbar-left">
+              <span class="toolbar-status">🎨 Click & Drag logo/text on canvas to position</span>
+            </div>
+            <div class="toolbar-right">
+              <button type="button" class="tool-btn" onclick="resetCanvasTransform()" title="Reset Alignment">↺
+                Reset</button>
+              <button type="button" class="tool-btn" onclick="centerCanvasDesign()" title="Center Alignment">🎯
+                Center</button>
+              <button type="button" class="tool-btn" id="btnToggleCompare" onclick="toggleBeforeAfter()"
+                title="Toggle Original vs Mockup">👁️ View Original</button>
+            </div>
+          </div>
+
+          <!-- Canvas Stage -->
+          <div class="canvas-stage" id="canvasStage">
+            <canvas id="studioCanvas" width="600" height="600"></canvas>
+            <div id="canvasOverlayHint" class="canvas-overlay-hint">
+              <span>👇 Drag logo or text on product image to customize</span>
+            </div>
+          </div>
+
+          <!-- AI Simulation Indicator Bar -->
+          <div class="ai-sim-bar">
+            <span class="sim-pulse">●</span>
+            <span id="aiSimText">Live AI Branding Visualizer: Rendered Photorealistically on Product Surface</span>
+          </div>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR: ORDER CHECKOUT -->
+        <div class="studio-sidebar-right">
+
+          <!-- Order Specs & Checkout Card -->
+          <div class="studio-card checkout-card">
+            <div class="studio-card-header">
+              <h3>Order Quantity & Specs</h3>
+            </div>
+
+            <div class="studio-field">
+              <label class="control-label">Product Title:</label>
+              <input type="text" id="studioProductNameInput" value="Smart Temperature LED Bottle"
+                placeholder="Custom Product Name">
+            </div>
+
+            <div class="studio-field">
+              <label class="control-label">Quantity (Min 1):</label>
+              <div class="qty-calc-row">
+                <button type="button" class="qty-btn" onclick="adjustStudioQty(-5)">-5</button>
+                <button type="button" class="qty-btn" onclick="adjustStudioQty(-1)">-1</button>
+                <input type="number" id="studioQtyInput" value="10" min="1" oninput="recalculateStudioPrice()">
+                <button type="button" class="qty-btn" onclick="adjustStudioQty(1)">+1</button>
+                <button type="button" class="qty-btn" onclick="adjustStudioQty(5)">+5</button>
+              </div>
+            </div>
+
+            <div class="pricing-table">
+              <div class="price-row">
+                <span>Unit Price:</span>
+                <span id="studioUnitPrice">₹699</span>
+              </div>
+              <div class="price-row">
+                <span>Custom Branding:</span>
+                <span style="color: #16a34a; font-weight: 600;">FREE</span>
+              </div>
+              <div class="price-row total-row">
+                <span>Estimated Total:</span>
+                <span id="studioTotalPrice" class="total-price-num">₹6,990</span>
+              </div>
+              <small class="discount-badge" id="studioDiscountBadge">🎉 15% Bulk Discount Applied</small>
+            </div>
+
+            <div class="checkout-actions">
+              <button type="button" class="btn btn-gold btn-full" onclick="submitStudioOrder('cart')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <path d="M16 10a4 4 0 0 1-8 0" />
+                </svg>
+                <span>Add Custom Order to Cart</span>
+              </button>
+
+              <button type="button" class="btn btn-buy btn-full" style="background-color: var(--primary-color, #d4af37); color: #fff; margin-top: 10px;" onclick="submitStudioOrder('buynow')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+                <span style="font-weight: 600;">Buy Now</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= CART TOAST ================= -->
+  <div class="cart-toast" id="cartToast">
+    <span>Item added to cart</span>
+    <button type="button" onclick="goToCartFromToast()">GO TO CART</button>
+  </div>
+
+  <script src="js/shared/loading-ui.js"></script>
+  <script src="js/shared/product-fields.js?v=16"></script>
+  <script src="js/shared/thumb-map.js"></script>
+  <script src="js/shared/api-config.js"></script>
+  <script src="js/shared/site-menu.js"></script>
+  <script src="js/shared/stock.js?v=1"></script>
+  <script src="js/shared/bulk-tiers.js?v=3"></script>
+  <script src="js/shared/cart-core.js"></script>
+  <script src="js/shared/cart-ui.js?v=2"></script>
+  <script src="js/shared/product-media.js?v=2"></script>
+  <script src="js/shared/related-more.js?v=2"></script>
+  <script src="js/corporate.js?v=11"></script>
+  <script src="js/shared/home-nav.js" defer></script>
+  <script src="js/shared/customer-api.js"></script>
+  <script src="js/shared/auth-modal.js" defer></script>
+  <script src="js/shared/chatbot.js" defer></script>
+<!-- Mobile Header Gap Fix: dynamically sets body padding-top = actual fixed header height -->
+  <script src="js/corporate-3.js"></script>
+  <script src="js/shared/search.js?v=10" defer></script>
+  <script src="js/shared/bottom-nav.js"></script>
+  <script src="js/shared/wishlist-menu.js"></script>
+</body>
+
+</html>

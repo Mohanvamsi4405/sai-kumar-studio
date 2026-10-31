@@ -1,0 +1,969 @@
+{
+  "categories": [
+    {
+      "id": "accessories",
+      "name": "Accessories (Keychains)",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-keychain.png"
+    },
+    {
+      "id": "frames",
+      "name": "Photo Frames",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-photo%20frames.jpg"
+    },
+    {
+      "id": "clocks",
+      "name": "Wall Clocks",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-wall%20clock.jpg"
+    },
+    {
+      "id": "mirror",
+      "name": "Magic Mirror",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/34--magic%20mirror%20round.webp"
+    },
+    {
+      "id": "pillows",
+      "name": "Pillows",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-photo%20pillow.png"
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal Gifts",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-crystal%20gifts.jpg"
+    },
+    {
+      "id": "decor",
+      "name": "Home Decor",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/15-fridge%20magnets-01.webp"
+    },
+    {
+      "id": "drinkware",
+      "name": "Drinkware",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/sidebar-mugs.jpg"
+    },
+    {
+      "id": "combos",
+      "name": "Hampers & Combos",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/10--dairy%20combos-02.webp"
+    }
+  ],
+  "products": [
+    {
+      "name": "Premium Wooden Photo Frame",
+      "category": "frames",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wooden-frame-1.png",
+      "rating": "4.8 (120)"
+    },
+    {
+      "name": "Personalised Engraved Wooden Plaque",
+      "category": "frames",
+      "price": 799,
+      "old": 1199,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/05--%2006.jpg",
+      "rating": "4.9 (88)"
+    },
+    {
+      "name": "Personalised Wooden Frame",
+      "category": "frames",
+      "price": 599,
+      "old": 899,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wooden-frame-2.png",
+      "rating": "4.8 (120)"
+    },
+    {
+      "name": "Personalised heartshape Wooden Frame",
+      "category": "frames",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wooden-frame-8.png",
+      "rating": "4.8 (120)"
+    },
+    {
+      "name": "Personalised Coloured Wooden Frame",
+      "category": "frames",
+      "price": 599,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wooden-frame-11.png",
+      "rating": "4.8 (120)"
+    },
+    {
+      "name": "Personalised designed Wooden Frame",
+      "category": "frames",
+      "price": 799,
+      "old": 1199,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wooden-frame-17.png",
+      "rating": "4.8 (120)"
+    },
+    {
+      "name": "Classic Brown Wooden Photo Frame",
+      "category": "frames",
+      "price": 649,
+      "old": 949,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wooden-frame-16.png",
+      "rating": "4.7 (85)"
+    },
+    {
+      "name": "Base Wooden Cutout Frame",
+      "category": "frames",
+      "price": 899,
+      "old": 1299,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/BASE%20WOODEN%20CUTOUT%20FRAME.png",
+      "rating": "4.8 (31)"
+    },
+    {
+      "name": "Acrylic LED Cutout Frame",
+      "category": "frames",
+      "price": 1199,
+      "old": 1599,
+      "off": "25% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/ACRYLIC%20LED%20CUTOUT%20FRAME%20%281%29.png",
+      "rating": "4.9 (45)"
+    },
+    {
+      "name": "Table Top Acrylic Photo Frame",
+      "category": "frames",
+      "price": 749,
+      "old": 999,
+      "off": "25% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/18-TABLE%20TOP%20ACRYLIC%20PHOTO%20FRAMES-01.jpg",
+      "rating": "4.8 (42)"
+    },
+    {
+      "name": "Premium Acrylic Photo Frame",
+      "category": "frames",
+      "price": 849,
+      "old": 1199,
+      "off": "29% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/17%20acrylic%20photo%20frames.jpg",
+      "rating": "4.8 (34)"
+    },
+    {
+      "name": "Glossy Acrylic Tabletop Frame",
+      "category": "frames",
+      "price": 799,
+      "old": 1099,
+      "off": "27% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/18--TABLE%20TOP%20ACRYLIC%20PHOTO%20FRAMES-02.jpg",
+      "rating": "4.8 (40)"
+    },
+    {
+      "name": "Balaji Devotional Acrylic Frame",
+      "category": "frames",
+      "price": 999,
+      "old": 1499,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/tirumala_balaji_new_acrylic_frame%20%281%29.webp",
+      "rating": "5.0 (62)"
+    },
+    {
+      "name": "LED Photo Frame with Stand",
+      "category": "frames",
+      "price": 899,
+      "old": 1299,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/19-led-photo-frame.png",
+      "rating": "4.7 (65)"
+    },
+    {
+      "name": "Personalised Collage Photo Frame",
+      "category": "frames",
+      "price": 999,
+      "old": 1399,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/20--collage%20photo%20frames%20%281%29.jpg",
+      "rating": "4.7 (38)"
+    },
+    {
+      "name": "Multi-Grid Family Collage Frame",
+      "category": "frames",
+      "price": 1099,
+      "old": 1599,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/20--collage%20photo%20frames%20%282%29.jpg",
+      "rating": "4.8 (46)"
+    },
+    {
+      "name": "Nine-Grid Photo Collage Frame",
+      "category": "frames",
+      "price": 1199,
+      "old": 1699,
+      "off": "29% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/20--collage%20photo%20frames%20%283%29.jpg",
+      "rating": "4.9 (53)"
+    },
+    {
+      "name": "Crystal Photo Frame",
+      "category": "frames",
+      "price": 1299,
+      "old": 1899,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/crystal%20frame%201.webp",
+      "rating": "4.8 (32)"
+    },
+    {
+      "name": "Crystal Beveled Edge Photo Frame",
+      "category": "frames",
+      "price": 1399,
+      "old": 1999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/crystal%20frame%202.webp",
+      "rating": "4.9 (41)"
+    },
+    {
+      "name": "Custom Crystal Photo Frame",
+      "category": "frames",
+      "price": 1499,
+      "old": 2199,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/Custom_Crystal_Photo_Frame_16-12-3.webp",
+      "rating": "4.8 (37)"
+    },
+    {
+      "name": "Mosaic Photo Frame",
+      "category": "frames",
+      "price": 1199,
+      "old": 1699,
+      "off": "29% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/ChatGPT%20Image%20Jul%2026%2C%202026%2C%2005_55_10%20PM.png",
+      "rating": "4.7 (27)"
+    },
+    {
+      "name": "Artistic Mosaic Photo Collage",
+      "category": "frames",
+      "price": 1249,
+      "old": 1799,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/ChatGPT%20Image%20Jul%2026%2C%202026%2C%2005_58_17%20PM.png",
+      "rating": "4.8 (33)"
+    },
+    {
+      "name": "Deluxe Mosaic Memory Frame",
+      "category": "frames",
+      "price": 1299,
+      "old": 1899,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/ChatGPT%20Image%20Jul%2026%2C%202026%2C%2005_59_48%20PM.png",
+      "rating": "4.9 (42)"
+    },
+    {
+      "name": "Personalised Neon Photo Frame",
+      "category": "frames",
+      "price": 1499,
+      "old": 2199,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/neon%20frame%201.png",
+      "rating": "4.9 (41)"
+    },
+    {
+      "name": "Neon Glow Couple Photo Frame",
+      "category": "frames",
+      "price": 1549,
+      "old": 2299,
+      "off": "32% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/ChatGPT%20Image%20Jul%2026%2C%202026%2C%2005_16_28%20PM.png",
+      "rating": "4.8 (39)"
+    },
+    {
+      "name": "Ambient Neon Silhouette Frame",
+      "category": "frames",
+      "price": 1599,
+      "old": 2399,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/ChatGPT%20Image%20Jul%2026%2C%202026%2C%2005_21_06%20PM.png",
+      "rating": "4.9 (44)"
+    },
+    {
+      "name": "Pencil Sketch Photo Frame",
+      "category": "frames",
+      "price": 999,
+      "old": 1499,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/pencil-sketch-frame-1.png",
+      "rating": "4.8 (36)"
+    },
+    {
+      "name": "Digital Pencil Sketch Art Frame",
+      "category": "frames",
+      "price": 1049,
+      "old": 1549,
+      "off": "32% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/pencil-sketch-frame-2.png",
+      "rating": "4.9 (45)"
+    },
+    {
+      "name": "QR Voice Photo Frame",
+      "category": "frames",
+      "price": 1299,
+      "old": 1899,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/qr-voice-frame-1.png",
+      "rating": "4.9 (29)"
+    },
+    {
+      "name": "QR Code Audio Greeting Frame",
+      "category": "frames",
+      "price": 1349,
+      "old": 1949,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/qr-voice-frame-2.jpg",
+      "rating": "4.8 (34)"
+    },
+    {
+      "name": "Round LED Magic Mirror Photo Frame",
+      "category": "mirror",
+      "price": 799,
+      "old": 1199,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/34--magic%20mirror%20round.webp",
+      "rating": "4.9 (64)"
+    },
+    {
+      "name": "Heart Shape LED Magic Mirror Frame",
+      "category": "mirror",
+      "price": 849,
+      "old": 1299,
+      "off": "35% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/34--magic%20mirror-02.jpg",
+      "rating": "4.9 (58)"
+    },
+    {
+      "name": "Heart Glow Magic Mirror Table Lamp",
+      "category": "mirror",
+      "price": 899,
+      "old": 1399,
+      "off": "36% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/35--magic%20mirror-01.jpg",
+      "rating": "4.8 (47)"
+    },
+    {
+      "name": "Classic Square Magic Mirror Frame",
+      "category": "mirror",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/magic%20mirror%20%281%29.png",
+      "rating": "4.7 (52)"
+    },
+    {
+      "name": "Tabletop LED Magic Photo Mirror",
+      "category": "mirror",
+      "price": 749,
+      "old": 1099,
+      "off": "32% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/34--magic%20mirror-01.jpg",
+      "rating": "4.8 (39)"
+    },
+    {
+      "name": "Personalised Photo Wall Clock",
+      "category": "clocks",
+      "price": 899,
+      "old": 1299,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/16--acrylic%20wall%20clocks%20%281%29.jpg",
+      "rating": "4.7 (54)"
+    },
+    {
+      "name": "Acrylic Photo Wall Clock",
+      "category": "clocks",
+      "price": 999,
+      "old": 1399,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%281%29.png",
+      "rating": "4.8 (37)"
+    },
+    {
+      "name": "12 Photos Acrylic Wall Clock",
+      "category": "clocks",
+      "price": 1099,
+      "old": 1599,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/43--12%20photos%20wall%20clock%20%281%29.jpg",
+      "rating": "4.9 (62)"
+    },
+    {
+      "name": "12 Photo Memories Clock (Deluxe)",
+      "category": "clocks",
+      "price": 1149,
+      "old": 1649,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/43--12%20photos%20wall%20clock%20%282%29.jpg",
+      "rating": "4.9 (55)"
+    },
+    {
+      "name": "Designer Acrylic Wall Clock",
+      "category": "clocks",
+      "price": 949,
+      "old": 1399,
+      "off": "32% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/16--acrylic%20wall%20clocks%20%282%29.jpg",
+      "rating": "4.8 (38)"
+    },
+    {
+      "name": "Modern Diamond Acrylic Clock",
+      "category": "clocks",
+      "price": 999,
+      "old": 1449,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%282%29.png",
+      "rating": "4.8 (43)"
+    },
+    {
+      "name": "Minimalist Square Wall Clock",
+      "category": "clocks",
+      "price": 949,
+      "old": 1399,
+      "off": "32% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%283%29.png",
+      "rating": "4.7 (36)"
+    },
+    {
+      "name": "Classic Numerals Wall Clock",
+      "category": "clocks",
+      "price": 899,
+      "old": 1299,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%284%29.png",
+      "rating": "4.8 (41)"
+    },
+    {
+      "name": "Family Portrait Acrylic Clock",
+      "category": "clocks",
+      "price": 1049,
+      "old": 1499,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%285%29.png",
+      "rating": "4.9 (47)"
+    },
+    {
+      "name": "Floral Silhouette Wall Clock",
+      "category": "clocks",
+      "price": 999,
+      "old": 1449,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%286%29.png",
+      "rating": "4.8 (39)"
+    },
+    {
+      "name": "Geometric Gold Accent Wall Clock",
+      "category": "clocks",
+      "price": 1099,
+      "old": 1599,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%287%29.png",
+      "rating": "4.9 (51)"
+    },
+    {
+      "name": "Roman Numerals Acrylic Clock",
+      "category": "clocks",
+      "price": 999,
+      "old": 1449,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/WALL%20CLOCKS%20ACRYLIC%20%20%288%29.png",
+      "rating": "4.8 (44)"
+    },
+    {
+      "name": "Vintage Wooden Wall Clock",
+      "category": "clocks",
+      "price": 899,
+      "old": 1299,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/wall-clock-1.jpg",
+      "rating": "4.7 (32)"
+    },
+    {
+      "name": "Multi-Image Studio Wall Clock",
+      "category": "clocks",
+      "price": 1099,
+      "old": 1599,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/16--acrylic%20wall%20clocks%20%287%29--.jpg",
+      "rating": "4.9 (48)"
+    },
+    {
+      "name": "Love You Personalised Photo Mug",
+      "category": "drinkware",
+      "price": 449,
+      "old": 599,
+      "off": "25% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/01-cup.png",
+      "rating": "4.7 (98)"
+    },
+    {
+      "name": "Classic Ceramic Coffee Mug",
+      "category": "drinkware",
+      "price": 349,
+      "old": 499,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/01--cup-02.jpg",
+      "rating": "4.8 (76)"
+    },
+    {
+      "name": "Sublimation Printed Coffee Cup",
+      "category": "drinkware",
+      "price": 349,
+      "old": 499,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/01--cup-03.jpg",
+      "rating": "4.7 (65)"
+    },
+    {
+      "name": "Heart Handle Photo Mug",
+      "category": "drinkware",
+      "price": 499,
+      "old": 699,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/02--heart%20handle%20cup-02-.jpg",
+      "rating": "4.8 (74)"
+    },
+    {
+      "name": "Romantic Heart Handle Cup",
+      "category": "drinkware",
+      "price": 499,
+      "old": 699,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/02--heart%20handle%20cup.jpg",
+      "rating": "4.9 (82)"
+    },
+    {
+      "name": "Magic Reveal Photo Mug",
+      "category": "drinkware",
+      "price": 549,
+      "old": 799,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/03--magic%20cup.png",
+      "rating": "4.9 (81)"
+    },
+    {
+      "name": "Color Changing Magic Cup",
+      "category": "drinkware",
+      "price": 549,
+      "old": 799,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/003%20magic%20cup-01.jpg",
+      "rating": "4.8 (70)"
+    },
+    {
+      "name": "Personalised Photo Water Bottle",
+      "category": "drinkware",
+      "price": 399,
+      "old": 599,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/45--photo%20water%20bottles.png",
+      "rating": "4.7 (46)"
+    },
+    {
+      "name": "Steel Insulated Photo Bottle",
+      "category": "drinkware",
+      "price": 499,
+      "old": 699,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/45--photo%20water%20bottles--%20%281%29.jpg",
+      "rating": "4.8 (52)"
+    },
+    {
+      "name": "Custom Printed Ceramic Cup",
+      "category": "drinkware",
+      "price": 349,
+      "old": 499,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/cups%20%281%29%20%281%29.png",
+      "rating": "4.8 (55)"
+    },
+    {
+      "name": "Glossy Finish Coffee Mug",
+      "category": "drinkware",
+      "price": 349,
+      "old": 499,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/cups%20%282%29.png",
+      "rating": "4.7 (48)"
+    },
+    {
+      "name": "Custom Couple Coffee Mug",
+      "category": "drinkware",
+      "price": 399,
+      "old": 549,
+      "off": "27% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/cups%20%283%29.png",
+      "rating": "4.8 (59)"
+    },
+    {
+      "name": "Signature White Photo Mug",
+      "category": "drinkware",
+      "price": 349,
+      "old": 499,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/cups%20%284%29.png",
+      "rating": "4.7 (43)"
+    },
+    {
+      "name": "Custom Photo Heart Pillow",
+      "category": "pillows",
+      "price": 599,
+      "old": 799,
+      "off": "25% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/30-%20heart%20pillow%20%282%29.jpg",
+      "rating": "4.6 (88)"
+    },
+    {
+      "name": "Red Satin Heart Photo Pillow",
+      "category": "pillows",
+      "price": 649,
+      "old": 899,
+      "off": "27% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/30-%20heart%20pillow%20%281%29.jpg",
+      "rating": "4.8 (67)"
+    },
+    {
+      "name": "Velvet Fur Heart Pillow",
+      "category": "pillows",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/30-%20heart%20pillow%20%283%29.jpg",
+      "rating": "4.9 (73)"
+    },
+    {
+      "name": "Love Keepsake Heart Cushion",
+      "category": "pillows",
+      "price": 649,
+      "old": 899,
+      "off": "27% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/30-%20HEART%20PILLOW-%284%29.webp",
+      "rating": "4.8 (54)"
+    },
+    {
+      "name": "Premium Heart Photo Cushion",
+      "category": "pillows",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/30-%20HEART%20PILLOW-5.jpg",
+      "rating": "4.9 (61)"
+    },
+    {
+      "name": "Swipe Magic Sequins Pillow",
+      "category": "pillows",
+      "price": 599,
+      "old": 899,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/31-%20MAGIC%20PILLOW.jpg",
+      "rating": "4.7 (51)"
+    },
+    {
+      "name": "Reversible Magic Sequins Cushion",
+      "category": "pillows",
+      "price": 649,
+      "old": 949,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/magic%20pillow.png",
+      "rating": "4.8 (58)"
+    },
+    {
+      "name": "Cute Panda Kids Photo Cushion",
+      "category": "pillows",
+      "price": 449,
+      "old": 699,
+      "off": "35% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/32-%20KIDS%20PHOTO%20PILLOWS.webp",
+      "rating": "4.8 (42)"
+    },
+    {
+      "name": "Cute Kids Photo Pillow",
+      "category": "pillows",
+      "price": 399,
+      "old": 599,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/32-%20KIDS%20PHOTO%20PILLOWS-02.jpg",
+      "rating": "4.8 (36)"
+    },
+    {
+      "name": "Kids Custom Photo Cushion",
+      "category": "pillows",
+      "price": 449,
+      "old": 649,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/32-%20KIDS%20PHOTO%20PILLOWS-01.webp",
+      "rating": "4.8 (35)"
+    },
+    {
+      "name": "Premium Velvet Heart Photo Cushion",
+      "category": "pillows",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/heart%20pillow.png",
+      "rating": "4.9 (44)"
+    },
+    {
+      "name": "3D Laser Engraved Crystal Cube",
+      "category": "crystal",
+      "price": 999,
+      "old": 1499,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/29--3D%20CRYSTAL%20CUBES%20%281%29.jpg",
+      "rating": "4.9 (76)"
+    },
+    {
+      "name": "3D Portrait Crystal Keepsake",
+      "category": "crystal",
+      "price": 1099,
+      "old": 1599,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/29--3D%20CRYSTAL%20CUBES%20%282%29.jpg",
+      "rating": "4.9 (68)"
+    },
+    {
+      "name": "Crystal Photo Stand",
+      "category": "crystal",
+      "price": 1299,
+      "old": 1899,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/36-crystal-photo-frame-317.jpg",
+      "rating": "4.8 (44)"
+    },
+    {
+      "name": "Designer Crystal Showcase Frame",
+      "category": "crystal",
+      "price": 1349,
+      "old": 1999,
+      "off": "32% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/36-crystal-photo-frame-317-%20%281%29.jpg",
+      "rating": "4.9 (38)"
+    },
+    {
+      "name": "Round Beveled Crystal Frame",
+      "category": "crystal",
+      "price": 1399,
+      "old": 2099,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/36-crystal-photo-frame-317-%20%282%29.jpg",
+      "rating": "4.8 (42)"
+    },
+    {
+      "name": "Crystal Keepsake Stand with Stand",
+      "category": "crystal",
+      "price": 1449,
+      "old": 2199,
+      "off": "34% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/36-crystal-photo-frame-317-%20%283%29.jpg",
+      "rating": "4.9 (46)"
+    },
+    {
+      "name": "Rotating LED Crystal Gift",
+      "category": "crystal",
+      "price": 1799,
+      "old": 2599,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/29--3d-crystal.jpg",
+      "rating": "4.9 (29)"
+    },
+    {
+      "name": "37-Rotate LED Crystal Photo Cube",
+      "category": "crystal",
+      "price": 1899,
+      "old": 2699,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/37-%20rotate%20cube-01.jpg",
+      "rating": "4.9 (43)"
+    },
+    {
+      "name": "37-Rotate LED Photo Cube (Design 2)",
+      "category": "crystal",
+      "price": 1899,
+      "old": 2699,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/37-%20rotate%20cube-02.png",
+      "rating": "4.9 (38)"
+    },
+    {
+      "name": "37-Rotate LED Photo Cube (Design 3)",
+      "category": "crystal",
+      "price": 1899,
+      "old": 2699,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/37-%20rotate%20cube-03.png",
+      "rating": "4.9 (41)"
+    },
+    {
+      "name": "XXL Personalised Crystal Frame",
+      "category": "crystal",
+      "price": 2199,
+      "old": 3199,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/XXL_Personalised_Crystal_Photo_Frame.webp",
+      "rating": "5.0 (52)"
+    },
+    {
+      "name": "Custom Fridge Magnets Set",
+      "category": "decor",
+      "price": 199,
+      "old": 299,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/15-fridge%20magnets-01.webp",
+      "rating": "4.6 (61)"
+    },
+    {
+      "name": "Personalised Fridge Magnet Pack",
+      "category": "decor",
+      "price": 249,
+      "old": 349,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/15-fridge%20magnets.jpg",
+      "rating": "4.7 (45)"
+    },
+    {
+      "name": "Personalised Kiddy Bank",
+      "category": "decor",
+      "price": 499,
+      "old": 699,
+      "off": "28% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/kiddy-bank-1.jpg",
+      "rating": "4.7 (24)"
+    },
+    {
+      "name": "Custom Name Kiddy Money Box",
+      "category": "decor",
+      "price": 549,
+      "old": 799,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/kiddy-bank-2.jpg",
+      "rating": "4.8 (31)"
+    },
+    {
+      "name": "Double-sided Photo Keychain",
+      "category": "accessories",
+      "price": 199,
+      "old": 299,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/11-keychains%20%20%281%29.png",
+      "rating": "4.7 (93)"
+    },
+    {
+      "name": "Premium Metallic Photo Keychain",
+      "category": "accessories",
+      "price": 249,
+      "old": 349,
+      "off": "29% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/40-PHOTO%20KEY%20CHAINS.jpg",
+      "rating": "4.7 (78)"
+    },
+    {
+      "name": "Acrylic Custom Keychain Set",
+      "category": "accessories",
+      "price": 229,
+      "old": 329,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/11-keychains%20%20%282%29.webp",
+      "rating": "4.8 (64)"
+    },
+    {
+      "name": "Square Photo Keychain Pair",
+      "category": "accessories",
+      "price": 249,
+      "old": 349,
+      "off": "29% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/11-keychains%20%20%283%29.webp",
+      "rating": "4.7 (58)"
+    },
+    {
+      "name": "Metal Border Photo Keychain",
+      "category": "accessories",
+      "price": 279,
+      "old": 399,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/11-keychains%20%209.jpg",
+      "rating": "4.8 (49)"
+    },
+    {
+      "name": "Engraved Leather Wallet",
+      "category": "accessories",
+      "price": 699,
+      "old": 999,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/08--wallets-02-0.jpg",
+      "rating": "4.8 (57)"
+    },
+    {
+      "name": "Personalised Men Leather Wallet",
+      "category": "accessories",
+      "price": 749,
+      "old": 1099,
+      "off": "31% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/08--wallets-01.jpg",
+      "rating": "4.9 (63)"
+    },
+    {
+      "name": "Custom Name Executive Diary",
+      "category": "accessories",
+      "price": 499,
+      "old": 799,
+      "off": "37% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/09--dairys-02.jpg",
+      "rating": "4.7 (39)"
+    },
+    {
+      "name": "Hardbound Organiser Diary",
+      "category": "accessories",
+      "price": 549,
+      "old": 849,
+      "off": "35% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/09-dairys.avif",
+      "rating": "4.8 (44)"
+    },
+    {
+      "name": "Wooden Pen Stand Organizer",
+      "category": "accessories",
+      "price": 599,
+      "old": 899,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/12-table%20top%20pen%20stand%20calenders.jpg",
+      "rating": "4.8 (40)"
+    },
+    {
+      "name": "Personalised Diary Gift Combo",
+      "category": "combos",
+      "price": 899,
+      "old": 1299,
+      "off": "30% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/10--dairy%20combos-02.webp",
+      "rating": "4.8 (33)"
+    },
+    {
+      "name": "Executive Pen & Diary Hamper",
+      "category": "combos",
+      "price": 999,
+      "old": 1499,
+      "off": "33% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/10--dairy%20combos-03.webp",
+      "rating": "4.9 (45)"
+    },
+    {
+      "name": "Wooden Pen Stand Tabletop Calendar",
+      "category": "combos",
+      "price": 799,
+      "old": 1099,
+      "off": "27% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/12-table%20top%20pen%20stand%20calenders-01.webp",
+      "rating": "4.7 (28)"
+    },
+    {
+      "name": "Wooden Pen Stand Gift Combo",
+      "category": "combos",
+      "price": 799,
+      "old": 1099,
+      "off": "27% OFF",
+      "image": "https://pub-0f96bbc0f4a649b7b396578fc5db875b.r2.dev/skds_0438a7a87e/gifts-assets/12-table%20top%20pen%20stand%20calenders-04.jpg",
+      "rating": "4.8 (31)"
+    }
+  ]
+}
